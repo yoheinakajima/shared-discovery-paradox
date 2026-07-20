@@ -65,6 +65,11 @@ strong { font-weight:700; }
 .topbar a { text-decoration:none; color:var(--ink2); }
 .topbar a:hover { color:var(--ink); text-decoration:underline; }
 #progress { position:absolute; left:0; bottom:-1px; height:2px; width:0; background:var(--planner); }
+.seg.mini { padding:3px; border-radius:9px; flex:none; }
+.seg.mini button { padding:.24rem .55rem; font-size:.7rem; border-radius:6px; }
+[data-lang="ste"] .lang-tech { display:none !important; }
+[data-lang="tech"] .lang-ste { display:none !important; }
+.langnote { font-family:var(--sans); font-size:.78rem; color:var(--muted); margin:-1.4rem 0 2.2rem; }
 
 /* ================= hero ================= */
 .hero { padding:7.5rem 0 3rem; }
@@ -256,9 +261,19 @@ footer.site .wrap { border-top:1px solid var(--grid); padding-top:1.6rem; }
 </style>
 </head>
 <body>
+<script>
+document.body.dataset.lang = (function () {
+  try { return localStorage.getItem("sdp-lang") === "tech" ? "tech" : "ste"; }
+  catch (e) { return "ste"; }
+})();
+</script>
 
 <div class="topbar" role="banner">
   <span class="tb-title">The Shared Discovery Paradox</span>
+  <div class="seg mini" role="group" aria-label="text language">
+    <button id="langSte" aria-pressed="true" title="Simplified Technical English (ASD-STE100)">Standard</button>
+    <button id="langTech" aria-pressed="false" title="The author's original text">Technical</button>
+  </div>
   <nav aria-label="page links">
     <a href="#machine" class="hide-sm">experiment</a>
     <a href="#lesson" class="hide-sm">takeaway</a>
@@ -274,29 +289,34 @@ footer.site .wrap { border-top:1px solid var(--grid); padding-top:1.6rem; }
     <h1>The Shared Discovery Paradox</h1>
     <p class="sub">How a one-answer rule turns better information into worse search</p>
     <p class="byline"><b>Yohei Nakajima</b> · Untapped Capital · July 2026</p>
+    <p class="langnote">
+      <span class="lang-ste">This page uses Simplified Technical English (ASD-STE100). For the author's original text, select <b>Technical</b> at the top.</span>
+      <span class="lang-tech">You are reading the original text. For Simplified Technical English (ASD-STE100), select <b>Standard</b> at the top.</span>
+    </p>
 
     <div class="hero-tiles" role="group" aria-label="the paper in three numbers">
       <div class="tile" style="--tc:var(--private)">
-        <div class="t-label">Eight searchers each follow their own noisy clue</div>
+        <div class="t-label"><span class="lang-ste">Each of the 8 searchers opens the box on their own clue</span><span class="lang-tech">Eight searchers each follow their own noisy clue</span></div>
         <div class="t-value num">0.832</div>
       </div>
       <div class="tile" style="--tc:var(--consensus)">
-        <div class="t-label">Pool every clue, all repeat the single best answer</div>
+        <div class="t-label"><span class="lang-ste">The group collects all clues; all 8 open the one best box</span><span class="lang-tech">Pool every clue, all repeat the single best answer</span></div>
         <div class="t-value num">0.383</div>
       </div>
       <div class="tile" style="--tc:var(--planner)">
-        <div class="t-label">Same pooled clues, spread across eight boxes</div>
+        <div class="t-label"><span class="lang-ste">The same collected clues, spread across 8 different boxes</span><span class="lang-tech">Same pooled clues, spread across eight boxes</span></div>
         <div class="t-value num">0.859</div>
       </div>
     </div>
 
-    <p style="max-width:38rem">A group can become <em>better informed</em> and <em>less likely to discover</em> what it is looking for. Sharing evidence genuinely improves the ranking of candidates — and a one-answer rule then spends every attempt on the top of that ranking, collapsing a portfolio of eight searches into one search, repeated eight times.</p>
+    <p style="max-width:38rem" class="lang-ste">A group can get better information and, at the same time, find its target less frequently. Collected clues make the ranking of the boxes better. But a one-answer rule then sends all attempts to the top of that ranking. A portfolio of 8 searches becomes 1 search, done 8 times.</p>
+    <p style="max-width:38rem" class="lang-tech">A group can become <em>better informed</em> and <em>less likely to discover</em> what it is looking for. Sharing evidence genuinely improves the ranking of candidates — and a one-answer rule then spends every attempt on the top of that ranking, collapsing a portfolio of eight searches into one search, repeated eight times.</p>
     <p class="linkrow">
       <a class="btn primary" href="#machine">Run the experiment ↓</a>
       <a class="btn" href="paper.pdf">Read the paper</a>
-      <a class="btn" href="https://github.com/yoheinakajima/shared-discovery-paradox">Reproduce every number</a>
+      <a class="btn" href="https://github.com/yoheinakajima/shared-discovery-paradox"><span class="lang-ste">Check every number</span><span class="lang-tech">Reproduce every number</span></a>
     </p>
-    <p class="scrollcue">Seven interactive stops, ~6 minutes. Every number on this page is exact and re-derived by the repo's verification script.</p>
+    <p class="scrollcue"><span class="lang-ste">7 interactive sections, approximately 6 minutes. Each number on this page is exact. The verification script in the repository calculates each number again.</span><span class="lang-tech">Seven interactive stops, ~6 minutes. Every number on this page is exact and re-derived by the repo's verification script.</span></p>
   </div>
 </header>
 
@@ -306,8 +326,9 @@ footer.site .wrap { border-top:1px solid var(--grid); padding-top:1.6rem; }
 <section class="chapter" id="machine">
   <div class="wrap">
     <span class="chip">01 · The machine</span>
-    <h2>Sixteen boxes, one jackpot, eight searchers</h2>
-    <p>Each searcher gets a private clue naming a box — right with probability <span class="num">0.20</span>, otherwise a uniformly random wrong box. Everyone opens one box; the group wins if <em>anyone</em> opens the jackpot. The clues are fixed; the only choice is the <strong>protocol</strong> that turns clues into actions.</p>
+    <h2><span class="lang-ste">16 boxes, 1 jackpot, 8 searchers</span><span class="lang-tech">Sixteen boxes, one jackpot, eight searchers</span></h2>
+    <p class="lang-ste">Each searcher gets a private clue. The clue shows 1 box. The clue is correct with probability <span class="num">0.20</span>. If it is not correct, it shows a random different box. Each searcher opens 1 box. The group wins if 1 or more searchers open the jackpot box. The clues do not change. Only the <strong>protocol</strong> changes — the rule that makes actions from clues.</p>
+    <p class="lang-tech">Each searcher gets a private clue naming a box — right with probability <span class="num">0.20</span>, otherwise a uniformly random wrong box. Everyone opens one box; the group wins if <em>anyone</em> opens the jackpot. The clues are fixed; the only choice is the <strong>protocol</strong> that turns clues into actions.</p>
   </div>
   <div class="wrap wide">
     <div class="panel reveal">
@@ -319,18 +340,20 @@ footer.site .wrap { border-top:1px solid var(--grid); padding-top:1.6rem; }
         <button class="action" id="run1">Run once</button>
         <button class="action" id="run1k">Run 1,000×</button>
         <button class="action" id="autoBtn" aria-pressed="false">Auto ▸</button>
-        <button class="action quiet" id="resetTally">Reset tallies</button>
+        <button class="action quiet" id="resetTally"><span class="lang-ste">Reset the counts</span><span class="lang-tech">Reset tallies</span></button>
       </div>
       <div class="figwrap" id="simWrap">
         <svg id="simStage" role="img" aria-label="Sixteen boxes in a four by four grid. Dots are searchers placed by the selected protocol; the jackpot box is revealed after each run."></svg>
       </div>
-      <p class="status" id="simStatus" aria-live="polite">Pick a protocol and press <b>Run once</b>.</p>
+      <p class="status" id="simStatus" aria-live="polite"><span class="lang-ste">Select a protocol. Then click <b>Run once</b>.</span><span class="lang-tech">Pick a protocol and press <b>Run once</b>.</span></p>
       <div id="tallyRows" aria-label="running hit rates against exact values"></div>
-      <p class="figcap">Bars fill with your empirical hit rate; the black tick on each bar is the exact value the paper proves. Run enough trials and every bar converges to its tick.</p>
+      <p class="figcap"><span class="lang-ste">Each bar shows your measured hit rate. The black tick shows the exact value from the paper. When you do many runs, each bar moves to its tick.</span><span class="lang-tech">Bars fill with your empirical hit rate; the black tick on each bar is the exact value the paper proves. Run enough trials and every bar converges to its tick.</span></p>
     </div>
     <div class="wrap" style="padding:0">
-      <p><strong>Watch what changes.</strong> <span style="color:var(--consensus)">●</span> Consensus piles all eight searchers on the plurality box. <span style="color:var(--market)">●</span> The market spreads over the top two or three. <span style="color:var(--private)">●</span> Private clue-followers scatter across six distinct boxes on average. <span style="color:var(--planner)">●</span> The planner opens the eight best boxes, one searcher each — and <span style="color:var(--blind)">●</span> blind ignores the clues entirely, opening eight boxes at random.</p>
-      <div class="keyline">Consensus makes the single <em>best</em> guess available — <span class="num">0.3835</span> beats any lone clue's <span class="num">0.20</span> — and it is still the worst protocol on the board. Even <strong>blind</strong> coordination wins more: <span class="num">0.500&nbsp;&gt;&nbsp;0.3835</span>. No information beats shared information, when the protocol compresses the actions.</div>
+      <p class="lang-ste"><strong>Look at the differences.</strong> <span style="color:var(--consensus)">●</span> Consensus sends all 8 searchers to the box with the most clues. <span style="color:var(--market)">●</span> The market puts the searchers on the best 2 or 3 boxes. <span style="color:var(--private)">●</span> With private clues, the searchers open approximately 6 different boxes. <span style="color:var(--planner)">●</span> The planner opens the 8 best boxes, with 1 searcher for each box. <span style="color:var(--blind)">●</span> Blind does not use the clues. It opens 8 random boxes.</p>
+      <p class="lang-tech"><strong>Watch what changes.</strong> <span style="color:var(--consensus)">●</span> Consensus piles all eight searchers on the plurality box. <span style="color:var(--market)">●</span> The market spreads over the top two or three. <span style="color:var(--private)">●</span> Private clue-followers scatter across six distinct boxes on average. <span style="color:var(--planner)">●</span> The planner opens the eight best boxes, one searcher each — and <span style="color:var(--blind)">●</span> blind ignores the clues entirely, opening eight boxes at random.</p>
+      <div class="keyline lang-ste">Consensus makes the best possible single guess — its <span class="num">0.3835</span> is more than the <span class="num">0.20</span> of 1 clue. But consensus is the worst protocol here. <strong>Blind</strong> coordination wins more: <span class="num">0.500&nbsp;&gt;&nbsp;0.3835</span>. No information is better than shared information, if the protocol makes all actions the same.</div>
+      <div class="keyline lang-tech">Consensus makes the single <em>best</em> guess available — <span class="num">0.3835</span> beats any lone clue's <span class="num">0.20</span> — and it is still the worst protocol on the board. Even <strong>blind</strong> coordination wins more: <span class="num">0.500&nbsp;&gt;&nbsp;0.3835</span>. No information beats shared information, when the protocol compresses the actions.</div>
     </div>
   </div>
 </section>
@@ -340,7 +363,8 @@ footer.site .wrap { border-top:1px solid var(--grid); padding-top:1.6rem; }
   <div class="wrap">
     <span class="chip">02 · The paradox</span>
     <h2>Quality up, discovery down</h2>
-    <p>Score each protocol two ways. <strong>Q</strong> is the average accuracy of the actions taken — how good the typical guess is. <strong>G</strong> is the probability the <em>group</em> finds the jackpot. Sharing information strictly improves Q. It can strictly destroy G:</p>
+    <p class="lang-ste">We measure each protocol in 2 ways. <strong>Q</strong> is the average accuracy of the actions — the quality of the usual guess. <strong>G</strong> is the probability that the <em>group</em> finds the jackpot. Shared information always increases Q. But it can decrease G:</p>
+    <p class="lang-tech">Score each protocol two ways. <strong>Q</strong> is the average accuracy of the actions taken — how good the typical guess is. <strong>G</strong> is the probability the <em>group</em> finds the jackpot. Sharing information strictly improves Q. It can strictly destroy G:</p>
   </div>
   <div class="wrap wide">
     <div class="panel reveal">
@@ -348,14 +372,15 @@ footer.site .wrap { border-top:1px solid var(--grid); padding-top:1.6rem; }
       <div class="figwrap" id="qgWrap">
         <svg id="qgChart" role="img" aria-label="Grouped bar chart: average action quality Q versus group discovery G for four protocols. The orderings are exact inverses."></svg>
       </div>
-      <p class="figcap">The two orderings are exact inverses: consensus has the <em>best</em> average action and the <em>worst</em> group outcome. Dashed line: the blind control at 0.500. Hover any bar for exact values.</p>
+      <p class="figcap"><span class="lang-ste">The 2 sequences are exact opposites: consensus has the <em>best</em> average action and the <em>worst</em> group result. The dashed line shows the blind control at 0.500. Put the pointer on a bar to see the exact values.</span><span class="lang-tech">The two orderings are exact inverses: consensus has the <em>best</em> average action and the <em>worst</em> group outcome. Dashed line: the blind control at 0.500. Hover any bar for exact values.</span></p>
       <details class="tableview"><summary>View as table</summary>
         <table class="data" id="qgTable"></table>
       </details>
     </div>
   </div>
   <div class="wrap">
-    <p>The gap between the columns is not mysterious — it is <strong>redundancy, exactly</strong>: <span class="num">N·Q − G = E[(K−1)⁺]</span>, the expected number of redundant successful actions. Consensus maximizes per-action quality by making all eight actions <em>the same action</em>: <span class="num">2.68</span> of its expected hits land on a box that was already open.</p>
+    <p class="lang-ste">The difference between Q and G is <strong>redundancy</strong>. The identity is <span class="num">N·Q − G = E[(K−1)⁺]</span> — the expected number of successful actions that hit the same box again. Consensus gets its high action quality because all 8 actions are <em>the same action</em>. On average, <span class="num">2.68</span> of its hits open a box that is already open.</p>
+    <p class="lang-tech">The gap between the columns is not mysterious — it is <strong>redundancy, exactly</strong>: <span class="num">N·Q − G = E[(K−1)⁺]</span>, the expected number of redundant successful actions. Consensus maximizes per-action quality by making all eight actions <em>the same action</em>: <span class="num">2.68</span> of its expected hits land on a box that was already open.</p>
   </div>
 </section>
 
@@ -363,8 +388,9 @@ footer.site .wrap { border-top:1px solid var(--grid); padding-top:1.6rem; }
 <section class="chapter" id="frontier">
   <div class="wrap">
     <span class="chip">03 · The frontier</span>
-    <h2>Discovery is a budget, not an answer</h2>
-    <p>Keep the pooled ranking, but give it a <strong>budget of L distinct actions</strong> instead of one answer. Consensus is just the L&nbsp;=&nbsp;1 endpoint of a frontier. Drag the budget:</p>
+    <h2><span class="lang-ste">Discovery uses a budget, not 1 answer</span><span class="lang-tech">Discovery is a budget, not an answer</span></h2>
+    <p class="lang-ste">Keep the collected ranking. But give it a <strong>budget of L different actions</strong>, not 1 answer. Consensus is the point L&nbsp;=&nbsp;1 on a curve. Move the budget:</p>
+    <p class="lang-tech">Keep the pooled ranking, but give it a <strong>budget of L distinct actions</strong> instead of one answer. Consensus is just the L&nbsp;=&nbsp;1 endpoint of a frontier. Drag the budget:</p>
   </div>
   <div class="wrap wide">
     <div class="panel reveal">
@@ -379,7 +405,7 @@ footer.site .wrap { border-top:1px solid var(--grid); padding-top:1.6rem; }
       <div class="figwrap" id="frWrap">
         <svg id="frChart" role="img" aria-label="Pooled discovery frontier for budgets one through eight, with the private clue-following benchmark as a reference line crossed at budget seven."></svg>
       </div>
-      <p class="figcap">Pooled frontier, L = 1…8. Dashed line: decentralized private search, 0.8322. <strong>Seven</strong> coordinated actions already beat eight decentralized ones — the recovery budget is L*&nbsp;=&nbsp;7.</p>
+      <p class="figcap"><span class="lang-ste">Budgets L = 1 to 8. The dashed line shows private search, 0.8322. <strong>7</strong> planned actions are better than 8 private actions. The recovery budget is L*&nbsp;=&nbsp;7.</span><span class="lang-tech">Pooled frontier, L = 1…8. Dashed line: decentralized private search, 0.8322. <strong>Seven</strong> coordinated actions already beat eight decentralized ones — the recovery budget is L*&nbsp;=&nbsp;7.</span></p>
       <details class="tableview"><summary>View as table</summary>
         <table class="data" id="frTable"></table>
       </details>
@@ -391,8 +417,9 @@ footer.site .wrap { border-top:1px solid var(--grid); padding-top:1.6rem; }
 <section class="chapter" id="conformity">
   <div class="wrap">
     <span class="chip">04 · The dial</span>
-    <h2>The conformity dial only goes down</h2>
-    <p>The natural compromise — let only <em>a</em> of the eight defer to the committee's pick while the rest keep their own clue — never helps. The plurality winner is already in the private proposal set, so each adopter adds nothing and deletes their own proposal. Drag the dial:</p>
+    <h2><span class="lang-ste">More conformity always decreases discovery</span><span class="lang-tech">The conformity dial only goes down</span></h2>
+    <p class="lang-ste">A possible compromise: <em>a</em> of the 8 searchers use the committee box. The other searchers keep their own clues. This never helps. The committee box is always in the set of private proposals. Thus each adopter adds no new box and removes their own box. Move the dial:</p>
+    <p class="lang-tech">The natural compromise — let only <em>a</em> of the eight defer to the committee's pick while the rest keep their own clue — never helps. The plurality winner is already in the private proposal set, so each adopter adds nothing and deletes their own proposal. Drag the dial:</p>
   </div>
   <div class="wrap wide">
     <div class="panel reveal">
@@ -408,7 +435,7 @@ footer.site .wrap { border-top:1px solid var(--grid); padding-top:1.6rem; }
       <div class="figwrap" id="adWrap">
         <svg id="adChart" role="img" aria-label="Group discovery as a function of the number of consensus adopters. Strictly decreasing from 0.8322 at zero adopters to 0.3835 at eight."></svg>
       </div>
-      <p class="figcap">Exact G(a), strictly decreasing — the first adopter already costs 4.1 points. Dispersion must be informed, priced, or assigned; it cannot be obtained by dosing conformity.</p>
+      <p class="figcap"><span class="lang-ste">The exact G(a) always decreases. The first adopter costs 4.1 points. To get dispersion, use information, prices, or a plan. Small quantities of conformity do not give dispersion.</span><span class="lang-tech">Exact G(a), strictly decreasing — the first adopter already costs 4.1 points. Dispersion must be informed, priced, or assigned; it cannot be obtained by dosing conformity.</span></p>
       <details class="tableview"><summary>View as table</summary>
         <table class="data" id="adTable"></table>
       </details>
@@ -420,31 +447,35 @@ footer.site .wrap { border-top:1px solid var(--grid); padding-top:1.6rem; }
 <section class="chapter" id="market">
   <div class="wrap">
     <span class="chip">05 · Incentives</span>
-    <h2>Can selfishness fix it?</h2>
-    <p>Partially. Remove the planner, keep the pooled reports public, and let eight self-interested searchers split a unit prize among whoever opens the jackpot. Crowding dilutes the prize, so nobody wants to stand where everyone stands. The equilibrium <strong>water-fills</strong> the posterior — every occupied box offers the same expected payoff λ, like water finding its level:</p>
+    <h2><span class="lang-ste">Can self-interest correct it?</span><span class="lang-tech">Can selfishness fix it?</span></h2>
+    <p class="lang-ste">Partially. Remove the planner. The collected reports stay public. 8 searchers divide a prize of 1 between the searchers that open the jackpot box. A crowd makes each part of the prize smaller. Thus a searcher does not want to stand where all the other searchers stand. The equilibrium <strong>water-fills</strong> the posterior — each used box gives the same expected payoff λ:</p>
+    <p class="lang-tech">Partially. Remove the planner, keep the pooled reports public, and let eight self-interested searchers split a unit prize among whoever opens the jackpot. Crowding dilutes the prize, so nobody wants to stand where everyone stands. The equilibrium <strong>water-fills</strong> the posterior — every occupied box offers the same expected payoff λ, like water finding its level:</p>
   </div>
   <div class="wrap wide">
     <div class="panel reveal">
       <div class="controls">
-        <button class="action" id="newWorld">Deal new clues</button>
-        <button class="action quiet" id="resample">Re-drop searchers</button>
+        <button class="action" id="newWorld"><span class="lang-ste">Get new clues</span><span class="lang-tech">Deal new clues</span></button>
+        <button class="action quiet" id="resample"><span class="lang-ste">Sample searchers again</span><span class="lang-tech">Re-drop searchers</span></button>
         <span class="status" id="wfStatus" style="margin:0 0 0 .4rem"></span>
       </div>
       <div class="figwrap" id="wfWrap">
         <svg id="wfChart" role="img" aria-label="Water-filling equilibrium: posterior probability bars for sixteen boxes with the common payoff water level, and the resulting distribution of eight self-interested searchers."></svg>
       </div>
-      <p class="figcap">Top: the pooled posterior after one draw of clues, with the equilibrium water level λ. Boxes above the line get searched; the deeper a bar sits under water, the larger its share. Bottom: equilibrium shares, with eight searchers dropped at random from them.</p>
+      <p class="figcap"><span class="lang-ste">Top: the posterior after 1 set of clues, with the equilibrium water level λ. The equilibrium uses the boxes that are higher than the line. A taller bar gets a larger share. Bottom: the equilibrium shares, with a random sample of 8 searchers.</span><span class="lang-tech">Top: the pooled posterior after one draw of clues, with the equilibrium water level λ. Boxes above the line get searched; the deeper a bar sits under water, the larger its share. Bottom: equilibrium shares, with eight searchers dropped at random from them.</span></p>
     </div>
     <div class="wrap" style="padding:0">
-      <p>Averaged over worlds the market reaches <span class="num">0.5991</span> — above consensus, below everything diversified. It typically covers only <span class="num">2.7</span> distinct boxes: profit-seeking buys <em>some</em> dispersion, not enough.</p>
+      <p class="lang-ste">The average result of the market is <span class="num">0.5991</span> — more than consensus, less than each diversified protocol. The market usually opens only <span class="num">2.7</span> different boxes. Self-interest gives <em>some</em> dispersion, but not enough.</p>
+      <p class="lang-tech">Averaged over worlds the market reaches <span class="num">0.5991</span> — above consensus, below everything diversified. It typically covers only <span class="num">2.7</span> distinct boxes: profit-seeking buys <em>some</em> dispersion, not enough.</p>
       <div class="cards2">
         <div class="card reveal">
-          <h3>The damage is bounded</h3>
-          The exact mixed price of anarchy is <span class="num">2 − 1/N</span>: no equilibrium loses more than that factor against the optimal portfolio. And because the proof is a smoothness argument, the same guarantee covers no-regret learners — adaptive agents inherit it without ever computing an equilibrium.
+          <h3><span class="lang-ste">The loss has a limit</span><span class="lang-tech">The damage is bounded</span></h3>
+          <span class="lang-ste">The exact mixed price of anarchy is <span class="num">2 − 1/N</span>. No equilibrium loses more than this factor against the best portfolio. The proof is a smoothness argument. Thus the same limit applies to no-regret learning agents. These agents get the guarantee without a calculation of the equilibrium.</span>
+          <span class="lang-tech">The exact mixed price of anarchy is <span class="num">2 − 1/N</span>: no equilibrium loses more than that factor against the optimal portfolio. And because the proof is a smoothness argument, the same guarantee covers no-regret learners — adaptive agents inherit it without ever computing an equilibrium.</span>
         </div>
         <div class="card reveal">
-          <h3>One reward rule closes the gap</h3>
-          Pay the prize only when <em>exactly one</em> searcher covers the target — reward the <strong>rescue</strong>, not the win — and every pure Nash equilibrium becomes the planner's portfolio. Marginal-contribution pay makes selfish search first-best.
+          <h3><span class="lang-ste">One pay rule removes the gap</span><span class="lang-tech">One reward rule closes the gap</span></h3>
+          <span class="lang-ste">Pay the prize only when exactly 1 searcher opens the jackpot box — pay for the <strong>rescue</strong>, not for the win. Then each pure Nash equilibrium is the planner's portfolio. Payment for marginal contribution makes self-interested search the best possible.</span>
+          <span class="lang-tech">Pay the prize only when <em>exactly one</em> searcher covers the target — reward the <strong>rescue</strong>, not the win — and every pure Nash equilibrium becomes the planner's portfolio. Marginal-contribution pay makes selfish search first-best.</span>
         </div>
       </div>
     </div>
@@ -455,8 +486,9 @@ footer.site .wrap { border-top:1px solid var(--grid); padding-top:1.6rem; }
 <section class="chapter" id="copying">
   <div class="wrap">
     <span class="chip">06 · Correlation</span>
-    <h2>When everyone reads the same memo</h2>
-    <p>Real clues are correlated. With probability <em>c</em> each searcher copies a common source instead of drawing an independent signal, and eight nominal reports collapse into fewer effective channels. Independence is what made private search strong — drag c and watch it fall:</p>
+    <h2><span class="lang-ste">When all searchers read the same source</span><span class="lang-tech">When everyone reads the same memo</span></h2>
+    <p class="lang-ste">Real clues are frequently correlated. With probability <em>c</em>, a searcher copies a common source and does not get an independent signal. Then the 8 reports contain fewer independent channels. Independence made private search strong. Move c to see the effect:</p>
+    <p class="lang-tech">Real clues are correlated. With probability <em>c</em> each searcher copies a common source instead of drawing an independent signal, and eight nominal reports collapse into fewer effective channels. Independence is what made private search strong — drag c and watch it fall:</p>
   </div>
   <div class="wrap wide">
     <div class="panel reveal">
@@ -470,7 +502,7 @@ footer.site .wrap { border-top:1px solid var(--grid); padding-top:1.6rem; }
         <svg id="cpChart" role="img" aria-label="Discovery under copying for four protocols. Private report-following collapses as copying rises; the market crosses above it at copying probability 0.788."></svg>
       </div>
       <p class="status" id="copyReading" aria-live="polite"></p>
-      <p class="figcap">Exact canonical curves. The dispersing market degrades slowly; private report-following collapses. They cross exactly once, at <span class="num">c* = 0.7885</span> — and on a 72-combination (M, N, p) grid, the sign never changes more than once. Hover for exact values.</p>
+      <p class="figcap"><span class="lang-ste">The curves show the exact values. The market decreases slowly. Private search decreases quickly. The curves cross 1 time, at <span class="num">c* = 0.7885</span>. On a grid of 72 combinations (M, N, p), the difference changes its sign 1 time maximum. Put the pointer on the chart to see the exact values.</span><span class="lang-tech">Exact canonical curves. The dispersing market degrades slowly; private report-following collapses. They cross exactly once, at <span class="num">c* = 0.7885</span> — and on a 72-combination (M, N, p) grid, the sign never changes more than once. Hover for exact values.</span></p>
       <details class="tableview"><summary>View as table</summary>
         <table class="data" id="cpTable"></table>
       </details>
@@ -482,8 +514,9 @@ footer.site .wrap { border-top:1px solid var(--grid); padding-top:1.6rem; }
 <section class="chapter" id="scale">
   <div class="wrap">
     <span class="chip">07 · Scale</span>
-    <h2>It survives at scale</h2>
-    <p>Not a sixteen-box curiosity. Grow boxes and searchers together while evidence stays sparse, and the whole ladder converges — consensus to <em>zero</em>, because an extreme false positive eventually outvotes the truth:</p>
+    <h2><span class="lang-ste">The paradox stays in large worlds</span><span class="lang-tech">It survives at scale</span></h2>
+    <p class="lang-ste">This is not only a property of 16 boxes. Increase the numbers of boxes and searchers together, and keep the evidence sparse. Then all the values go to their limits. Consensus goes to <em>zero</em>, because one large incorrect signal wins the vote against the truth:</p>
+    <p class="lang-tech">Not a sixteen-box curiosity. Grow boxes and searchers together while evidence stays sparse, and the whole ladder converges — consensus to <em>zero</em>, because an extreme false positive eventually outvotes the truth:</p>
   </div>
   <div class="wrap wide">
     <div class="panel reveal">
@@ -503,8 +536,10 @@ footer.site .wrap { border-top:1px solid var(--grid); padding-top:1.6rem; }
     </div>
   </div>
   <div class="wrap">
-    <div class="keyline">The quotable near-tie: information without coordination (<span class="num">0.547</span>) is worth about as much as coordination without information (<span class="num">0.500</span>). Only the combination reaches <span class="num">0.874</span>.</div>
-    <p>The flip side sharpens the domain. Hold clue accuracy <em>fixed</em> while the world grows — evidence becomes abundant — and consensus becomes consistent, rising toward one. The paradox is a property of <strong>sparse-evidence search</strong>: frontier science, pre-seed investing, novel hypotheses. Exactly the places where institutions lean hardest on consensus.</p>
+    <div class="keyline lang-ste">An interesting result: information without coordination (<span class="num">0.547</span>) is almost equal to coordination without information (<span class="num">0.500</span>). Only the combination gets to <span class="num">0.874</span>.</div>
+    <div class="keyline lang-tech">The quotable near-tie: information without coordination (<span class="num">0.547</span>) is worth about as much as coordination without information (<span class="num">0.500</span>). Only the combination reaches <span class="num">0.874</span>.</div>
+    <p class="lang-ste">The opposite case shows the domain of the paradox. Keep the clue accuracy <em>constant</em> while the world becomes larger. The evidence becomes abundant, and consensus becomes correct — it goes to 1. The paradox is a property of <strong>searches with sparse evidence</strong>: new science, pre-seed investment, new hypotheses. In these areas, organizations use consensus the most.</p>
+    <p class="lang-tech">The flip side sharpens the domain. Hold clue accuracy <em>fixed</em> while the world grows — evidence becomes abundant — and consensus becomes consistent, rising toward one. The paradox is a property of <strong>sparse-evidence search</strong>: frontier science, pre-seed investing, novel hypotheses. Exactly the places where institutions lean hardest on consensus.</p>
   </div>
 </section>
 
@@ -513,17 +548,19 @@ footer.site .wrap { border-top:1px solid var(--grid); padding-top:1.6rem; }
   <div class="wrap">
     <span class="chip">08 · The design lesson</span>
     <p class="bigsay">Share the evidence.<br><em>Diversify the actions.</em></p>
-    <p>Pooling information and pooling actions are different operations. The first is nearly free improvement; the second silently converts a portfolio into a point estimate. Committees, prize rules, and feeds that end in one answer are choosing the left column of this table:</p>
+    <p class="lang-ste">To collect information and to collect actions are 2 different operations. The first gives almost free improvement. The second changes a portfolio into 1 repeated choice, without a warning. Committees, prize rules, and feeds that end in 1 answer select the consensus row of this table:</p>
+    <p class="lang-tech">Pooling information and pooling actions are different operations. The first is nearly free improvement; the second silently converts a portfolio into a point estimate. Committees, prize rules, and feeds that end in one answer are choosing the left column of this table:</p>
   </div>
   <div class="wrap wide">
     <div class="panel reveal">
       <table class="data" id="sumTable"></table>
-      <p class="figcap">The benchmark in one table — same information, different action protocols. All values exact.</p>
+      <p class="figcap"><span class="lang-ste">The benchmark in 1 table. The information is the same; the action protocols are different. All values are exact.</span><span class="lang-tech">The benchmark in one table — same information, different action protocols. All values exact.</span></p>
     </div>
   </div>
   <div class="wrap">
     <h2 style="font-size:1.35rem; margin-top:2.4rem">Reproduce everything</h2>
-    <p style="font-family:var(--sans); font-size:.88rem">One script re-derives every number above by exact enumeration (490,314 count vectors reduced to 67 classes), solves the Poisson water-filling limit to 12 digits, and asserts each claim. It ends with <span class="mono">All v8.6 checks passed.</span></p>
+    <p style="font-family:var(--sans); font-size:.88rem" class="lang-ste">One script calculates each number on this page again. It uses exact enumeration (490,314 count vectors in 67 classes). It solves the Poisson water-filling limit to 12 digits. It makes sure that each claim is correct. It ends with <span class="mono">All v8.6 checks passed.</span></p>
+    <p style="font-family:var(--sans); font-size:.88rem" class="lang-tech">One script re-derives every number above by exact enumeration (490,314 count vectors reduced to 67 classes), solves the Poisson water-filling limit to 12 digits, and asserts each claim. It ends with <span class="mono">All v8.6 checks passed.</span></p>
     <pre class="code">git clone https://github.com/yoheinakajima/shared-discovery-paradox
 pip install -r requirements.txt
 python verify_shared_discovery_v8_6.py</pre>
@@ -539,7 +576,8 @@ python verify_shared_discovery_v8_6.py</pre>
 <footer class="site">
   <div class="wrap">
     <p><a href="paper.pdf">Paper (PDF)</a> · <a href="https://github.com/yoheinakajima/shared-discovery-paradox">GitHub</a> · <a href="https://github.com/yoheinakajima/shared-discovery-paradox/blob/main/verify_shared_discovery_v8_6.py">Verification script</a> · <a href="https://github.com/yoheinakajima/shared-discovery-paradox/blob/main/verification_log.txt">Verification log</a></p>
-    <p>MIT licensed. Every number on this page is reproduced to stated precision by the verification script — nothing here is a simulation approximating a claim; the simulations exist so you can watch the exact numbers happen.</p>
+    <p class="lang-ste">The license is MIT. The verification script calculates each number on this page to the given precision. The simulations here are not approximations of the claims. They let you see the exact numbers occur.</p>
+    <p class="lang-tech">MIT licensed. Every number on this page is reproduced to stated precision by the verification script — nothing here is a simulation approximating a claim; the simulations exist so you can watch the exact numbers happen.</p>
   </div>
 </footer>
 
@@ -591,6 +629,10 @@ const SCALE = {
 };
 const ABUNDANT = { consensus:[0.3851, 0.9472, 1.0, 1.0] }; // fixed p = 0.2, M = 16/64/256/limit
 const REDUCED = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+/* language: "ste" (ASD-STE100 Simplified Technical English, default) or "tech" */
+const onLang = [];
+const T = (ste, tech) => document.body.dataset.lang === "tech" ? tech : ste;
 
 /* ---------------- tiny DOM helpers ---------------- */
 const $ = s => document.querySelector(s);
@@ -863,9 +905,12 @@ function actions(proto, world) {
       tally[proto].runs++; tally[proto].hits += hit ? 1 : 0;
       clearNode(statusEl);
       const b = document.createElement("b");
-      b.textContent = hit ? "Found it — " : "Missed — ";
+      b.textContent = hit ? T("Found — ", "Found it — ") : T("Not found — ", "Missed — ");
       b.style.color = hit ? "var(--good-text)" : "inherit";
-      statusEl.append(b, `the jackpot was box ${world.target + 1}; ${new Set(acts).size} distinct box${new Set(acts).size > 1 ? "es" : ""} searched under ${PNAME[proto].toLowerCase()}.`);
+      const k = new Set(acts).size;
+      statusEl.append(b, T(
+        `the jackpot was in box ${world.target + 1}. The group opened ${k > 1 ? k + " different boxes" : "1 box"} with the ${PNAME[proto].toLowerCase()} protocol.`,
+        `the jackpot was box ${world.target + 1}; ${k} distinct box${k > 1 ? "es" : ""} searched under ${PNAME[proto].toLowerCase()}.`));
       renderTally();
     };
     if (!animate || REDUCED) { finish(); return; }
@@ -884,14 +929,14 @@ function actions(proto, world) {
       tally[proto].runs++; tally[proto].hits += acts.includes(world.target) ? 1 : 0;
     }
     runOnce(false);
-    statusEl.insertBefore(document.createTextNode("1,000 runs added. "), statusEl.firstChild);
+    statusEl.insertBefore(document.createTextNode(T("1,000 new runs are complete. ", "1,000 runs added. ")), statusEl.firstChild);
   }
 
   /* tallies with convergence bars */
   const rows = $("#tallyRows");
   function renderTally() {
     clearNode(rows);
-    const heads = ["protocol", "convergence to exact", "runs", "hit rate", "exact"];
+    const heads = ["protocol", T("hit rate against the exact value", "convergence to exact"), "runs", "hit rate", "exact"];
     heads.forEach(h => { const d = document.createElement("span"); d.className = "hd"; d.textContent = h; rows.appendChild(d); });
     for (const p of PROTOS) {
       const t = tally[p], rate = t.runs ? t.hits / t.runs : null;
@@ -915,7 +960,7 @@ function actions(proto, world) {
   $("#run1k").addEventListener("click", runBatch);
   $("#resetTally").addEventListener("click", () => {
     PROTOS.forEach(p => { tally[p].runs = 0; tally[p].hits = 0; });
-    renderTally(); statusEl.textContent = "Tallies cleared.";
+    renderTally(); statusEl.textContent = T("The counts are now zero.", "Tallies cleared.");
   });
   const autoBtn = $("#autoBtn");
   function stopAuto() { if (auto) { clearInterval(auto); auto = null; autoBtn.textContent = "Auto ▸"; autoBtn.setAttribute("aria-pressed", "false"); } }
@@ -929,6 +974,13 @@ function actions(proto, world) {
 
   responsive(wrapEl, W => { layout(W); render(lastState); });
   renderTally();
+  onLang.push(() => {
+    renderTally();
+    clearNode(statusEl);
+    const b = document.createElement("b");
+    b.textContent = "Run once";
+    statusEl.append(T("Select a protocol. Then click ", "Pick a protocol and press "), b, ".");
+  });
 })();
 
 /* =================================================================
@@ -1064,14 +1116,17 @@ function actions(proto, world) {
     const L = +slider.value, v = FRONTIER[L - 1];
     out.textContent = fmt(v);
     const d = v - PRIV;
-    note.textContent = L === 1 ? "one answer — this is consensus"
-      : d >= 0 ? `beats decentralized search by ${fmt(d, 4)} — with ${L} of 8 actions`
-      : `still ${fmt(-d, 4)} behind decentralized search`;
+    note.textContent = L === 1 ? T("1 answer — this is consensus", "one answer — this is consensus")
+      : d >= 0 ? T(`better than private search by ${fmt(d, 4)}, with ${L} of the 8 actions`,
+                   `beats decentralized search by ${fmt(d, 4)} — with ${L} of 8 actions`)
+      : T(`less than private search by ${fmt(-d, 4)}`,
+          `still ${fmt(-d, 4)} behind decentralized search`);
     draw(W0 || wrapEl.clientWidth);
   }
   slider.addEventListener("input", update);
   responsive(wrapEl, w => { W0 = w; draw(w); });
   update();
+  onLang.push(update);
 
   const tb = $("#frTable");
   tb.innerHTML = "<thead><tr><th>budget L</th><th>pooled discovery G(L)</th><th>vs private 0.832228</th></tr></thead>";
@@ -1134,15 +1189,17 @@ function actions(proto, world) {
   function update() {
     const a = +slider.value;
     out.textContent = fmt(ADOPT[a]);
-    note.textContent = a === 0 ? "everyone follows their own clue"
-      : a === 8 ? "full consensus — down 44.9 points"
-      : `−${((ADOPT[0] - ADOPT[a]) * 100).toFixed(1)} points vs independent search`;
+    note.textContent = a === 0 ? T("each searcher uses their own clue", "everyone follows their own clue")
+      : a === 8 ? T("full consensus — a decrease of 44.9 points", "full consensus — down 44.9 points")
+      : T(`a decrease of ${((ADOPT[0] - ADOPT[a]) * 100).toFixed(1)} points from private search`,
+          `−${((ADOPT[0] - ADOPT[a]) * 100).toFixed(1)} points vs independent search`);
     [...avs.children].forEach((d, i) => d.classList.toggle("adopt", i < a));
     draw(W0 || wrapEl.clientWidth);
   }
   slider.addEventListener("input", update);
   responsive(wrapEl, w => { W0 = w; draw(w); });
   update();
+  onLang.push(update);
 
   const tb = $("#adTable");
   tb.innerHTML = "<thead><tr><th>adopters a</th><th>discovery G(a)</th></tr></thead>";
@@ -1239,13 +1296,17 @@ function actions(proto, world) {
     const active = s.filter(v => v > 1e-9).length;
     const distinct = new Set(searchers).size;
     clearNode(statusEl);
-    statusEl.append(`Equilibrium spreads over ${active} box${active > 1 ? "es" : ""}; these 8 searchers landed on `,
-      Object.assign(document.createElement("b"), { textContent: `${distinct} distinct` }),
-      `. Across worlds: 2.67 distinct on average, discovery 0.5991.`);
+    statusEl.append(
+      T(`The equilibrium uses ${active} box${active > 1 ? "es" : ""}. These 8 searchers opened `,
+        `Equilibrium spreads over ${active} box${active > 1 ? "es" : ""}; these 8 searchers landed on `),
+      Object.assign(document.createElement("b"), { textContent: T(`${distinct} different box${distinct > 1 ? "es" : ""}`, `${distinct} distinct`) }),
+      T(`. The average across worlds is 2.67 different boxes; discovery is 0.5991.`,
+        `. Across worlds: 2.67 distinct on average, discovery 0.5991.`));
   }
   $("#newWorld").addEventListener("click", () => { world = drawWorld(); resample(); draw(W0); });
   $("#resample").addEventListener("click", () => { resample(); draw(W0); });
   responsive(wrapEl, w => { W0 = w; draw(w); });
+  onLang.push(() => { if (W0) draw(W0); });
 })();
 
 /* =================================================================
@@ -1327,17 +1388,21 @@ function actions(proto, world) {
     clearNode(reading);
     const b = document.createElement("b");
     if (c < CSTAR) {
-      b.textContent = `private leads by ${fmt(pv - mk, 3)}`;
-      reading.append("Independent clues still supply natural coverage: ", b, ".");
+      b.textContent = T(`private search is better by ${fmt(pv - mk, 3)}`, `private leads by ${fmt(pv - mk, 3)}`);
+      reading.append(T("The clues are almost independent, and they give natural coverage: ",
+                       "Independent clues still supply natural coverage: "), b, ".");
     } else {
-      b.textContent = `the market now leads by ${fmt(mk - pv, 3)}`;
-      reading.append("Channel collapse: dispersed incentives beat report-following — ", b, ".");
+      b.textContent = T(`the market is now better than private search by ${fmt(mk - pv, 3)}`,
+                        `the market now leads by ${fmt(mk - pv, 3)}`);
+      reading.append(T("The channels became almost one channel: ",
+                       "Channel collapse: dispersed incentives beat report-following — "), b, ".");
     }
     draw(W0 || wrapEl.clientWidth);
   }
   slider.addEventListener("input", () => { hoverC = null; update(); });
   responsive(wrapEl, w => { W0 = w; draw(w); });
   update();
+  onLang.push(update);
 
   const tb = $("#cpTable");
   tb.innerHTML = "<thead><tr><th>c</th><th>consensus</th><th>market</th><th>private</th><th>planner</th></tr></thead>";
@@ -1422,12 +1487,15 @@ function actions(proto, world) {
   function update() {
     if (regime === "abundant" && mi > 2) { /* allow ∞ in abundant too: consensus → 1 */ }
     cap.textContent = regime === "sparse"
-      ? "Proportional growth, evidence staying sparse (α = ½, r = 3.75). Faint ticks mark each protocol's exact limit; finite-M market and consensus points are the paper's Monte Carlo diagnostics. Consensus → 0: an extreme false positive eventually outvotes the truth."
-      : "Clue accuracy held fixed at p = 0.2 while the world grows: evidence becomes abundant, and consensus becomes consistent — rising toward 1. The paradox is a sparse-evidence phenomenon. (Other protocols shown only in the sparse regime.)";
+      ? T("The world becomes larger in proportion, and the evidence stays sparse (α = ½, r = 3.75). The small marks show the exact limits. The market and consensus points at finite M come from the Monte Carlo tests in the paper. Consensus goes to 0: one large incorrect signal wins the vote against the truth.",
+          "Proportional growth, evidence staying sparse (α = ½, r = 3.75). Faint ticks mark each protocol's exact limit; finite-M market and consensus points are the paper's Monte Carlo diagnostics. Consensus → 0: an extreme false positive eventually outvotes the truth.")
+      : T("Here the clue accuracy stays at p = 0.2 while the world becomes larger. The evidence becomes abundant. Then consensus becomes correct and goes to 1. The paradox is a property of sparse evidence. (The other protocols show only in the sparse mode.)",
+          "Clue accuracy held fixed at p = 0.2 while the world grows: evidence becomes abundant, and consensus becomes consistent — rising toward 1. The paradox is a sparse-evidence phenomenon. (Other protocols shown only in the sparse regime.)");
     draw(W0 || wrapEl.clientWidth);
   }
   responsive(wrapEl, w => { W0 = w; draw(w); });
   update();
+  onLang.push(update);
 
   const tb = $("#scTable");
   tb.innerHTML = "<thead><tr><th>protocol</th><th>M = 16</th><th>M = 64</th><th>M = 256</th><th>limit</th></tr></thead>";
@@ -1483,6 +1551,27 @@ function actions(proto, world) {
     catch { btn.textContent = "Select + copy:"; $("#bibText").textContent = BIB; }
     setTimeout(() => { btn.textContent = "Copy BibTeX"; }, 1800);
   });
+})();
+
+/* =================================================================
+   language toggle — "ste" (ASD-STE100, default) vs "tech" (original)
+   ================================================================= */
+(function langToggle() {
+  const bs = $("#langSte"), bt = $("#langTech");
+  function paint() {
+    const lang = document.body.dataset.lang;
+    bs.setAttribute("aria-pressed", String(lang !== "tech"));
+    bt.setAttribute("aria-pressed", String(lang === "tech"));
+  }
+  function apply(lang) {
+    document.body.dataset.lang = lang;
+    try { localStorage.setItem("sdp-lang", lang); } catch (e) {}
+    paint();
+    onLang.forEach(f => f());
+  }
+  bs.addEventListener("click", () => apply("ste"));
+  bt.addEventListener("click", () => apply("tech"));
+  paint();
 })();
 </script>
 </body>
