@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Shared Discovery Paradox — an interactive guide</title>
+<meta name="description" content="How a one-answer rule turns better information into worse search. Run the sixteen-box experiment yourself.">
+<style>
+  :root { --ink:#000; --paper:#fff; }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:"Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+    font-size:1.06rem; line-height:1.62;
+  }
+  .col { max-width:41rem; margin:0 auto; padding:0 1.25rem; }
+  header.col { padding-top:4.5rem; }
+  h1 { font-size:2.6rem; line-height:1.08; margin:0 0 .4rem; letter-spacing:-.01em; font-weight:700; }
+  .subtitle { font-size:1.25rem; font-style:italic; margin:0 0 1.4rem; }
+  .byline, .mono, figcaption, button, .tick, input, .linkrow a, table, .status {
+    font-family:ui-monospace, "IBM Plex Mono", Menlo, Consolas, monospace;
+  }
+  .byline { font-size:.8rem; letter-spacing:.06em; text-transform:uppercase; }
+  .linkrow { margin:1.1rem 0 0; font-size:.8rem; }
+  .linkrow a { color:var(--ink); margin-right:1.2rem; }
+  a { color:var(--ink); text-decoration-thickness:1px; text-underline-offset:3px; }
+  canvas.rule { display:block; width:100%; height:8px; margin:2.6rem 0 2.2rem; image-rendering:pixelated; }
+  section h2 { font-size:1.5rem; margin:0 0 .9rem; }
+  section h2 .no { font-family:ui-monospace,Menlo,monospace; font-size:.8rem; vertical-align:.45em; letter-spacing:.08em; margin-right:.55em; }
+  p { margin:0 0 1.05rem; }
+  .mono { font-size:.92em; }
+  figure { margin:1.6rem 0; }
+  figure canvas { display:block; width:100%; image-rendering:pixelated; border:1px solid var(--ink); }
+  figcaption { font-size:.74rem; line-height:1.5; margin-top:.5rem; letter-spacing:.01em; }
+  .controls { display:flex; flex-wrap:wrap; gap:.5rem; margin:.9rem 0 .6rem; align-items:center; }
+  button {
+    background:var(--paper); color:var(--ink); border:1.5px solid var(--ink);
+    padding:.42rem .8rem; font-size:.78rem; cursor:pointer; letter-spacing:.03em;
+  }
+  button[aria-pressed="true"] { background:var(--ink); color:var(--paper); }
+  button:hover { text-decoration:underline; }
+  button:focus-visible, input:focus-visible, a:focus-visible { outline:2px solid var(--ink); outline-offset:3px; }
+  table { width:100%; border-collapse:collapse; font-size:.78rem; margin:.9rem 0 0; }
+  th, td { border:1px solid var(--ink); padding:.32rem .5rem; text-align:right; }
+  th:first-child, td:first-child { text-align:left; }
+  thead th { background:var(--ink); color:var(--paper); font-weight:400; }
+  .status { font-size:.8rem; margin:.5rem 0 0; min-height:1.3em; }
+  input[type=range] { -webkit-appearance:none; appearance:none; width:14rem; max-width:60vw; height:2px; background:var(--ink); }
+  input[type=range]::-webkit-slider-thumb { -webkit-appearance:none; appearance:none; width:14px; height:14px; background:var(--ink); border:0; cursor:pointer; }
+  input[type=range]::-moz-range-thumb { width:14px; height:14px; background:var(--ink); border:0; border-radius:0; cursor:pointer; }
+  .big { font-family:ui-monospace,Menlo,monospace; font-size:2rem; }
+  .keyline { border-left:3px solid var(--ink); padding:.15rem 0 .15rem 1rem; margin:1.3rem 0; }
+  footer { margin:3.4rem 0 4.5rem; font-size:.85rem; }
+  footer .mono { font-size:.74rem; display:block; white-space:pre-wrap; border:1px solid var(--ink); padding: .8rem; margin-top:.8rem; }
+  @media (max-width:600px){ h1{font-size:2rem;} .col{padding:0 1rem;} }
+</style>
+</head>
+<body>
+
+<header class="col">
+  <h1>The Shared Discovery Paradox</h1>
+  <p class="subtitle">How a one-answer rule turns better information into worse search</p>
+  <p class="byline">Yohei Nakajima · Untapped Capital · July 2026</p>
+  <p class="linkrow">
+    <a href="paper.pdf">paper (pdf)</a>
+    <!-- Once the SSRN abstract page exists, replace href="#" below with the SSRN URL. -->
+    <a id="ssrn" href="https://github.com/yoheinakajima/shared-discovery-paradox">github</a>
+    <a href="https://github.com/yoheinakajima/shared-discovery-paradox/blob/main/verify_shared_discovery_v8_6.py">verification&nbsp;script</a>
+  </p>
+</header>
+
+<main class="col">
+  <canvas class="rule" aria-hidden="true"></canvas>
+
+  <p>A group can become <em>better informed</em> and <em>less likely to discover</em> what it is looking for. The contradiction dissolves once you separate two jobs an institution does with information: ranking candidates, and allocating attempts. Pooling evidence improves the ranking. A one-answer rule then spends every attempt on the top of that ranking — and a portfolio of eight searches collapses into one search, repeated eight times.</p>
+  <p>This page is the paper's argument in runnable form. Every number is exact, reproduced by <a href="https://github.com/yoheinakajima/shared-discovery-paradox/blob/main/verify_shared_discovery_v8_6.py">a verification script</a>; nothing here is a simulation approximating a claim — the simulations exist so you can watch the exact numbers happen.</p>
+
+  <section id="machine">
+    <h2><span class="no">01</span>The sixteen-box machine</h2>
+    <p>Sixteen boxes, one jackpot. Eight searchers each get a noisy clue: right with probability 0.20, otherwise a uniformly random wrong box. Each searcher opens one box; the group wins if anyone opens the jackpot. Pick a protocol and run it.</p>
+    <div class="controls" role="group" aria-label="protocol">
+      <button data-proto="consensus" aria-pressed="true">consensus</button>
+      <button data-proto="market" aria-pressed="false">equal-split market</button>
+      <button data-proto="private" aria-pressed="false">private clues</button>
+      <button data-proto="planner" aria-pressed="false">planner</button>
+      <button data-proto="blind" aria-pressed="false">blind</button>
+    </div>
+    <div class="controls">
+      <button id="run1">run once</button>
+      <button id="run1k">run 1,000×</button>
+      <button id="reset">reset tallies</button>
+    </div>
+    <figure>
+      <canvas id="simCanvas" width="340" height="120" aria-label="Sixteen boxes with searcher placements for the selected protocol"></canvas>
+      <figcaption id="simCaption">Dots are searchers. The jackpot box is revealed after each run; a solid box means the group found it.</figcaption>
+    </figure>
+    <p class="status" id="simStatus" aria-live="polite"></p>
+    <table aria-label="running tallies against exact values">
+      <thead><tr><th>protocol</th><th>runs</th><th>hit rate</th><th>exact</th></tr></thead>
+      <tbody id="tallyBody"></tbody>
+    </table>
+    <p style="margin-top:1rem">Consensus converges to <span class="mono">0.3835</span> — well below private clue-following at <span class="mono">0.8322</span> — even though the consensus box is the single <em>best</em> guess anyone can make (<span class="mono">0.3835 &gt; 0.20</span>). The planner, using the <em>same pooled reports</em>, reaches <span class="mono">0.8594</span>. Same information; the protocol decides.</p>
+  </section>
+
+  <canvas class="rule" aria-hidden="true"></canvas>
+
+  <section id="paradox">
+    <h2><span class="no">02</span>Quality up, discovery down</h2>
+    <p>Define <em>Q</em> as the average accuracy of the actions taken and <em>G</em> as the probability the group finds the target. Sharing strictly improves Q. It can strictly destroy G. The two columns invert:</p>
+    <figure>
+      <canvas id="qgCanvas" width="340" height="150" aria-label="Paired bars: average action quality Q versus group discovery G for four protocols"></canvas>
+      <figcaption>Dense pattern = Q (action quality). Sparse pattern = G (group discovery). The orderings are exact inverses. Dashed line: the blind control at 0.50.</figcaption>
+    </figure>
+    <p>The gap is not mysterious. It is redundancy, exactly: <span class="mono">NQ − G = E[(K−1)⁺]</span>, the expected number of <em>redundant</em> successful actions. Consensus maximizes per-action quality by making all eight actions the same action.</p>
+    <p class="keyline">A coordinator who ignores the clues entirely and opens eight distinct boxes wins half the time. <span class="mono">0.50 &gt; 0.3835</span>: no information beats shared information, when the protocol compresses the actions.</p>
+  </section>
+
+  <canvas class="rule" aria-hidden="true"></canvas>
+
+  <section id="frontier">
+    <h2><span class="no">03</span>Discovery is a budget, not an answer</h2>
+    <p>Give the pooled posterior a budget of L distinct actions. Consensus is the L&nbsp;=&nbsp;1 endpoint of a frontier; seven coordinated actions already beat eight decentralized clue-followers. The <em>recovery budget</em> is L*&nbsp;=&nbsp;7.</p>
+    <figure>
+      <canvas id="frontierCanvas" width="340" height="140" aria-label="Pooled discovery frontier for budgets one through eight with the private benchmark line"></canvas>
+      <figcaption>Pooled frontier, L = 1…8. Dashed line: private clue-following, 0.8322. The frontier crosses it at L* = 7 (0.8360).</figcaption>
+    </figure>
+  </section>
+
+  <canvas class="rule" aria-hidden="true"></canvas>
+
+  <section id="dial">
+    <h2><span class="no">04</span>The conformity dial only goes down</h2>
+    <p>The natural compromise — let only <em>a</em> of the eight defer to the committee's pick — never helps. The plurality winner already sits in the private proposal set, so each adopter adds nothing and deletes their own proposal. Drag the dial:</p>
+    <div class="controls">
+      <label for="adoptSlider" class="mono" style="font-size:.8rem">adopters a =</label>
+      <input type="range" id="adoptSlider" min="0" max="8" step="1" value="0" aria-label="number of consensus adopters">
+      <span class="big" id="adoptVal">0.8322</span>
+    </div>
+    <figure>
+      <canvas id="adoptCanvas" width="340" height="120" aria-label="Discovery as a function of the number of consensus adopters, strictly decreasing"></canvas>
+      <figcaption>Exact G(a) for a = 0…8. Strictly decreasing; the first adopter already costs 4.1 points. Dispersion must be informed, priced, or assigned — it cannot be obtained by dosing conformity.</figcaption>
+    </figure>
+  </section>
+
+  <canvas class="rule" aria-hidden="true"></canvas>
+
+  <section id="market">
+    <h2><span class="no">05</span>Can selfishness fix it?</h2>
+    <p>Partially. Remove the planner, keep the pooled posterior, and let eight self-interested searchers split a unit prize among whoever opens the jackpot. Crowding dilutes the prize, so nobody wants to stand where everyone stands: the equilibrium <em>water-fills</em> the posterior, flooding boxes above a common value line. You watched it in the machine above — it reaches <span class="mono">0.5991</span>: above consensus, below everything diversified.</p>
+    <p>The inefficiency is bounded exactly: no mixed equilibrium loses more than a factor <span class="mono">2 − 1/N</span> against the optimal portfolio — and because the proof is a smoothness argument, the same guarantee covers no-regret learning dynamics: adaptive agents inherit it without ever computing an equilibrium.</p>
+    <p class="keyline">One reward rule closes the gap entirely. Pay the prize only when <em>exactly one</em> searcher covers the target — reward the rescue, not the win — and every pure Nash equilibrium becomes the planner's portfolio. Marginal contribution turns selfish search first-best.</p>
+  </section>
+
+  <canvas class="rule" aria-hidden="true"></canvas>
+
+  <section id="copying">
+    <h2><span class="no">06</span>When everyone reads the same memo</h2>
+    <p>Real clues are correlated: searchers copy a common source with probability <em>c</em>, and nominal reports collapse into fewer effective channels. Independence is what made private search strong. Drag c:</p>
+    <div class="controls">
+      <label for="copySlider" class="mono" style="font-size:.8rem">copying c =</label>
+      <input type="range" id="copySlider" min="0" max="0.95" step="0.01" value="0" aria-label="copying probability">
+      <span class="big" id="copyVal">0.00</span>
+    </div>
+    <figure>
+      <canvas id="copyCanvas" width="340" height="170" aria-label="Discovery under copying for consensus, market, private, and planner protocols with the crossover marked"></canvas>
+      <figcaption>Exact canonical curves. The dispersing market degrades slowly; private report-following collapses. They cross exactly once, at c* = 0.7885 — and on a 72-combination grid, the gap never changes sign more than once.</figcaption>
+    </figure>
+    <p id="copyReading" class="status" aria-live="polite"></p>
+  </section>
+
+  <canvas class="rule" aria-hidden="true"></canvas>
+
+  <section id="scale">
+    <h2><span class="no">07</span>It survives at scale</h2>
+    <p>Not a sixteen-box curiosity. Grow the world proportionally — boxes and searchers together, evidence staying sparse — and the whole ladder converges:</p>
+    <figure>
+      <canvas id="limitCanvas" width="340" height="110" aria-label="Five protocol limits at scale: zero, one half, 0.547, 0.847, 0.874"></canvas>
+      <figcaption>Large-market limits. Consensus → 0 (an extreme false positive eventually outvotes the truth). Market → 0.547 by Poisson water-filling: it rationally abandons every box with fewer than two reports, and nearly the whole market–private gap is the chance the target got exactly one report (0.288 of 0.300).</figcaption>
+    </figure>
+    <p>The near-tie in the middle is the quotable part: information without coordination (<span class="mono">0.547</span>) is worth about as much as coordination without information (<span class="mono">0.500</span>). Only the combination reaches <span class="mono">0.874</span>. And the flip side sharpens the domain: hold clue accuracy fixed while the world grows and consensus becomes <em>consistent</em> — the paradox is a property of <em>sparse-evidence</em> search. Frontier science. Pre-seed investing. Novel hypotheses.</p>
+  </section>
+
+  <canvas class="rule" aria-hidden="true"></canvas>
+
+  <footer>
+    <p><strong>The design lesson is one sentence:</strong> share the evidence, diversify the actions.</p>
+    <p>Every claim in the paper is tagged as a theorem, an exact enumeration, or a computational pattern — and a single script checks all of them, ending in <span class="mono">All checks passed.</span> <a href="paper.pdf">Read the paper</a>, or <a href="https://github.com/yoheinakajima/shared-discovery-paradox">run it yourself</a>.</p>
+    <span class="mono">Nakajima, Yohei (2026). The Shared Discovery Paradox:
+How a One-Answer Rule Turns Better Information into
+Worse Search. Working paper.</span>
+  </footer>
+</main>
+
+<script>
+"use strict";
+/* ------------------------------------------------ 1-bit dither toolkit */
+const BAYER = [[0,8,2,10],[12,4,14,6],[3,11,1,9],[15,7,13,5]];
+function ditherRect(ctx, x, y, w, h, level){
+  // level in [0,1]: fraction of pixels inked, ordered Bayer 4x4, absolute coords
+  x = Math.round(x); y = Math.round(y); w = Math.round(w); h = Math.round(h);
+  const img = ctx.createImageData(Math.max(w,1), Math.max(h,1));
+  for (let j = 0; j < h; j++){
+    for (let i = 0; i < w; i++){
+      const t = (BAYER[(y+j) & 3][(x+i) & 3] + 0.5) / 16;
+      const ink = level > t;
+      const k = (j*w + i) * 4;
+      img.data[k] = img.data[k+1] = img.data[k+2] = ink ? 0 : 255;
+      img.data[k+3] = 255;
+    }
+  }
+  ctx.putImageData(img, x, y);
+}
+function clearC(ctx){ ctx.fillStyle = "#fff"; ctx.fillRect(0,0,ctx.canvas.width,ctx.canvas.height); }
+function line(ctx, x1,y1,x2,y2){ ctx.fillStyle="#000";
+  // integer-pixel line (crisp at 1px logical)
+  const dx = x2-x1, dy = y2-y1, n = Math.max(Math.abs(dx), Math.abs(dy), 1);
+  for (let i=0;i<=n;i++) ctx.fillRect(Math.round(x1+dx*i/n), Math.round(y1+dy*i/n), 1, 1);
+}
+function dashedH(ctx, x1, x2, y){ for(let x=x1; x<x2; x+=4) ctx.fillRect(x, y, 2, 1); }
+function label(ctx, text, x, y, align){
+  ctx.fillStyle = "#000"; ctx.font = "7px Menlo, monospace";
+  ctx.textAlign = align || "left"; ctx.textBaseline = "alphabetic";
+  ctx.fillText(text, x, y);
+}
+/* section rules: dither gradient strips */
+document.querySelectorAll("canvas.rule").forEach(c=>{
+  c.width = 340; c.height = 4;
+  const ctx = c.getContext("2d"); clearC(ctx);
+  for (let x=0; x<340; x+=4) ditherRect(ctx, x, 0, 4, 4, 0.55 * (1 - x/340) + 0.04);
+});
+
+/* ------------------------------------------------ exact constants */
+const M=16, N=8, P=0.2, Q0=0.8/15, R=P/Q0; // R = 3.75
+const EXACT = { consensus:0.383469, market:0.599099, private:0.832228, planner:0.859421, blind:0.500000 };
+const QVAL  = { consensus:0.383469, market:0.344136, private:0.200000, planner:0.107428 };
+const FRONTIER = [0.383469,0.527532,0.604528,0.670581,0.735604,0.794435,0.836010,0.859421];
+const ADOPT = [0.8322,0.7913,0.7461,0.6967,0.6429,0.5848,0.5222,0.4551,0.3835];
+const CGRID = [0,0.10,0.20,0.30,0.40,0.50,0.60,0.70,0.80,0.90,0.95];
+const CCURVES = {
+  consensus:[0.3835,0.3668,0.3290,0.2881,0.2783,0.2713,0.2581,0.2398,0.2208,0.2059,0.2016],
+  market:   [0.5991,0.5885,0.5734,0.5724,0.5688,0.5516,0.5200,0.4773,0.4282,0.3878,0.3801],
+  private:  [0.8322,0.8220,0.7961,0.7587,0.7117,0.6555,0.5894,0.5123,0.4229,0.3194,0.2618],
+  planner:  [0.8594,0.8536,0.8393,0.8195,0.7955,0.7679,0.7369,0.7023,0.6638,0.6209,0.5977]
+};
+const CSTAR = 0.788462;
+const LIMITS = [
+  {name:"consensus", v:0.0}, {name:"blind", v:0.500},
+  {name:"market", v:0.547011}, {name:"private", v:0.846645}, {name:"portfolio", v:0.873580}
+];
+const REDUCED = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+/* ------------------------------------------------ model */
+function drawWorld(){
+  const target = Math.floor(Math.random()*M);
+  const clues = [];
+  for (let i=0;i<N;i++){
+    if (Math.random() < P) clues.push(target);
+    else { let b = Math.floor(Math.random()*(M-1)); if (b >= target) b++; clues.push(b); }
+  }
+  const counts = new Array(M).fill(0);
+  clues.forEach(b=>counts[b]++);
+  return {target, clues, counts};
+}
+function phi(s){ return s <= 1e-12 ? 1 : (1 - Math.pow(1-s, N)) / (N*s); }
+function phiInv(y){
+  if (y >= 1) return 0;
+  if (y <= 1/N) return 1;
+  let lo=0, hi=1;
+  for (let i=0;i<60;i++){ const m=(lo+hi)/2; if (phi(m) > y) lo=m; else hi=m; }
+  return (lo+hi)/2;
+}
+function waterfill(pi){
+  const order = [...pi.keys()].sort((a,b)=>pi[b]-pi[a]);
+  const top = pi[order[0]], second = pi[order[1]];
+  if (top/N >= second - 1e-14){
+    const s = new Array(M).fill(0); s[order[0]] = 1; return s;
+  }
+  let lo = top/N, hi = top;
+  for (let i=0;i<80;i++){
+    const lam = (lo+hi)/2;
+    let budget = 0;
+    for (const v of pi) if (v > lam) budget += phiInv(lam/v);
+    if (budget > 1) lo = lam; else hi = lam;
+  }
+  const lam = (lo+hi)/2;
+  const s = pi.map(v => v > lam ? phiInv(lam/v) : 0);
+  const tot = s.reduce((a,b)=>a+b, 0);
+  return s.map(x=>x/tot);
+}
+function sampleCat(s){
+  let u = Math.random();
+  for (let b=0;b<M;b++){ u -= s[b]; if (u <= 0) return b; }
+  return M-1;
+}
+function actions(proto, world){
+  const {clues, counts} = world;
+  if (proto === "private") return clues.slice();
+  if (proto === "blind"){
+    const boxes = [...Array(M).keys()];
+    for (let i=boxes.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [boxes[i],boxes[j]]=[boxes[j],boxes[i]]; }
+    return boxes.slice(0, N);
+  }
+  if (proto === "consensus"){
+    const mx = Math.max(...counts);
+    const winners = [...counts.keys()].filter(b=>counts[b]===mx);
+    const pick = winners[Math.floor(Math.random()*winners.length)];
+    return new Array(N).fill(pick);
+  }
+  if (proto === "planner"){
+    // top-N by count, uniform randomization among ties at the cutoff
+    const byCount = new Map();
+    counts.forEach((c,b)=>{ (byCount.get(c) || byCount.set(c,[]).get(c)).push(b); });
+    const levels = [...byCount.keys()].sort((a,b)=>b-a);
+    const out = [];
+    for (const c of levels){
+      const group = byCount.get(c).slice();
+      for (let i=group.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [group[i],group[j]]=[group[j],group[i]]; }
+      for (const b of group){ if (out.length < N) out.push(b); }
+      if (out.length >= N) break;
+    }
+    return out;
+  }
+  // market: water-filling on posterior ∝ R^count, each searcher samples independently
+  const w = counts.map(c=>Math.pow(R, c));
+  const Z = w.reduce((a,b)=>a+b, 0);
+  const s = waterfill(w.map(x=>x/Z));
+  return Array.from({length:N}, ()=>sampleCat(s));
+}
+
+/* ------------------------------------------------ the machine */
+const simCtx = document.getElementById("simCanvas").getContext("2d");
+const tally = {}; ["consensus","market","private","planner","blind"].forEach(p=>tally[p]={runs:0,hits:0});
+let proto = "consensus";
+const protoButtons = [...document.querySelectorAll("[data-proto]")];
+protoButtons.forEach(b=>b.addEventListener("click", ()=>{
+  proto = b.dataset.proto;
+  protoButtons.forEach(x=>x.setAttribute("aria-pressed", String(x===b)));
+  drawSim(null);
+}));
+function boxRect(b){
+  const col = b % 8, row = Math.floor(b/8);
+  return {x: 6 + col*42, y: 8 + row*56, w: 36, h: 44};
+}
+function drawSim(state){
+  clearC(simCtx);
+  for (let b=0;b<M;b++){
+    const r = boxRect(b);
+    const searched = state && state.shown.includes(b);
+    const isTarget = state && state.revealed && b === state.target;
+    const hit = isTarget && searched;
+    if (hit){ simCtx.fillStyle="#000"; simCtx.fillRect(r.x, r.y, r.w, r.h); }
+    else ditherRect(simCtx, r.x, r.y, r.w, r.h, searched ? 0.30 : 0.06);
+    simCtx.fillStyle="#000";
+    // border (double for target)
+    line(simCtx, r.x, r.y, r.x+r.w, r.y); line(simCtx, r.x, r.y+r.h, r.x+r.w, r.y+r.h);
+    line(simCtx, r.x, r.y, r.x, r.y+r.h); line(simCtx, r.x+r.w, r.y, r.x+r.w, r.y+r.h);
+    if (isTarget){
+      line(simCtx, r.x-2, r.y-2, r.x+r.w+2, r.y-2); line(simCtx, r.x-2, r.y+r.h+2, r.x+r.w+2, r.y+r.h+2);
+      line(simCtx, r.x-2, r.y-2, r.x-2, r.y+r.h+2); line(simCtx, r.x+r.w+2, r.y-2, r.x+r.w+2, r.y+r.h+2);
+    }
+    // searcher dots
+    if (state){
+      const nHere = state.shown.filter(a=>a===b).length;
+      for (let d=0; d<nHere; d++){
+        const dx = r.x + 5 + (d % 4)*8, dy = r.y + 6 + Math.floor(d/4)*8;
+        if (hit){ simCtx.fillStyle="#fff"; simCtx.fillRect(dx, dy, 4, 4); simCtx.fillStyle="#000"; }
+        else simCtx.fillRect(dx, dy, 4, 4);
+      }
+    }
+  }
+}
+function runOnce(){
+  const world = drawWorld();
+  const acts = actions(proto, world);
+  const state = {target: world.target, acts, shown: [], revealed: false};
+  const finish = ()=>{
+    state.shown = acts; state.revealed = true; drawSim(state);
+    const hit = acts.includes(world.target);
+    tally[proto].runs++; tally[proto].hits += hit ? 1 : 0;
+    document.getElementById("simStatus").textContent =
+      (hit ? "FOUND — " : "missed — ") + "target was box " + (world.target+1) +
+      ", " + new Set(acts).size + " distinct boxes searched";
+    renderTally();
+  };
+  if (REDUCED){ finish(); return; }
+  let i = 0;
+  state.revealed = false; drawSim(state);
+  const step = ()=>{
+    if (i < acts.length){ state.shown = acts.slice(0, ++i); drawSim(state); setTimeout(step, 90); }
+    else setTimeout(finish, 220);
+  };
+  step();
+}
+function runBatch(){
+  for (let k=0;k<1000;k++){
+    const world = drawWorld();
+    const acts = actions(proto, world);
+    tally[proto].runs++; tally[proto].hits += acts.includes(world.target) ? 1 : 0;
+  }
+  const world = drawWorld();
+  const acts = actions(proto, world);
+  drawSim({target: world.target, acts, shown: acts, revealed: true});
+  document.getElementById("simStatus").textContent = "1,000 runs added under " + proto;
+  renderTally();
+}
+function renderTally(){
+  const tb = document.getElementById("tallyBody"); tb.innerHTML = "";
+  for (const p of ["consensus","market","private","planner","blind"]){
+    const t = tally[p];
+    const tr = document.createElement("tr");
+    tr.innerHTML = "<td>"+p+"</td><td>"+t.runs+"</td><td>"+
+      (t.runs ? (t.hits/t.runs).toFixed(4) : "—")+"</td><td>"+EXACT[p].toFixed(4)+"</td>";
+    if (p === proto) tr.style.fontWeight = "700";
+    tb.appendChild(tr);
+  }
+}
+document.getElementById("run1").addEventListener("click", runOnce);
+document.getElementById("run1k").addEventListener("click", runBatch);
+document.getElementById("reset").addEventListener("click", ()=>{
+  for (const p in tally){ tally[p].runs = 0; tally[p].hits = 0; }
+  renderTally(); document.getElementById("simStatus").textContent = "tallies cleared";
+});
+drawSim(null); renderTally();
+
+/* ------------------------------------------------ figure: Q vs G */
+(function(){
+  const ctx = document.getElementById("qgCanvas").getContext("2d");
+  clearC(ctx);
+  const protos = ["consensus","market","private","planner"];
+  const base = 128, top = 14, x0 = 30;
+  const y = v => base - v * (base - top);
+  line(ctx, x0, base, 332, base);
+  dashedH(ctx, x0, 332, y(0.5)); label(ctx, "0.50 blind", 332, y(0.5)-2, "right");
+  protos.forEach((p,i)=>{
+    const gx = x0 + 12 + i*76;
+    const qh = base - y(QVAL[p]), gh = base - y(EXACT[p]);
+    ditherRect(ctx, gx,      y(QVAL[p]),  22, qh, 0.85);
+    ditherRect(ctx, gx + 26, y(EXACT[p]), 22, gh, 0.28);
+    label(ctx, QVAL[p].toFixed(2).slice(1), gx+11, y(QVAL[p])-2, "center");
+    label(ctx, EXACT[p].toFixed(2).slice(1), gx+37, y(EXACT[p])-2, "center");
+    label(ctx, p.slice(0,9), gx+24, base+9, "center");
+  });
+})();
+
+/* ------------------------------------------------ figure: frontier */
+(function(){
+  const ctx = document.getElementById("frontierCanvas").getContext("2d");
+  clearC(ctx);
+  const x0=30, x1=326, base=118, top=12;
+  const X = i => x0 + (i)*(x1-x0)/7;
+  const Y = v => base - (v-0.30)/(0.90-0.30)*(base-top);
+  line(ctx, x0, base, x1, base);
+  dashedH(ctx, x0, x1, Y(0.832228)); label(ctx, "private .8322", x1, Y(0.832228)-3, "right");
+  FRONTIER.forEach((v,i)=>{
+    ditherRect(ctx, X(i)-9, Y(v), 18, base-Y(v), i===6 ? 0.95 : 0.30);
+    label(ctx, String(i+1), X(i), base+9, "center");
+    if (i===0 || i===6 || i===7) label(ctx, v.toFixed(3).slice(1), X(i), Y(v)-2, "center");
+  });
+  label(ctx, "L* = 7", X(6), top+4, "center");
+})();
+
+/* ------------------------------------------------ adoption dial */
+(function(){
+  const ctx = document.getElementById("adoptCanvas").getContext("2d");
+  const slider = document.getElementById("adoptSlider");
+  const out = document.getElementById("adoptVal");
+  function draw(){
+    clearC(ctx);
+    const a = +slider.value;
+    const x0=30, x1=326, base=100, top=10;
+    const X = i => x0 + i*(x1-x0)/8;
+    const Y = v => base - (v-0.35)/(0.90-0.35)*(base-top);
+    line(ctx, x0, base, x1, base);
+    for (let i=0;i<8;i++) line(ctx, X(i), Y(ADOPT[i]), X(i+1), Y(ADOPT[i+1]));
+    for (let i=0;i<=8;i++){
+      const sel = i === a;
+      if (sel){ ctx.fillStyle="#000"; ctx.fillRect(X(i)-4, Y(ADOPT[i])-4, 8, 8); }
+      else ditherRect(ctx, X(i)-3, Y(ADOPT[i])-3, 6, 6, 0.9);
+      label(ctx, String(i), X(i), base+9, "center");
+    }
+    label(ctx, "G(0)=.8322 = private", x0, Y(0.8322)-6, "left");
+    label(ctx, "G(8)=.3835 = consensus", x1, Y(0.3835)-6, "right");
+    out.textContent = ADOPT[a].toFixed(4);
+  }
+  slider.addEventListener("input", draw);
+  draw();
+})();
+
+/* ------------------------------------------------ copying slider */
+(function(){
+  const ctx = document.getElementById("copyCanvas").getContext("2d");
+  const slider = document.getElementById("copySlider");
+  const out = document.getElementById("copyVal");
+  const reading = document.getElementById("copyReading");
+  function interp(series, c){
+    let i = 0;
+    while (i < CGRID.length-2 && CGRID[i+1] < c) i++;
+    const t = (c - CGRID[i]) / (CGRID[i+1] - CGRID[i]);
+    return series[i] + t * (series[i+1] - series[i]);
+  }
+  const x0=32, x1=322, base=146, top=10;
+  const X = c => x0 + c/0.95*(x1-x0);
+  const Y = v => base - v*(base-top)/0.9;
+  function curve(name, level){
+    const s = CCURVES[name];
+    for (let i=0;i<CGRID.length-1;i++){
+      const steps = 14;
+      for (let k=0;k<steps;k++){
+        const cA = CGRID[i] + (CGRID[i+1]-CGRID[i])*k/steps;
+        const cB = CGRID[i] + (CGRID[i+1]-CGRID[i])*(k+1)/steps;
+        const px = X(cA), py = Y(interp(s,cA)), qx = X(cB), qy = Y(interp(s,cB));
+        if (level >= 0.99) line(ctx, px,py,qx,qy);
+        else if ((i*steps+k) % 2 === 0) line(ctx, px,py,qx,qy); // 50% dashed curve
+      }
+    }
+  }
+  function draw(){
+    clearC(ctx);
+    const c = +slider.value;
+    line(ctx, x0, base, x1, base);
+    curve("planner", 0.5); curve("consensus", 0.5);
+    curve("private", 1); curve("market", 1);
+    // crossover marker
+    ctx.fillRect(Math.round(X(CSTAR))-1, Y(0.62), 2, base - Y(0.62));
+    label(ctx, "c*=.7885", X(CSTAR), Y(0.62)-3, "center");
+    // cursor
+    const cx = X(c);
+    for (let yy=top; yy<base; yy+=3) ctx.fillRect(Math.round(cx), yy, 1, 1);
+    const vals = {consensus:interp(CCURVES.consensus,c), market:interp(CCURVES.market,c),
+                  private:interp(CCURVES.private,c), planner:interp(CCURVES.planner,c)};
+    label(ctx, "planner "+vals.planner.toFixed(3).slice(1), x1, Y(CCURVES.planner[0])-2, "right");
+    label(ctx, "private "+vals.private.toFixed(3).slice(1), x0+2, Y(CCURVES.private[0])+9, "left");
+    label(ctx, "market "+vals.market.toFixed(3).slice(1), x0+2, Y(CCURVES.market[0])-4, "left");
+    label(ctx, "consensus "+vals.consensus.toFixed(3).slice(1), x0+2, Y(CCURVES.consensus[0])-4, "left");
+    out.textContent = c.toFixed(2);
+    reading.textContent = c < CSTAR
+      ? "independent clues still supply natural coverage: private leads the market by " + (vals.private-vals.market).toFixed(3).slice(1)
+      : "channel collapse: the dispersing market now leads private report-following by " + (vals.market-vals.private).toFixed(3).slice(1);
+  }
+  slider.addEventListener("input", draw);
+  draw();
+})();
+
+/* ------------------------------------------------ limits strip */
+(function(){
+  const ctx = document.getElementById("limitCanvas").getContext("2d");
+  clearC(ctx);
+  const x0=14, x1=326, y=64;
+  line(ctx, x0, y, x1, y);
+  const X = v => x0 + v*(x1-x0);
+  LIMITS.forEach((L,i)=>{
+    const x = X(L.v);
+    ctx.fillRect(Math.round(x)-1, y-14, 2, 28);
+    const lx = Math.max(30, Math.min(306, x));
+    label(ctx, L.v === 0 ? "0" : L.v.toFixed(3).slice(1), lx, (i%2? y+26 : y-19), "center");
+    label(ctx, L.name, lx, (i%2? y+34 : y-27), "center");
+  });
+  // dithered band from market to private = the "one report" gap
+  ditherRect(ctx, X(0.547011), y-4, X(0.846645)-X(0.547011), 8, 0.35);
+  label(ctx, "gap ≈ P(exactly one report)", (X(0.547)+X(0.847))/2, y+14, "center");
+})();
+</script>
+</body>
+</html>
