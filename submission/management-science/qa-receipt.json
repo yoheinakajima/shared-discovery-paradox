@@ -6,9 +6,9 @@
   "pdfs": {
     "manuscript": {
       "path": "submission/management-science/manuscript.pdf",
-      "bytes": 198072,
-      "sha256": "fb53ffb172cc21b03804810477dca64670d13db0a5649d35eec6e0f88a79cf5c",
-      "pages": 28,
+      "bytes": 197691,
+      "sha256": "f0084183c8ad427fddc884612c6e3557a58245360318cd5f3e857c25eebc74f0",
+      "pages": 27,
       "author_metadata_empty": true,
       "unknown_reference_markers": 0,
       "overfull_boxes": 0
@@ -16,7 +16,7 @@
     "companion": {
       "path": "submission/management-science/companion.pdf",
       "bytes": 91893,
-      "sha256": "fadde60e3a06d6eeb58ce84be5be71d4b613a3a91772607d93b7345e33349c79",
+      "sha256": "bb6dc1d603438cd82b766309fb9ec461b1c7f0865b9abc44b285f40ee7b71eea",
       "pages": 11,
       "author_metadata_empty": true,
       "unknown_reference_markers": 0,
@@ -35,11 +35,26 @@
     "Main first page has no empty-author title gap",
     "Companion first/proof/final pages checked; no empty References heading",
     "Neutral proper attribution to related preprint retained; not self-identifying prose",
-    "Zero overfull boxes and undefined citations/references in final cached build"
+    "Zero overfull boxes and undefined citations/references in final cached build",
+    "References-only bibsep 0.4em removes orphan final reference page; final pages25\u201327 rendered at1400px and checked; first24 pages extracted layout/text identical to preceding reviewed PDF",
+    "400px raster regression: main pages1\u201324 and all11 companion pages identical to preceding manager-reviewed PDFs; current main references pages25\u201327 separately visually checked"
   ],
   "limitations": [
     "Color figure print handling must be checked in any later production proof; no print-color payment authorized",
     "Independent specialist proof/priority certification not claimed",
     "Code bundle retains named MIT copyright; supported anonymous/confidential code route remains unresolved"
-  ]
+  ],
+  "manager_review": {
+    "scope": "Manager reviewed all pages at these exact prior hashes; current references-only pagination adjustment awaits manager review. This is limited manuscript/layout cross-review, not independent specialist certification.",
+    "pdfs": {
+      "manuscript": {
+        "sha256": "fb53ffb172cc21b03804810477dca64670d13db0a5649d35eec6e0f88a79cf5c",
+        "pages": 28
+      },
+      "companion": {
+        "sha256": "fadde60e3a06d6eeb58ce84be5be71d4b613a3a91772607d93b7345e33349c79",
+        "pages": 11
+      }
+    }
+  }
 }

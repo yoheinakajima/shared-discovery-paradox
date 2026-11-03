@@ -142,7 +142,7 @@
     {
       "path": "submission/management-science/companion.pdf",
       "bytes": 91893,
-      "sha256": "fadde60e3a06d6eeb58ce84be5be71d4b613a3a91772607d93b7345e33349c79"
+      "sha256": "bb6dc1d603438cd82b766309fb9ec461b1c7f0865b9abc44b285f40ee7b71eea"
     },
     {
       "path": "submission/management-science/companion.tex",
@@ -161,13 +161,13 @@
     },
     {
       "path": "submission/management-science/manuscript.pdf",
-      "bytes": 198072,
-      "sha256": "fb53ffb172cc21b03804810477dca64670d13db0a5649d35eec6e0f88a79cf5c"
+      "bytes": 197691,
+      "sha256": "f0084183c8ad427fddc884612c6e3557a58245360318cd5f3e857c25eebc74f0"
     },
     {
       "path": "submission/management-science/manuscript.tex",
-      "bytes": 57003,
-      "sha256": "cd54b682f52e9b772b1b852bac46c08142a40e4a2f862ac1da91341ee3ac8afe"
+      "bytes": 57030,
+      "sha256": "4c8868b63008fef0f1fdce16e52c81321dc7a85ee4128e3594cfc5a349092979"
     },
     {
       "path": "submission/management-science/organizations-fit.md",
@@ -181,8 +181,8 @@
     },
     {
       "path": "submission/management-science/qa-receipt.json",
-      "bytes": 1910,
-      "sha256": "beef6f8e6302e703b56e047eb2fd30a0f95d0028996fa415b1ae32c0a484aa5a"
+      "bytes": 2850,
+      "sha256": "86db46fa389e8cce8bda8952191f4faa941d7ff503cee0cdf6555270baf0cccb"
     },
     {
       "path": "submission/management-science/readiness.md",
