@@ -1,0 +1,110 @@
+{
+  "scope": "Attributed local replication bundle prepared for accepted-paper First Look/editor request; original MIT notice retained; not automatic initial upload; not uploaded",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1071,
+      "sha256": "a38ea78f852a563f5172121b14a24f144e428b8a259d9e7179f8775e863ea021"
+    },
+    {
+      "path": "data/canonical_quality.csv",
+      "bytes": 355,
+      "sha256": "542e8e179fb21fc8490198fc03a86f2da5edf54a48c66f82ada73bdbfdbea960"
+    },
+    {
+      "path": "data/copying_results.csv",
+      "bytes": 1201,
+      "sha256": "758d61aea3b2e4b316264fcc480aaca2bcd44fd27ca554cbce88ff5274f67f66"
+    },
+    {
+      "path": "data/grid_crossings.csv",
+      "bytes": 2312,
+      "sha256": "9527e610027389744862bb83f784b30ac6e9694e0d84b89d089b3f86edfc4006"
+    },
+    {
+      "path": "data/independent_frontier.csv",
+      "bytes": 169,
+      "sha256": "4617a7c94acd1e51a4b423dc429fb460d65e5f5e10268ac0a8302d8f46bc13ac"
+    },
+    {
+      "path": "figures/canonical_protocols.pdf",
+      "bytes": 18250,
+      "sha256": "531bfaa4dc14aceda604ecf6c1f2851f3f2902e7b9292af2291eda2218a4ef79"
+    },
+    {
+      "path": "figures/canonical_protocols.png",
+      "bytes": 82530,
+      "sha256": "21fa52c14711948c03ca655d1df558ef7b8255a8598cb251e96bad29ac6a6980"
+    },
+    {
+      "path": "figures/copying_protocols.pdf",
+      "bytes": 22287,
+      "sha256": "d97ff56609c9f9ce39a8c555629f98e8badf55bcfe240ff8b1240364868b2539"
+    },
+    {
+      "path": "figures/copying_protocols.png",
+      "bytes": 187562,
+      "sha256": "72d0e708e52aabe3ee3a406d4f317122a56078faa89507ca5a71b4283a9a8708"
+    },
+    {
+      "path": "figures/planner_gain.pdf",
+      "bytes": 14270,
+      "sha256": "8e694ea47a68c3986dd0c1f43d40279811813763f18b7195b061b4f6e2b857ed"
+    },
+    {
+      "path": "figures/planner_gain.png",
+      "bytes": 91432,
+      "sha256": "cc940a9ae0fefaa65222bad76f1993c7ca2a3e31009cd43e606a181e131e3450"
+    },
+    {
+      "path": "figures/pooled_frontier.pdf",
+      "bytes": 18218,
+      "sha256": "e7100e242bb4b16659fcc562e285d08c58640aa84265ad12d9e9d0a312ac3ceb"
+    },
+    {
+      "path": "figures/pooled_frontier.png",
+      "bytes": 100555,
+      "sha256": "172c4626f13b8e3ca5a8d51d9638bd5252995218413d12a3465c3c607c562b6f"
+    },
+    {
+      "path": "submission/management-science/receipts/native-verification.log.txt",
+      "bytes": 4113,
+      "sha256": "008fb016e42ea4d59cdb030475b2d6d2151a34d5b732f097a7bb0e3cb246bba5"
+    },
+    {
+      "path": "submission/management-science/replication-guide.md",
+      "bytes": 10625,
+      "sha256": "a9ba6beb6d44ab3956cf0a8dbb51e07350837899270bb62b1c1baada31f84dc1"
+    },
+    {
+      "path": "submission/management-science/requirements-lock.txt",
+      "bytes": 186,
+      "sha256": "4c58fcbbf15c5fcf0e94bfc79fdca72f6b4c8dba6a68857071203e5410ea8c8e"
+    },
+    {
+      "path": "submission/management-science/review-dispositions.json",
+      "bytes": 5776,
+      "sha256": "02af5e4e58e5a62249d05c5948a6a5eb7f5881a924ff335cd8d7b4187b86c8a0"
+    },
+    {
+      "path": "submission/management-science/tool-assistance.md",
+      "bytes": 4749,
+      "sha256": "5b35919947ced43ed6093be7be949e1ca3cc6739623496bc81205a8feb63073c"
+    },
+    {
+      "path": "submission/management-science/tool-use-evidence.json",
+      "bytes": 6910,
+      "sha256": "cb1a22ec7f299e2309bf9fc9313e1a1ed7425684cda3bdfa7c6198f2067fbd2c"
+    },
+    {
+      "path": "submission/management-science/verification-receipt.json",
+      "bytes": 2614,
+      "sha256": "e4be9ab29694f13818d5d5663ed58413df50932ccfb3b5570613e138f71c030b"
+    },
+    {
+      "path": "verify_shared_discovery_v8_6.py",
+      "bytes": 51055,
+      "sha256": "83871228a6743acbcbce9e60806529108860b74bd43c62cc60addbc1eedd75d9"
+    }
+  ]
+}

@@ -1,0 +1,274 @@
+{
+  "date": "2026-11-02",
+  "baseline": "5025cc8e8f2f8ca015dff2066f08f81ad5715a51",
+  "scope": "Source preparation implemented to reviewable packet; no submission or owner attestation",
+  "source_pr": "https://github.com/yoheinakajima/shared-discovery-paradox/pull/5",
+  "tasks": [
+    {
+      "id": "SHARED-001",
+      "disposition": "implemented",
+      "evidence": [
+        "provenance.json"
+      ],
+      "remaining": "Public arXiv source bytes remain in frozen inspection area; not reuploaded."
+    },
+    {
+      "id": "SHARED-002",
+      "disposition": "implemented",
+      "evidence": [
+        "portal-checklist.md",
+        "ascollected-draft.md"
+      ],
+      "remaining": "Recheck current live policies before any later authorized submission."
+    },
+    {
+      "id": "SHARED-010",
+      "disposition": "implemented",
+      "evidence": [
+        "scientific-audit.md",
+        "review-dispositions.json"
+      ],
+      "remaining": "Priority/novelty is bounded audit, not exhaustive certification."
+    },
+    {
+      "id": "SHARED-011",
+      "disposition": "implemented",
+      "evidence": [
+        "scientific-audit.md",
+        "reference-audit.md",
+        "bibliography.bib",
+        "review-dispositions.json"
+      ],
+      "remaining": ""
+    },
+    {
+      "id": "SHARED-012",
+      "disposition": "implemented-with-review-limit",
+      "evidence": [
+        "scientific-audit.md",
+        "manuscript.tex",
+        "companion.tex",
+        "review-dispositions.json"
+      ],
+      "remaining": "Builder checked arguments; manager separately reviewed central strictness/likelihood/coupling. Full independent expert audit of every asymptotic argument is not claimed."
+    },
+    {
+      "id": "SHARED-013",
+      "disposition": "implemented",
+      "evidence": [
+        "manuscript.tex",
+        "scientific-audit.md",
+        "review-dispositions.json"
+      ],
+      "remaining": ""
+    },
+    {
+      "id": "SHARED-014",
+      "disposition": "implemented",
+      "evidence": [
+        "organizations-fit.md",
+        "manuscript.tex",
+        "review-dispositions.json"
+      ],
+      "remaining": "Already-authorized Management Science preparation continues; final author assesses contribution, no repeat preliminary gate."
+    },
+    {
+      "id": "SHARED-015",
+      "disposition": "implemented",
+      "evidence": [
+        "manuscript.tex",
+        "companion.tex"
+      ],
+      "remaining": ""
+    },
+    {
+      "id": "SHARED-016",
+      "disposition": "implemented",
+      "evidence": [
+        "scientific-audit.md",
+        "verification-receipt.json",
+        "companion.tex",
+        "review-dispositions.json"
+      ],
+      "remaining": ""
+    },
+    {
+      "id": "SHARED-017",
+      "disposition": "implemented-with-access-limits",
+      "evidence": [
+        "reference-audit.md",
+        "reference-metadata.json",
+        "bibliography.bib",
+        "review-dispositions.json"
+      ],
+      "remaining": "All31 retained citations reviewed; explicit M-level full-text limits, Ladha/Nelson final-page checks and Golovin old registry failure remain. No imported central proof depends on these limited lineage claims."
+    },
+    {
+      "id": "SHARED-020",
+      "disposition": "implemented",
+      "evidence": [
+        "verification-receipt.json",
+        "receipts/native-verification.log.txt"
+      ],
+      "remaining": ""
+    },
+    {
+      "id": "SHARED-021",
+      "disposition": "implemented",
+      "evidence": [
+        "requirements-lock.txt",
+        "replication-guide.md",
+        "verification-receipt.json"
+      ],
+      "remaining": ""
+    },
+    {
+      "id": "SHARED-022",
+      "disposition": "draft-complete-owner-attestation-needed",
+      "evidence": [
+        "replication-guide.md",
+        "author-declarations-template.md"
+      ],
+      "remaining": "Author confirms full provenance/rights/human-data history before certification."
+    },
+    {
+      "id": "SHARED-023",
+      "disposition": "offline-draft-complete-external-action-held",
+      "evidence": [
+        "ascollected-draft.md"
+      ],
+      "remaining": "Approved author/support fields populated. Exact original stage/contributor provenance and full-history/rights certifications remain open; separately authorized actual AsCollected project and editable URL still required."
+    },
+    {
+      "id": "SHARED-024",
+      "disposition": "implemented-attributed-first-look-bundle",
+      "evidence": [
+        "replication-package.zip",
+        "replication-contents.json",
+        "provenance.json"
+      ],
+      "remaining": "MIT copyright retained; attributed ZIP prepared for accepted-paper First Look/editor request, not automatic initial upload. Any later upload requires scoped authority."
+    },
+    {
+      "id": "SHARED-030",
+      "disposition": "implemented",
+      "evidence": [
+        "manuscript.pdf",
+        "companion.pdf",
+        "manuscript.tex",
+        "companion.tex",
+        "qa-receipt.json"
+      ],
+      "remaining": ""
+    },
+    {
+      "id": "SHARED-031",
+      "disposition": "implemented-anonymous-initial-review-pdfs",
+      "evidence": [
+        "manuscript.pdf",
+        "companion.pdf",
+        "qa-receipt.json",
+        "replication-guide.md"
+      ],
+      "remaining": "Anonymous main/EC checked. Attributed ZIP is a later First Look/editor-request item; only if requested during review does supported handling need checking before upload. No deletion of MIT notice or exception claimed."
+    },
+    {
+      "id": "SHARED-032",
+      "disposition": "approved-public-author-fields-prepared",
+      "evidence": [
+        "author-declarations-template.md",
+        "author-information.tex",
+        "author-information.pdf"
+      ],
+      "remaining": "Sole author, current affiliation/contact/location and supplied ORCID populated in named assets. Checksum passes; resolver failed/no registry authentication claimed. Final human approval and actual portal responsibilities remain open."
+    },
+    {
+      "id": "SHARED-033",
+      "disposition": "funding-relationships-and-tool-record-prepared",
+      "evidence": [
+        "author-declarations-template.md",
+        "tool-assistance.md",
+        "tool-use-evidence.json"
+      ],
+      "remaining": "Approved Untapped support/founder-GP relationship populated. Tool assistance reconstructed from records; pre-import creation tools/versions unestablished. Remaining conflicts/rights/full-history and fresh exclusivity certification still required; no private answers stored."
+    },
+    {
+      "id": "SHARED-034",
+      "disposition": "unsent-draft-complete-owner-input-needed",
+      "evidence": [
+        "cover-letter-draft.md"
+      ],
+      "remaining": "Approved name/contact/ORCID/funding and evidence-based tool disclosure populated; remaining history/rights/conflicts, chosen DE/nominees, AsCollected URL and final human approval. Unsent."
+    },
+    {
+      "id": "SHARED-035",
+      "disposition": "candidate-work-complete-owner-input-needed",
+      "evidence": [
+        "reviewer-editor-worksheet.md"
+      ],
+      "remaining": "Five public contact/affiliation candidates and3 current AEs/DE proposed; human COI/final selection required, refresh live availability."
+    },
+    {
+      "id": "SHARED-036",
+      "disposition": "owner-decision-needed",
+      "evidence": [
+        "author-declarations-template.md",
+        "portal-checklist.md"
+      ],
+      "remaining": "Truthful waiver basis or USD79 cap; all account/upload/terms/submission scope and optional later charges remain unapproved."
+    },
+    {
+      "id": "SHARED-037",
+      "disposition": "offline-map-complete-live-action-held",
+      "evidence": [
+        "portal-checklist.md"
+      ],
+      "remaining": "Actual live portal field/PDF reconciliation only in later authorized session; no authentication/upload now."
+    },
+    {
+      "id": "SHARED-038",
+      "disposition": "reviewable-source-packet-not-submission-ready",
+      "evidence": [
+        "readiness.md",
+        "provenance.json",
+        "qa-receipt.json",
+        "review-dispositions.json"
+      ],
+      "remaining": "Supplied public author/support fields prepared. Remaining human certifications/final approval, fresh submission-stage exclusivity/prior-history/follow-on status, nominee conflicts, required AsCollected URL and scoped external actions remain open. Manager limited review applies to exact blind PDF hashes in qa-receipt.json."
+    },
+    {
+      "id": "SHARED-040",
+      "disposition": "conditional-not-triggered-claim-narrowed",
+      "evidence": [
+        "manuscript.tex",
+        "organizations-fit.md"
+      ],
+      "remaining": "No optimized private-role comparator commissioned; the manuscript explicitly limits causal/institutional claims."
+    },
+    {
+      "id": "SHARED-041",
+      "disposition": "conditional-no-interior-failure-found",
+      "evidence": [
+        "scientific-audit.md"
+      ],
+      "remaining": "Known endpoint/convention and proof-exposition repairs completed; any later genuine interior gap must be repaired/narrowed, not hidden."
+    },
+    {
+      "id": "SHARED-042",
+      "disposition": "conditional-route-change-not-triggered",
+      "evidence": [
+        "organizations-fit.md"
+      ],
+      "remaining": "MS Organizations stays current target; MSS recommendation available if final author finds contribution inadequate. No simultaneous submission."
+    },
+    {
+      "id": "SHARED-050",
+      "disposition": "optional-refinements-selected",
+      "evidence": [
+        "manuscript.tex",
+        "companion.tex"
+      ],
+      "remaining": "Exposition/interpretation/reversal improved; a new diagram, empirical vignette or study was not needed for this source milestone."
+    }
+  ]
+}

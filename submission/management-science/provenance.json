@@ -1,0 +1,339 @@
+{
+  "date": "2026-11-02",
+  "baseline_commit": "5025cc8e8f2f8ca015dff2066f08f81ad5715a51",
+  "source_repository": "yoheinakajima/shared-discovery-paradox",
+  "source_branch": "codex/management-science-prep-20261102",
+  "source_pr": "https://github.com/yoheinakajima/shared-discovery-paradox/pull/5",
+  "journal_draft_distinct_from_original": true,
+  "all_preserved_inputs_match_git_baseline": true,
+  "preserved_baseline_files": [
+    {
+      "path": "README.md",
+      "bytes": 3545,
+      "sha256": "2af2deff86ffb2fc1ef2ee5b7daeba16ab6ab1654bc45d900604f01d2fc17d47"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1071,
+      "sha256": "a38ea78f852a563f5172121b14a24f144e428b8a259d9e7179f8775e863ea021"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 28,
+      "sha256": "bde68ffcfb53dd010e2ca394340aee83803b9f8e90ecfb32b1c600cd4d3db081"
+    },
+    {
+      "path": "verification_log.txt",
+      "bytes": 4081,
+      "sha256": "c88166f618886e92c5b65159f1f900a60f66dfb98414d474c64953eca2ede7b6"
+    },
+    {
+      "path": "verify_shared_discovery_v8_6.py",
+      "bytes": 51055,
+      "sha256": "83871228a6743acbcbce9e60806529108860b74bd43c62cc60addbc1eedd75d9"
+    },
+    {
+      "path": "paper/The_Shared_Discovery_Paradox.tex",
+      "bytes": 82610,
+      "sha256": "95503c4af1118727592fc55ce5ac660e8aba57973745d45751f13975887d2db0"
+    },
+    {
+      "path": "paper/The_Shared_Discovery_Paradox.pdf",
+      "bytes": 291628,
+      "sha256": "cb4816cb3a9cdd8db0210ab8981e3729028eb02ba174f2a7300b617807cc1e04"
+    },
+    {
+      "path": "paper/shared_discovery_v8.bib",
+      "bytes": 8422,
+      "sha256": "a16e64c146808f5bd14e3c2061a3841456d1ebbada534d2e14039410520f2cb1"
+    },
+    {
+      "path": "docs/paper.pdf",
+      "bytes": 291628,
+      "sha256": "cb4816cb3a9cdd8db0210ab8981e3729028eb02ba174f2a7300b617807cc1e04"
+    },
+    {
+      "path": "data/canonical_quality.csv",
+      "bytes": 355,
+      "sha256": "542e8e179fb21fc8490198fc03a86f2da5edf54a48c66f82ada73bdbfdbea960"
+    },
+    {
+      "path": "data/copying_results.csv",
+      "bytes": 1201,
+      "sha256": "758d61aea3b2e4b316264fcc480aaca2bcd44fd27ca554cbce88ff5274f67f66"
+    },
+    {
+      "path": "data/grid_crossings.csv",
+      "bytes": 2312,
+      "sha256": "9527e610027389744862bb83f784b30ac6e9694e0d84b89d089b3f86edfc4006"
+    },
+    {
+      "path": "data/independent_frontier.csv",
+      "bytes": 169,
+      "sha256": "4617a7c94acd1e51a4b423dc429fb460d65e5f5e10268ac0a8302d8f46bc13ac"
+    },
+    {
+      "path": "figures/canonical_protocols.pdf",
+      "bytes": 18250,
+      "sha256": "531bfaa4dc14aceda604ecf6c1f2851f3f2902e7b9292af2291eda2218a4ef79"
+    },
+    {
+      "path": "figures/canonical_protocols.png",
+      "bytes": 82530,
+      "sha256": "21fa52c14711948c03ca655d1df558ef7b8255a8598cb251e96bad29ac6a6980"
+    },
+    {
+      "path": "figures/copying_protocols.pdf",
+      "bytes": 22287,
+      "sha256": "d97ff56609c9f9ce39a8c555629f98e8badf55bcfe240ff8b1240364868b2539"
+    },
+    {
+      "path": "figures/copying_protocols.png",
+      "bytes": 187562,
+      "sha256": "72d0e708e52aabe3ee3a406d4f317122a56078faa89507ca5a71b4283a9a8708"
+    },
+    {
+      "path": "figures/planner_gain.pdf",
+      "bytes": 14270,
+      "sha256": "8e694ea47a68c3986dd0c1f43d40279811813763f18b7195b061b4f6e2b857ed"
+    },
+    {
+      "path": "figures/planner_gain.png",
+      "bytes": 91432,
+      "sha256": "cc940a9ae0fefaa65222bad76f1993c7ca2a3e31009cd43e606a181e131e3450"
+    },
+    {
+      "path": "figures/pooled_frontier.pdf",
+      "bytes": 18218,
+      "sha256": "e7100e242bb4b16659fcc562e285d08c58640aa84265ad12d9e9d0a312ac3ceb"
+    },
+    {
+      "path": "figures/pooled_frontier.png",
+      "bytes": 100555,
+      "sha256": "172c4626f13b8e3ca5a8d51d9638bd5252995218413d12a3465c3c607c562b6f"
+    }
+  ],
+  "prepared_files": [
+    {
+      "path": "submission/management-science/README.md",
+      "bytes": 2908,
+      "sha256": "7c7605ba9d5b8b148b1c2fb4cfb915d42cf7b45ad6de2be34f0245b97f8bc1d0"
+    },
+    {
+      "path": "submission/management-science/ascollected-draft.md",
+      "bytes": 3359,
+      "sha256": "7d4bec21128b52a2b432b3d3bd0a3978eaf43e5be5dd1bd2491aa9cc8966ee74"
+    },
+    {
+      "path": "submission/management-science/author-declarations-template.md",
+      "bytes": 4101,
+      "sha256": "525be3b4c83d293b8f5d9f277116ee152fd62f4bccc80145fe0debef37e4b9ef"
+    },
+    {
+      "path": "submission/management-science/author-information.pdf",
+      "bytes": 13573,
+      "sha256": "8dca7262071ab42836d7e152df27e8a7a0009337bc6225258e309ce55d64f643"
+    },
+    {
+      "path": "submission/management-science/author-information.tex",
+      "bytes": 1280,
+      "sha256": "0862f6bf742b759a7f52b56b2d709828f982e1a2137fc5e37181ee2d5bbb7d57"
+    },
+    {
+      "path": "submission/management-science/bibliography.bib",
+      "bytes": 10387,
+      "sha256": "bbe037ba45f9bea261d11f178683a7e589972d997619a97f0d796640ab9b9878"
+    },
+    {
+      "path": "submission/management-science/build.py",
+      "bytes": 2051,
+      "sha256": "9ad4676fc14f12bf5a0002f8846d0ef43e94516112a8e0e2cf00271c3de5dbc7"
+    },
+    {
+      "path": "submission/management-science/companion.pdf",
+      "bytes": 94280,
+      "sha256": "2046ab84434b7cc950d8a6ca6e0fe104c70b4b7206e8c4f6d6437b27d7fa6d0a"
+    },
+    {
+      "path": "submission/management-science/companion.tex",
+      "bytes": 29621,
+      "sha256": "cfe541d2d90d51480ab14002391197330fb995f26a4194fe4c3df9b91beb57cc"
+    },
+    {
+      "path": "submission/management-science/cover-letter-draft.md",
+      "bytes": 5470,
+      "sha256": "3d1309fa3e23d028d51021d3467fa0dc4548dfc2e8fd07623e5e0dd746a1c97b"
+    },
+    {
+      "path": "submission/management-science/main-labels.tex",
+      "bytes": 7469,
+      "sha256": "b4914856eaea0085e19c8946d98bf62336643db9c9bb4ca3a0f23f6540f144b7"
+    },
+    {
+      "path": "submission/management-science/manuscript.pdf",
+      "bytes": 204157,
+      "sha256": "7dca07904a399958c5665a7947f40d61e160423371ac6e6e539414d8d6762906"
+    },
+    {
+      "path": "submission/management-science/manuscript.tex",
+      "bytes": 60535,
+      "sha256": "a65b32c1f75f42ca9a3259cb844163dd9e2edf7e697a843691947cb5d3fdf80b"
+    },
+    {
+      "path": "submission/management-science/organizations-fit.md",
+      "bytes": 5073,
+      "sha256": "463abc83ae6446333433289e1b5f3b8c2d1ab32eb5f2e1907c4b6d97e8b96ec3"
+    },
+    {
+      "path": "submission/management-science/portal-checklist.md",
+      "bytes": 4294,
+      "sha256": "6ec70579155a3fa0e8343d645ed3422904084db82a0260947d4ca0e1951094e9"
+    },
+    {
+      "path": "submission/management-science/qa-receipt.json",
+      "bytes": 4819,
+      "sha256": "231ce07eb5b6244054b47c6b004a244c6dad7137680257f4bde73cd531bc47b3"
+    },
+    {
+      "path": "submission/management-science/readiness.md",
+      "bytes": 7734,
+      "sha256": "f2248ec9f8d82edffe3a690b2eca65a5eff1d08ec35824e5b96f08c10921ac7e"
+    },
+    {
+      "path": "submission/management-science/receipts/native-verification.log.txt",
+      "bytes": 4113,
+      "sha256": "008fb016e42ea4d59cdb030475b2d6d2151a34d5b732f097a7bb0e3cb246bba5"
+    },
+    {
+      "path": "submission/management-science/reference-audit.md",
+      "bytes": 13072,
+      "sha256": "8ec3fd71dee9a0d4aebc3fff93221d906bb0c683034829a8892dd68e8d0e8a35"
+    },
+    {
+      "path": "submission/management-science/reference-metadata.json",
+      "bytes": 34241,
+      "sha256": "5b0809b8eb0c61895f988aff4c2d990b45331cbb24e286b4ceeee499856eb84b"
+    },
+    {
+      "path": "submission/management-science/replication-contents.json",
+      "bytes": 3780,
+      "sha256": "0479e0c7f45026d145f72f2090d09c6a6fdf16e64cb9c26e9eb39f3c96f298da"
+    },
+    {
+      "path": "submission/management-science/replication-guide.md",
+      "bytes": 10625,
+      "sha256": "a9ba6beb6d44ab3956cf0a8dbb51e07350837899270bb62b1c1baada31f84dc1"
+    },
+    {
+      "path": "submission/management-science/replication-package.zip",
+      "bytes": 488258,
+      "sha256": "7626b08006505d3d4138c831c8cab2cfed99c257943ebf07a5ed0b26d54aa375"
+    },
+    {
+      "path": "submission/management-science/requirements-lock.txt",
+      "bytes": 186,
+      "sha256": "4c58fcbbf15c5fcf0e94bfc79fdca72f6b4c8dba6a68857071203e5410ea8c8e"
+    },
+    {
+      "path": "submission/management-science/review-dispositions.json",
+      "bytes": 5776,
+      "sha256": "02af5e4e58e5a62249d05c5948a6a5eb7f5881a924ff335cd8d7b4187b86c8a0"
+    },
+    {
+      "path": "submission/management-science/reviewer-editor-worksheet.md",
+      "bytes": 5117,
+      "sha256": "49f066b7818e7b5f64efaf2005fc32008ce5e731fb11a7e35ef3ec3499e89215"
+    },
+    {
+      "path": "submission/management-science/scientific-audit.md",
+      "bytes": 11543,
+      "sha256": "d3f2ad2b2829e5cf1473c667bbe2d9c3396cb654b7d4c9e4e359ee1437a8cedf"
+    },
+    {
+      "path": "submission/management-science/task-disposition.json",
+      "bytes": 9735,
+      "sha256": "58a8114af209b8dca62a8cf3ad766e37eace1ebd6dbc748a448a79f3a70009f0"
+    },
+    {
+      "path": "submission/management-science/tool-assistance.md",
+      "bytes": 4749,
+      "sha256": "5b35919947ced43ed6093be7be949e1ca3cc6739623496bc81205a8feb63073c"
+    },
+    {
+      "path": "submission/management-science/tool-use-evidence.json",
+      "bytes": 6910,
+      "sha256": "cb1a22ec7f299e2309bf9fc9313e1a1ed7425684cda3bdfa7c6198f2067fbd2c"
+    },
+    {
+      "path": "submission/management-science/verification-receipt.json",
+      "bytes": 2614,
+      "sha256": "e4be9ab29694f13818d5d5663ed58413df50932ccfb3b5570613e138f71c030b"
+    },
+    {
+      "path": "submission/management-science/verify_package.py",
+      "bytes": 3503,
+      "sha256": "3d8b5670483e1c0de4dfcbfc9af3ef45c17eaed165678a8d9dc5eed41b396b9f"
+    }
+  ],
+  "primary_literature_artifacts": [
+    {
+      "url": "https://arxiv.org/pdf/1805.01319v1",
+      "bytes": 221657,
+      "sha256": "9386e6bb1b669c84a0624c065df5354d6bb3925aa95d7a2cf93cd5fcdc5e8e06",
+      "redistributed": false
+    },
+    {
+      "url": "https://arxiv.org/pdf/1811.01270v3",
+      "bytes": 418101,
+      "sha256": "977d82c8079e947a8d811e73a90984899ba229bb1fd55ba0edc082cb9931caae",
+      "redistributed": false
+    },
+    {
+      "url": "https://cgi.csc.liv.ac.uk/~gairing/publications/Covering_long.pdf",
+      "bytes": 235839,
+      "sha256": "fd8734adb8eae6a1a7affaea01a70e1e85615d07e92c49ddc92e6de01389a14b",
+      "redistributed": false
+    },
+    {
+      "url": "https://www.cs.cornell.edu/home/kleinber/stoc11-credit.pdf",
+      "bytes": 343890,
+      "sha256": "3e7bb1e6576e003c15925cc0e06550d8ec81d683a82fec2661b7ada74e03c1fc",
+      "redistributed": false
+    }
+  ],
+  "arxiv_public_version": "https://arxiv.org/abs/2607.18045v1",
+  "ssrn_public_version": "https://ssrn.com/abstract=7147798",
+  "related_followon": "https://arxiv.org/abs/2609.01814v1",
+  "owner_attestations_complete": false,
+  "submission_ready": false,
+  "submitted": false,
+  "account_or_external_project_created": false,
+  "new_scientific_campaigns": false,
+  "limitations": "All prepared-file hashes exclude this self-describing manifest. Verify final Git head from PR; no recursive commit hash embedded.",
+  "approved_public_author_metadata_prepared": true,
+  "private_owner_answers_included": false,
+  "author_metadata_scope": "Author-approved public-ready name/affiliation/contact/location/ORCID/support and public relationship only; fresh submission certifications remain open",
+  "tool_history_scope": "Evidence-bounded original Claude Code archive import and later venue/current Codex preparation; pre-import creation tools/versions unestablished; no complete provider-history search or absence-of-AI inference",
+  "two_model_review_source_head": "59f7ccd388b26d0dea7699f15fd5b1d398541baf",
+  "two_model_review_dispositions": "submission/management-science/review-dispositions.json",
+  "new_primary_access": [
+    {
+      "key": "SahStiglitz1986",
+      "url": "https://www.nber.org/papers/w1334",
+      "scope": "Primary NBER abstract and Published Versions metadata; earlier1984working paper, not full1986article audit",
+      "artifact_bytes_not_archived": true
+    },
+    {
+      "key": "CsaszarEggers2013",
+      "url": "https://pubsonline.informs.org/doi/10.1287/mnsc.1120.1698",
+      "scope": "Primary publisher abstract/metadata read; full article argument not audited",
+      "artifact_bytes_not_archived": true
+    },
+    {
+      "key": "DasguptaMaskin1987",
+      "url": "https://maskin.scholars.harvard.edu/sites/g/files/omnuum10606/files/maskin/files/the_simple_economics_of_research_portfolios.pdf",
+      "scope": "Primary author-hosted paper frontmatter and introduction pp581\u2013585 read, plus author publication listing; no claim to have independently checked all propositions",
+      "artifact_bytes_not_archived": true
+    }
+  ]
+}

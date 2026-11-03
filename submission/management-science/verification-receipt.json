@@ -1,0 +1,66 @@
+{
+  "baseline_commit": "5025cc8e8f2f8ca015dff2066f08f81ad5715a51",
+  "observed_date": "2026-11-02",
+  "route": "unchanged verify_shared_discovery_v8_6.py --out-dir disposable-output",
+  "environment": "subprocess env -i with only PATH, MPLBACKEND=Agg and task-local MPLCONFIGDIR; no credentials/live services",
+  "python": "CPython 3.12.13",
+  "platform": "macOS-15.5-arm64-arm-64bit",
+  "dependencies": {
+    "kiwisolver": "1.5.1",
+    "numpy": "2.2.6",
+    "packaging": "26.3",
+    "matplotlib": "3.10.3",
+    "pillow": "13.0.0",
+    "contourpy": "1.4.0",
+    "cycler": "0.12.1",
+    "fonttools": "4.68.0",
+    "tzdata": "2026.6",
+    "python-dateutil": "4.0.0",
+    "pyparsing": "3.3.3"
+  },
+  "exit_code": 0,
+  "all_original_assertions_passed": true,
+  "native_checks_include_existing_seeded_diagnostics_and_72_combination_grid": true,
+  "new_experiments": false,
+  "source_script_sha256": "83871228a6743acbcbce9e60806529108860b74bd43c62cc60addbc1eedd75d9",
+  "saved_csv_comparisons": [
+    {
+      "path": "data/canonical_quality.csv",
+      "rerun_sha256": "542e8e179fb21fc8490198fc03a86f2da5edf54a48c66f82ada73bdbfdbea960",
+      "saved_sha256": "542e8e179fb21fc8490198fc03a86f2da5edf54a48c66f82ada73bdbfdbea960",
+      "rows_including_header": 5,
+      "byte_identical": true,
+      "max_abs_numeric_difference": 0,
+      "tolerance": 2e-12
+    },
+    {
+      "path": "data/copying_results.csv",
+      "rerun_sha256": "49577e0a5f3130dd8fd825dd2812503a5be1add5fbf68adfbb5d0f183e70c2c8",
+      "saved_sha256": "758d61aea3b2e4b316264fcc480aaca2bcd44fd27ca554cbce88ff5274f67f66",
+      "rows_including_header": 12,
+      "byte_identical": false,
+      "max_abs_numeric_difference": 1.000088900582341e-12,
+      "tolerance": 2e-12
+    },
+    {
+      "path": "data/grid_crossings.csv",
+      "rerun_sha256": "9527e610027389744862bb83f784b30ac6e9694e0d84b89d089b3f86edfc4006",
+      "saved_sha256": "9527e610027389744862bb83f784b30ac6e9694e0d84b89d089b3f86edfc4006",
+      "rows_including_header": 73,
+      "byte_identical": true,
+      "max_abs_numeric_difference": 0,
+      "tolerance": 2e-12
+    },
+    {
+      "path": "data/independent_frontier.csv",
+      "rerun_sha256": "4617a7c94acd1e51a4b423dc429fb460d65e5f5e10268ac0a8302d8f46bc13ac",
+      "saved_sha256": "4617a7c94acd1e51a4b423dc429fb460d65e5f5e10268ac0a8302d8f46bc13ac",
+      "rows_including_header": 9,
+      "byte_identical": true,
+      "max_abs_numeric_difference": 0,
+      "tolerance": 2e-12
+    }
+  ],
+  "runtime": "Not instrumented precisely; original few-minute estimate is not a new measured guarantee",
+  "proof_certification": false
+}

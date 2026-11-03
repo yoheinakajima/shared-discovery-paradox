@@ -1,0 +1,93 @@
+{
+  "date": "2026-11-02",
+  "scope": "Source package and visual QA, not owner attestations or independent proof certification",
+  "toolchain": "Existing tectonic --only-cached --untrusted; no native editor/compiler tool exposed; no runtime/plugin installation",
+  "build_exit_code": 0,
+  "pdfs": {
+    "manuscript": {
+      "path": "submission/management-science/manuscript.pdf",
+      "bytes": 204157,
+      "sha256": "7dca07904a399958c5665a7947f40d61e160423371ac6e6e539414d8d6762906",
+      "pages": 28,
+      "author_metadata_empty": true,
+      "unknown_reference_markers": 0,
+      "overfull_boxes": 0
+    },
+    "companion": {
+      "path": "submission/management-science/companion.pdf",
+      "bytes": 94280,
+      "sha256": "2046ab84434b7cc950d8a6ca6e0fe104c70b4b7206e8c4f6d6437b27d7fa6d0a",
+      "pages": 11,
+      "author_metadata_empty": true,
+      "unknown_reference_markers": 0,
+      "overfull_boxes": 0
+    }
+  },
+  "abstract_whitespace_word_count": 223,
+  "keyword_count": 4,
+  "font_pt": 11,
+  "margins_inches": 1,
+  "line_spacing": 1.5,
+  "all_final_pages_rendered_and_layout_reviewed": true,
+  "detail_checks": [
+    "All28 main and11 EC pages rendered at600px and inspected; main body pages1\u201325 raster-identical to inspected pre-final-bibliography correction renders",
+    "Changed role example, direct prior-art/organizational paragraph and conditional covariance/union-bound proof pages checked at1400px",
+    "References-only bibsep0.1em and standard journal metadata avoid orphan reference page; body remains11pt/1.5spacing/1in",
+    "Saved Monte Carlo means/SEs and sample counts checked against retained native receipt and unchanged script, with no numerical replay",
+    "Abstract223words;31 cited references; all13 model findings plus3 additional notes have dispositions",
+    "Zero overfull boxes and undefined references/citations; anonymous main/EC omit contact/affiliation/ORCID/funding identity"
+  ],
+  "limitations": [
+    "Color figure print handling must be checked in any later production proof; no print-color payment authorized",
+    "Independent specialist proof/priority certification not claimed",
+    "Attributed MIT code ZIP is prepared for First Look/editor request, not automatic initial upload; check supported handling if specifically requested during review"
+  ],
+  "manager_review": {
+    "scope": "Manager reviewed all pages at these exact prior hashes. Limited manuscript/layout cross-review, not independent specialist certification.",
+    "pdfs": {
+      "manuscript": {
+        "sha256": "fb53ffb172cc21b03804810477dca64670d13db0a5649d35eec6e0f88a79cf5c",
+        "pages": 28
+      },
+      "companion": {
+        "sha256": "fadde60e3a06d6eeb58ce84be5be71d4b613a3a91772607d93b7345e33349c79",
+        "pages": 11
+      }
+    }
+  },
+  "manager_final_review": {
+    "scope": "Historical manager review of the earlier PDF snapshot at the exact hashes below, before the two-model correction round; not a claim of manager review of current revised PDFs.",
+    "pdfs": {
+      "manuscript": {
+        "sha256": "f0084183c8ad427fddc884612c6e3557a58245360318cd5f3e857c25eebc74f0",
+        "pages": 27
+      },
+      "companion": {
+        "sha256": "bb6dc1d603438cd82b766309fb9ec461b1c7f0865b9abc44b285f40ee7b71eea",
+        "pages": 11
+      }
+    }
+  },
+  "named_author_asset": {
+    "path": "submission/management-science/author-information.pdf",
+    "bytes": 13573,
+    "sha256": "8dca7262071ab42836d7e152df27e8a7a0009337bc6225258e309ce55d64f643",
+    "pages": 1,
+    "author_metadata": "Yohei Nakajima",
+    "scope": "Named title/contact/support asset, separate from anonymous initial-review pair",
+    "visual_review": "Clean one-page candidate rendered at1400px and visually checked; operational footer removed; PDF subject is Author information; readable and inside margins",
+    "build": "Existing cached Tectonic --only-cached --untrusted via build.py --author-information-only; zero overfull boxes and unresolved references"
+  },
+  "orcid_verification": {
+    "supplied_id": "0009-0009-1293-6053",
+    "checksum_valid": true,
+    "public_resolver": "tool inaccessible",
+    "registry_authentication_performed": false
+  },
+  "named_author_prior_manager_review": {
+    "sha256": "1f788b065b2b37529bfa2e9a110fa4b70b4a84433e466896bde407778b6dc05d",
+    "pages": 1,
+    "scope": "Manager independently reviewed the preceding named-page render/metadata and package verifier at source head a89085dbd3a4f0a2ca7f43e74e40d2352197ccba; current financial-interest wording refinement was separately rendered and checked by builder."
+  },
+  "revision_scope": "Post-two-model correction round; current main28pp/EC11pp builder-rendered and checked. Historical manager reviews below apply only to their recorded prior hashes, not automatically to current revised PDFs."
+}
