@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-02",
+  "scope": "Source package and visual QA, not owner attestations or independent proof certification",
+  "toolchain": "Existing tectonic --only-cached --untrusted; no native editor/compiler tool exposed; no runtime/plugin installation",
+  "build_exit_code": 0,
+  "pdfs": {
+    "manuscript": {
+      "path": "submission/management-science/manuscript.pdf",
+      "bytes": 198072,
+      "sha256": "fb53ffb172cc21b03804810477dca64670d13db0a5649d35eec6e0f88a79cf5c",
+      "pages": 28,
+      "author_metadata_empty": true,
+      "unknown_reference_markers": 0,
+      "overfull_boxes": 0
+    },
+    "companion": {
+      "path": "submission/management-science/companion.pdf",
+      "bytes": 91893,
+      "sha256": "fadde60e3a06d6eeb58ce84be5be71d4b613a3a91772607d93b7345e33349c79",
+      "pages": 11,
+      "author_metadata_empty": true,
+      "unknown_reference_markers": 0,
+      "overfull_boxes": 0
+    }
+  },
+  "abstract_whitespace_word_count": 204,
+  "keyword_count": 4,
+  "font_pt": 11,
+  "margins_inches": 1,
+  "line_spacing": 1.5,
+  "all_final_pages_rendered_and_layout_reviewed": true,
+  "detail_checks": [
+    "Wide Table1 all columns inside margins and readable",
+    "Figures1\u20134 titles/axis labels/legends/captions checked on rendered pages",
+    "Main first page has no empty-author title gap",
+    "Companion first/proof/final pages checked; no empty References heading",
+    "Neutral proper attribution to related preprint retained; not self-identifying prose",
+    "Zero overfull boxes and undefined citations/references in final cached build"
+  ],
+  "limitations": [
+    "Color figure print handling must be checked in any later production proof; no print-color payment authorized",
+    "Independent specialist proof/priority certification not claimed",
+    "Code bundle retains named MIT copyright; supported anonymous/confidential code route remains unresolved"
+  ]
+}

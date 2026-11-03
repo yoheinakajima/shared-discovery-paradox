@@ -1,0 +1,19 @@
+# Unsent cover-letter draft — incomplete until owner confirmation
+
+To the Department Editors, Organizations, Management Science
+
+Please consider “The Shared Discovery Paradox: How a One-Answer Rule Turns Better Information into Worse Search” as a Regular Manuscript in Organizations. The paper asks how a team translates shared evidence into a portfolio of actions. It distinguishes information access, assignment authority, reward rules and common-source dependence. The contribution sought is a tractable ex ante comparison and a characterization of how dependence raises the value of reallocating duplicated capacity, rather than a new exclusive-reward mechanism or general covering-game inefficiency theorem.
+
+The anonymous manuscript is accompanied by an electronic companion with likelihoods, proof details and the existing numerical verification taxonomy. The replication plan supplies code, model-generated data, environment versions, result mappings and a captured credential-free recheck. The paper makes no empirical claims about actual organizations or AI-enabled teams.
+
+Abstract:
+
+> Organizations may pool evidence without coordinating how it is used. We study the resulting allocation problem in a Bayesian discovery benchmark with one valuable state and a fixed number of simultaneous actions. Shared reports improve the best single recommendation, yet a rule that repeats that recommendation can reduce discovery by discarding coverage. In a sixteen-state, eight-searcher example, private clue-following discovers the target with probability 0.8322, pooled consensus with 0.3835, and a distinct-action portfolio using the same pooled reports with 0.8594. Seven coordinated actions recover the private benchmark. With a latent common source and nondegenerate signal accuracy, the equal-budget planner gain increases strictly with copying. Equal-split rewards supply partial dispersion at the anonymous symmetric equilibrium, but do not generally recover the planner portfolio; exclusive rewards implement it in pure equilibria under the stated assumptions. We connect these incentives to existing covering and search games rather than claim a new reward mechanism. The contribution is a tractable comparison of information access, assignment authority, incentives and source dependence. The institutional implication is conditional: organizations that share evidence also need an allocation rule, particularly when nominally separate reports reflect common sources. The model does not identify the effect of information sharing alone or validate behavior in actual organizations.
+
+Public versions and overlap: the original working paper is available as [arXiv2607.18045v1](https://arxiv.org/abs/2607.18045v1) and [SSRN7147798](https://ssrn.com/abstract=7147798). This journal draft corrects the strict planner-gain domain/boundary convention, expands direct prior-art discussion and separates the institutional claim from analogies. A related follow-on working paper, [When Does Information Sharing Improve Decentralized Discovery?](https://arxiv.org/abs/2609.01814v1), develops incremental-sharing/residual-rescue criteria and a selected two-agent Bayesian result. It shares the broad motivation; those later results are not represented as contributions of this submission. Additional overlap and submission history require author confirmation below.
+
+**Do not send until completed privately:** preferred current DE and COI-vetted reviewer/AE roster; complete prior/competing-submission history (including any previous Management Science decision); funding/COI/AI/rights statements; verified author contact/ORCID; exact AsCollected editable project URL; approved code-attribution/anonymity route; fee/waiver decision; human final approval. No assertion of exclusivity, no-conflict status, sole authorship eligibility or signed rights is made by this draft.
+
+Sincerely,
+
+[Human author's confirmed name and contact — fill outside Git]

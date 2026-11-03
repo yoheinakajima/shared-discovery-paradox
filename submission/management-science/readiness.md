@@ -1,0 +1,30 @@
+# Source handoff and remaining gates
+
+Prepared 2026-11-02. PR: https://github.com/yoheinakajima/shared-discovery-paradox/pull/5 ; branch `codex/management-science-prep-20261102`. Baseline main `5025cc8e8f2f8ca015dff2066f08f81ad5715a51`. Local work clone is the isolated non-iCloud `submission-prep-20261102/work/shared-discovery-paradox` checkout. Atlas and frozen inspection clones were not edited by this implementation worker. No native source instructions/task database existed in the baseline tree.
+
+**Reviewable source package; not submission-ready.** The public-v1/source anchor and original numerical assets remain intact. No account, external provenance project, upload, contact, fee, publication license, arXiv replacement, merge or deployment occurred. There is one draft source PR; later commits update it.
+
+## Completed work and checks
+
+- A distinct anonymous Management Science Organizations regular-article draft and companion compile from editable sources with existing cached Tectonic, no new TeX install. Current PDF dimensions/page counts, hashes, reference/format/anonymity checks and visual inspection are in `qa-receipt.json` and `provenance.json`.
+- Abstract204 words; four keywords; 11-point, one-inch margins and 1.5 spacing. Main is within32 pages at current formatting, although initial submissions have no fixed limit. EC carries noncritical enumeration/likelihood/proof/scaling details; main retains the central gain statement, assumptions and mechanism logic. Empty EC references heading removed; main-reference numbers exported explicitly, EC counters prefixed and misleading imported hyperlinks disabled.
+- Direct full-text comparison of Collet–Korman, Korman–Rodeh, Gairing and Kleinberg–Oren; all28 retained citations have metadata/entailment/access rows. Exclusive rewards and covering inefficiency are credited. Domain repaired to nondegenerate1/M<p<1; zero gain at p=1 stated; indicator-weighted fill convention resolves N=M,D=M. Strictness event and asymptotic tail bounds expanded. Actual annotations appear in `scientific-audit.md`.
+- The unchanged native verifier passed once in an isolated credential-free environment. All four saved CSVs match within2e-12, three byte-for-byte. Exact environment, raw new receipt and result/source maps supplied. Sealed inputs/old log/PDFs unchanged. No new scientific campaign.
+- Local attributed replication ZIP/contents manifest prepared, with original MIT notice preserved. No claim that named copyright has been anonymized or that the journal granted an exception.
+- Unsent cover letter, data/code plan, offline AsCollected draft, exact portal map, and author/declaration/editor-reviewer worksheets prepared. Five proposed reviewer public affiliations/contacts and3 current AEs/preferred DE documented. No private answers are stored in this public repository.
+
+The implementing builder cannot certify its own proof audit as independent expert review. Manager separately checked the central likelihood/coupling/strictness repair and reviewed an earlier PDF snapshot; the final revision still receives manager review. Full specialist certification of all asymptotic details and universal priority is not claimed. The Organizations contribution case is explicit and limited: a Bayesian fixed-protocol/dependence benchmark, not a new general incentive mechanism. The current authorized route continues without another preliminary owner decision; MSS is a possible later owner route change if the contribution case is inadequate.
+
+## Minimum owner packet, consolidated
+
+Complete these **privately outside Git** after reading the concrete PDFs/letter:
+
+1. Confirm actual author name/current affiliation/contact/ORCID, corresponding/submitting responsibility and real contributor roles. Original paper says Untapped Capital; SSRN profile displays Claremont McKenna College and does not establish a current academic affiliation.
+2. Supply true funding, conflicts, rights/permissions, original/revision AI-use history and human approval of mathematics/references/code. Confirm no human/proprietary data in the full research history rather than extrapolating from the inspected script.
+3. Confirm complete prior/current journal/conference and related-paper history. Original arXiv2607.18045v1 and SSRN7147798 are disclosed. Related follow-on arXiv2609.01814v1 overlaps in motivation but has separate frontier/selected-equilibrium results; current competing-submission status is unknown. Absence of a receipt is not a declaration of no submission.
+4. Approve or replace the provisional five reviewers,3 AEs and DE after adviser/student, same-institution, last-five-year coauthor and other conflict checks. Public contact lookup is done; private relationships are not inferred.
+5. At the later submission milestone, choose a truthful applicable waiver basis or explicit USD79 original-fee cap, and authorize the exact account/project/upload/terms/submission actions. Optional OA/print color and publication agreements are separate decisions. No claim of inability to pay or membership is made here.
+
+Two preparation/operational items remain visible: resolve the attributed MIT code package's supported confidential-review route before claiming all reviewer files anonymous; create an actual AsCollected project only under later scoped authority using author-confirmed provenance. Final portal-generated PDF/fields and actual current terms are untested until such a session. These are not reasons to invent exemptions or to delete required attribution.
+
+`task-disposition.json` maps all28 SHARED IDs to implemented evidence, explicit limits, owner inputs, conditional decisions or held external actions. It is source-owned implementation evidence, not a copied canonical lane task database. `verify_package.py` checks saved hashes/PDFs/references/tasks without a numerical rerun or network calls. Source-ready for review, independently reviewed, merged, submitted and accepted remain distinct states.

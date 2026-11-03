@@ -1,0 +1,1458 @@
+{
+  "AcemogluEtAl2018": {
+    "DOI": "10.1287/opre.2017.1712",
+    "title": [
+      "Informational Braess\u2019 Paradox: The Effect of Information on Traffic Congestion"
+    ],
+    "author": [
+      {
+        "given": "Daron",
+        "family": "Acemoglu",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Economics, Massachusetts Institute of Technology, Cambridge, Massachusetts 02139"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-5422-0314",
+        "authenticated-orcid": false,
+        "given": "Ali",
+        "family": "Makhdoumi",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, Cambridge, Massachusetts 02139"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9464-746X",
+        "authenticated-orcid": false,
+        "given": "Azarakhsh",
+        "family": "Malekian",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Rotman School of Management, University of Toronto, Toronto, Ontario M5S 3E6, Canada"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-1827-1285",
+        "authenticated-orcid": false,
+        "given": "Asuman",
+        "family": "Ozdaglar",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, Cambridge, Massachusetts 02139"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Operations Research"
+    ],
+    "volume": "66",
+    "issue": "4",
+    "page": "893-917",
+    "published": {
+      "date-parts": [
+        [
+          2018,
+          8
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2018,
+          8
+        ]
+      ]
+    },
+    "published-online": null,
+    "URL": "https://doi.org/10.1287/opre.2017.1712",
+    "source": "https://api.crossref.org/works/10.1287/opre.2017.1712",
+    "abstract_available": true
+  },
+  "Banerjee1992": {
+    "DOI": "10.2307/2118364",
+    "title": [
+      "A Simple Model of Herd Behavior"
+    ],
+    "author": [
+      {
+        "given": "A. V.",
+        "family": "Banerjee",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "The Quarterly Journal of Economics"
+    ],
+    "volume": "107",
+    "issue": "3",
+    "page": "797-817",
+    "published": {
+      "date-parts": [
+        [
+          1992,
+          8,
+          1
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          1992,
+          8,
+          1
+        ]
+      ]
+    },
+    "published-online": null,
+    "URL": "https://doi.org/10.2307/2118364",
+    "source": "https://api.crossref.org/works/10.2307/2118364",
+    "abstract_available": false
+  },
+  "BikhchandaniEtAl1992": {
+    "DOI": "10.1086/261849",
+    "title": [
+      "A Theory of Fads, Fashion, Custom, and Cultural Change as Informational Cascades"
+    ],
+    "author": [
+      {
+        "given": "Sushil",
+        "family": "Bikhchandani",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "David",
+        "family": "Hirshleifer",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ivo",
+        "family": "Welch",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Journal of Political Economy"
+    ],
+    "volume": "100",
+    "issue": "5",
+    "page": "992-1026",
+    "published": {
+      "date-parts": [
+        [
+          1992,
+          10
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          1992,
+          10
+        ]
+      ]
+    },
+    "published-online": null,
+    "URL": "https://doi.org/10.1086/261849",
+    "source": "https://api.crossref.org/works/10.1086/261849",
+    "abstract_available": false
+  },
+  "Blackwell1953": {
+    "DOI": "10.1214/aoms/1177729032",
+    "title": [
+      "Equivalent Comparisons of Experiments"
+    ],
+    "author": [
+      {
+        "given": "David",
+        "family": "Blackwell",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "The Annals of Mathematical Statistics"
+    ],
+    "volume": "24",
+    "issue": "2",
+    "page": "265-272",
+    "published": {
+      "date-parts": [
+        [
+          1953,
+          6
+        ]
+      ]
+    },
+    "URL": "https://doi.org/10.1214/aoms/1177729032",
+    "source": "https://api.crossref.org/works/10.1214/aoms/1177729032",
+    "abstract_available": false
+  },
+  "ColletKorman2018": {
+    "DOI": "10.1145/3210377.3210405",
+    "title": [
+      "Intense Competition can Drive Selfish Explorers to Optimize Coverage"
+    ],
+    "author": [
+      {
+        "given": "Simon",
+        "family": "Collet",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "IRIF, CNRS and University Paris Diderot, Paris, France"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Amos",
+        "family": "Korman",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "IRIF, CNRS and University Paris Diderot, Paris, France"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Proceedings of the 30th on Symposium on Parallelism in Algorithms and Architectures"
+    ],
+    "volume": null,
+    "issue": null,
+    "page": "183-192",
+    "published": {
+      "date-parts": [
+        [
+          2018,
+          7,
+          11
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2018,
+          7,
+          11
+        ]
+      ]
+    },
+    "published-online": {
+      "date-parts": [
+        [
+          2018,
+          7,
+          11
+        ]
+      ]
+    },
+    "URL": "https://doi.org/10.1145/3210377.3210405",
+    "source": "https://api.crossref.org/works?rows=1&query.bibliographic=Intense%20Competition%20Can%20Drive%20Selfish%20Explorers%20to%20Optimize%20Coverage",
+    "abstract_available": false
+  },
+  "DasKamenicaMirka2017": {
+    "DOI": "10.1109/allerton.2017.8262884",
+    "title": [
+      "Reducing congestion through information design"
+    ],
+    "author": [
+      {
+        "given": "Sanmay",
+        "family": "Das",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Emir",
+        "family": "Kamenica",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Renee",
+        "family": "Mirka",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "2017 55th Annual Allerton Conference on Communication, Control, and Computing (Allerton)"
+    ],
+    "volume": null,
+    "issue": null,
+    "page": "1279-1284",
+    "published": {
+      "date-parts": [
+        [
+          2017,
+          10
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          10
+        ]
+      ]
+    },
+    "published-online": null,
+    "URL": "https://doi.org/10.1109/allerton.2017.8262884",
+    "source": "https://api.crossref.org/works/10.1109/ALLERTON.2017.8262884",
+    "abstract_available": false
+  },
+  "DuedeEvans2024": {
+    "source": "https://arxiv.org/abs/2406.05809v1",
+    "skip_crossref": true,
+    "title": [
+      "The Paradox of Collective Certainty in Science"
+    ],
+    "author": [
+      {
+        "given": "Eamon",
+        "family": "Duede"
+      },
+      {
+        "given": "James",
+        "family": "Evans"
+      }
+    ],
+    "year": 2024
+  },
+  "Gairing2009": {
+    "DOI": "10.1007/978-3-642-10841-9_18",
+    "title": [
+      "Covering Games: Approximation through Non-cooperation"
+    ],
+    "author": [
+      {
+        "given": "Martin",
+        "family": "Gairing",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Lecture Notes in Computer Science",
+      "Internet and Network Economics"
+    ],
+    "volume": null,
+    "issue": null,
+    "page": "184-195",
+    "published": {
+      "date-parts": [
+        [
+          2009
+        ]
+      ]
+    },
+    "URL": "https://doi.org/10.1007/978-3-642-10841-9_18",
+    "source": "https://api.crossref.org/works/10.1007/978-3-642-10841-9_18",
+    "abstract_available": false
+  },
+  "GolovinKrause2011": {
+    "source": "https://api.crossref.org/works/10.1613/jair.3278",
+    "error": "HTTP Error 404: Not Found",
+    "alternate_primary_source": "https://arxiv.org/abs/1003.3967v5",
+    "scope": "Old DOI registration lookup404; primary corrected preprint confirms title/authors and corrected theory. Retained journal fields have stated metadata verification limit."
+  },
+  "Kitcher1990": {
+    "DOI": "10.2307/2026796",
+    "title": [
+      "The Division of Cognitive Labor"
+    ],
+    "author": [
+      {
+        "given": "Philip",
+        "family": "Kitcher",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "The Journal of Philosophy"
+    ],
+    "volume": "87",
+    "issue": "1",
+    "page": "5",
+    "published": {
+      "date-parts": [
+        [
+          1990,
+          1
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          1990,
+          1
+        ]
+      ]
+    },
+    "published-online": null,
+    "URL": "https://doi.org/10.2307/2026796",
+    "source": "https://api.crossref.org/works/10.2307/2026796",
+    "abstract_available": false
+  },
+  "KleinbergOren2011": {
+    "DOI": "10.1145/1993636.1993707",
+    "title": [
+      "Mechanisms for (mis)allocating scientific credit"
+    ],
+    "author": [
+      {
+        "given": "Jon",
+        "family": "Kleinberg",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Cornell University, Ithaca, NY, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sigal",
+        "family": "Oren",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Cornell University, Ithaca, NY, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Proceedings of the forty-third annual ACM symposium on Theory of computing"
+    ],
+    "volume": null,
+    "issue": null,
+    "page": "529-538",
+    "published": {
+      "date-parts": [
+        [
+          2011,
+          6,
+          6
+        ]
+      ]
+    },
+    "URL": "https://doi.org/10.1145/1993636.1993707",
+    "source": "https://api.crossref.org/works/10.1145/1993636.1993707",
+    "disambiguation": "Title query matched 2022 journal extension; replaced with exact 2011 conference DOI record."
+  },
+  "Koopman1957": {
+    "DOI": "10.1287/opre.5.5.613",
+    "title": [
+      "The Theory of Search"
+    ],
+    "author": [
+      {
+        "given": "Bernard O.",
+        "family": "Koopman",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Columbia University, New York, New York"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Operations Research"
+    ],
+    "volume": "5",
+    "issue": "5",
+    "page": "613-626",
+    "published": {
+      "date-parts": [
+        [
+          1957,
+          10
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          1957,
+          10
+        ]
+      ]
+    },
+    "published-online": null,
+    "URL": "https://doi.org/10.1287/opre.5.5.613",
+    "source": "https://api.crossref.org/works/10.1287/opre.5.5.613",
+    "abstract_available": true
+  },
+  "KormanRodeh2020": {
+    "DOI": "10.1016/j.jcss.2020.05.003",
+    "title": [
+      "Multi-round cooperative search games with multiple players"
+    ],
+    "author": [
+      {
+        "given": "Amos",
+        "family": "Korman",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7224-6451",
+        "authenticated-orcid": false,
+        "given": "Yoav",
+        "family": "Rodeh",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Journal of Computer and System Sciences"
+    ],
+    "volume": "113",
+    "issue": null,
+    "page": "125-149",
+    "published": {
+      "date-parts": [
+        [
+          2020,
+          11
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          11
+        ]
+      ]
+    },
+    "published-online": null,
+    "URL": "https://doi.org/10.1016/j.jcss.2020.05.003",
+    "source": "https://api.crossref.org/works/10.1016/j.jcss.2020.05.003",
+    "abstract_available": false
+  },
+  "KoutsoupiasPapadimitriou1999": {
+    "DOI": "10.1007/3-540-49116-3_38",
+    "title": [
+      "Worst-Case Equilibria"
+    ],
+    "author": [
+      {
+        "given": "Elias",
+        "family": "Koutsoupias",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Christos",
+        "family": "Papadimitriou",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Lecture Notes in Computer Science",
+      "STACS 99"
+    ],
+    "volume": null,
+    "issue": null,
+    "page": "404-413",
+    "published": {
+      "date-parts": [
+        [
+          1999
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          1999
+        ]
+      ]
+    },
+    "published-online": {
+      "date-parts": [
+        [
+          2002,
+          4,
+          12
+        ]
+      ]
+    },
+    "URL": "https://doi.org/10.1007/3-540-49116-3_38",
+    "source": "https://api.crossref.org/works/10.1007/3-540-49116-3_38",
+    "abstract_available": false
+  },
+  "Ladha1992": {
+    "DOI": "10.2307/2111584",
+    "title": [
+      "The Condorcet Jury Theorem, Free Speech, and Correlated Votes"
+    ],
+    "author": [
+      {
+        "given": "Krishna K.",
+        "family": "Ladha",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "American Journal of Political Science"
+    ],
+    "volume": "36",
+    "issue": "3",
+    "page": "617",
+    "published": {
+      "date-parts": [
+        [
+          1992,
+          8
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          1992,
+          8
+        ]
+      ]
+    },
+    "published-online": null,
+    "URL": "https://doi.org/10.2307/2111584",
+    "source": "https://api.crossref.org/works/10.2307/2111584",
+    "abstract_available": false
+  },
+  "March1991": {
+    "DOI": "10.1287/orsc.2.1.71",
+    "title": [
+      "Exploration and Exploitation in Organizational Learning"
+    ],
+    "author": [
+      {
+        "given": "James G.",
+        "family": "March",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Graduate School of Business, Stanford University, Stanford, California 94305"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Organization Science"
+    ],
+    "volume": "2",
+    "issue": "1",
+    "page": "71-87",
+    "published": {
+      "date-parts": [
+        [
+          1991,
+          2
+        ]
+      ]
+    },
+    "URL": "https://doi.org/10.1287/orsc.2.1.71",
+    "source": "https://api.crossref.org/works/10.1287/orsc.2.1.71",
+    "abstract_available": true
+  },
+  "MarschakRadner1972": {
+    "title": [
+      "Economic Theory of Teams"
+    ],
+    "author": [
+      {
+        "given": "Jacob",
+        "family": "Marschak"
+      },
+      {
+        "given": "Roy",
+        "family": "Radner"
+      }
+    ],
+    "publisher": "Yale University Press",
+    "year": 1972,
+    "source": "https://cowles.yale.edu/research/publications/archive",
+    "secondary_primary_source": "https://pages.stern.nyu.edu/~rradner/radnercv.htm",
+    "scope": "Title/author/year metadata; not a full book review"
+  },
+  "MayoWilsonEtAl2011": {
+    "DOI": "10.1086/661777",
+    "title": [
+      "The Independence Thesis: When Individual and Social Epistemology Diverge"
+    ],
+    "author": [
+      {
+        "given": "Conor",
+        "family": "Mayo-Wilson",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kevin J. S.",
+        "family": "Zollman",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "David",
+        "family": "Danks",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Philosophy of Science"
+    ],
+    "volume": "78",
+    "issue": "4",
+    "page": "653-677",
+    "published": {
+      "date-parts": [
+        [
+          2011,
+          10,
+          1
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2011,
+          10,
+          1
+        ]
+      ]
+    },
+    "published-online": {
+      "date-parts": [
+        [
+          2022,
+          1,
+          1
+        ]
+      ]
+    },
+    "URL": "https://doi.org/10.1086/661777",
+    "source": "https://api.crossref.org/works/10.1086/661777",
+    "abstract_available": true
+  },
+  "MondererShapley1996": {
+    "DOI": "10.1006/game.1996.0044",
+    "title": [
+      "Potential Games"
+    ],
+    "author": [
+      {
+        "given": "Dov",
+        "family": "Monderer",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Lloyd S.",
+        "family": "Shapley",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Games and Economic Behavior"
+    ],
+    "volume": "14",
+    "issue": "1",
+    "page": "124-143",
+    "published": {
+      "date-parts": [
+        [
+          1996,
+          5
+        ]
+      ]
+    },
+    "URL": "https://doi.org/10.1006/game.1996.0044",
+    "source": "https://api.crossref.org/works/10.1006/game.1996.0044",
+    "abstract_available": false
+  },
+  "Nakajima2026Frontier": {
+    "source": "https://arxiv.org/abs/2609.01814v1",
+    "skip_crossref": true,
+    "title": [
+      "When Does Information Sharing Improve Decentralized Discovery? Aggregation, Independent Rescue, and Equilibrium Selection"
+    ],
+    "author": [
+      {
+        "given": "Yohei",
+        "family": "Nakajima"
+      }
+    ],
+    "year": 2026
+  },
+  "Nelson1961": {
+    "DOI": "10.2307/1927475",
+    "title": [
+      "Uncertainty, Learning, and the Economics of Parallel Research and Development Efforts"
+    ],
+    "author": [
+      {
+        "given": "Richard R.",
+        "family": "Nelson",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "The Review of Economics and Statistics"
+    ],
+    "volume": "43",
+    "issue": "4",
+    "page": "351",
+    "published": {
+      "date-parts": [
+        [
+          1961,
+          11
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          1961,
+          11
+        ]
+      ]
+    },
+    "published-online": null,
+    "URL": "https://doi.org/10.2307/1927475",
+    "source": "https://api.crossref.org/works/10.2307/1927475",
+    "abstract_available": false
+  },
+  "NemhauserEtAl1978": {
+    "DOI": "10.1007/bf01588971",
+    "title": [
+      "An analysis of approximations for maximizing submodular set functions\u2014I"
+    ],
+    "author": [
+      {
+        "given": "G. L.",
+        "family": "Nemhauser",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "L. A.",
+        "family": "Wolsey",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "M. L.",
+        "family": "Fisher",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Mathematical Programming"
+    ],
+    "volume": "14",
+    "issue": "1",
+    "page": "265-294",
+    "published": {
+      "date-parts": [
+        [
+          1978,
+          12
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          1978,
+          12
+        ]
+      ]
+    },
+    "published-online": null,
+    "URL": "https://doi.org/10.1007/bf01588971",
+    "source": "https://api.crossref.org/works/10.1007/BF01588971",
+    "abstract_available": false
+  },
+  "Rosenthal1973": {
+    "DOI": "10.1007/bf01737559",
+    "title": [
+      "A class of games possessing pure-strategy Nash equilibria"
+    ],
+    "author": [
+      {
+        "given": "Robert W.",
+        "family": "Rosenthal",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "International Journal of Game Theory"
+    ],
+    "volume": "2",
+    "issue": "1",
+    "page": "65-67",
+    "published": {
+      "date-parts": [
+        [
+          1973,
+          12
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          1973,
+          12
+        ]
+      ]
+    },
+    "published-online": null,
+    "URL": "https://doi.org/10.1007/bf01737559",
+    "source": "https://api.crossref.org/works/10.1007/BF01737559",
+    "abstract_available": false
+  },
+  "Roughgarden2015": {
+    "DOI": "10.1145/2806883",
+    "title": [
+      "Intrinsic Robustness of the Price of Anarchy"
+    ],
+    "author": [
+      {
+        "given": "Tim",
+        "family": "Roughgarden",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Stanford University, Stanford, CA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Journal of the ACM"
+    ],
+    "volume": "62",
+    "issue": "5",
+    "page": "1-42",
+    "published": {
+      "date-parts": [
+        [
+          2015,
+          11,
+          2
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2015,
+          11,
+          2
+        ]
+      ]
+    },
+    "published-online": {
+      "date-parts": [
+        [
+          2015,
+          11,
+          2
+        ]
+      ]
+    },
+    "URL": "https://doi.org/10.1145/2806883",
+    "source": "https://api.crossref.org/works/10.1145/2806883",
+    "abstract_available": true
+  },
+  "RzhetskyEtAl2015": {
+    "DOI": "10.1073/pnas.1509757112",
+    "title": [
+      "Choosing experiments to accelerate collective discovery"
+    ],
+    "author": [
+      {
+        "given": "Andrey",
+        "family": "Rzhetsky",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Departments of Medicine and Human Genetics, University of Chicago, Chicago, IL 60637;"
+          },
+          {
+            "name": "Computation Institute, University of Chicago and Argonne National Laboratory, Chicago, IL 60637;"
+          },
+          {
+            "name": "Institute of Genomic and Systems Biology, University of Chicago, Chicago, IL 60637;"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jacob G.",
+        "family": "Foster",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Sociology, University of California, Los Angeles, CA 90095;"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ian T.",
+        "family": "Foster",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Computation Institute, University of Chicago and Argonne National Laboratory, Chicago, IL 60637;"
+          },
+          {
+            "name": "Mathematics and Computer Science Division, Argonne National Laboratory, Argonne, IL 60637;"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9838-0707",
+        "authenticated-orcid": false,
+        "given": "James A.",
+        "family": "Evans",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Computation Institute, University of Chicago and Argonne National Laboratory, Chicago, IL 60637;"
+          },
+          {
+            "name": "Department of Sociology, University of Chicago, Chicago, IL 60637"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Proceedings of the National Academy of Sciences"
+    ],
+    "volume": "112",
+    "issue": "47",
+    "page": "14569-14574",
+    "published": {
+      "date-parts": [
+        [
+          2015,
+          11,
+          9
+        ]
+      ]
+    },
+    "URL": "https://doi.org/10.1073/pnas.1509757112",
+    "source": "https://api.crossref.org/works/10.1073/pnas.1509757112",
+    "abstract_available": true
+  },
+  "SmithSorensen2000": {
+    "DOI": "10.1111/1468-0262.00113",
+    "title": [
+      "Pathological Outcomes of Observational Learning"
+    ],
+    "author": [
+      {
+        "given": "Lones",
+        "family": "Smith",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Peter",
+        "family": "Sorensen",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Econometrica"
+    ],
+    "volume": "68",
+    "issue": "2",
+    "page": "371-398",
+    "published": {
+      "date-parts": [
+        [
+          2000,
+          3
+        ]
+      ]
+    },
+    "URL": "https://doi.org/10.1111/1468-0262.00113",
+    "source": "https://api.crossref.org/works/10.1111/1468-0262.00113",
+    "abstract_available": false
+  },
+  "Vetta2002": {
+    "DOI": "10.1109/sfcs.2002.1181966",
+    "title": [
+      "Nash equilibria in competitive societies, with applications to facility location, traffic routing and auctions"
+    ],
+    "author": [
+      {
+        "given": "A.",
+        "family": "Vetta",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "The 43rd Annual IEEE Symposium on Foundations of Computer Science, 2002. Proceedings."
+    ],
+    "volume": null,
+    "issue": null,
+    "page": "416-425",
+    "published": null,
+    "published-print": null,
+    "published-online": null,
+    "URL": "https://doi.org/10.1109/sfcs.2002.1181966",
+    "source": "https://api.crossref.org/works/10.1109/SFCS.2002.1181966",
+    "abstract_available": false
+  },
+  "Zollman2007": {
+    "DOI": "10.1086/525605",
+    "title": [
+      "The Communication Structure of Epistemic Communities"
+    ],
+    "author": [
+      {
+        "given": "Kevin J. S.",
+        "family": "Zollman",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Philosophy of Science"
+    ],
+    "volume": "74",
+    "issue": "5",
+    "page": "574-587",
+    "published": {
+      "date-parts": [
+        [
+          2007,
+          12
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2007,
+          12
+        ]
+      ]
+    },
+    "published-online": {
+      "date-parts": [
+        [
+          2022,
+          1,
+          1
+        ]
+      ]
+    },
+    "URL": "https://doi.org/10.1086/525605",
+    "source": "https://api.crossref.org/works/10.1086/525605",
+    "abstract_available": true
+  }
+}
