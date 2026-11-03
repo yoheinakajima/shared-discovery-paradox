@@ -45,7 +45,7 @@
     "Code bundle retains named MIT copyright; supported anonymous/confidential code route remains unresolved"
   ],
   "manager_review": {
-    "scope": "Manager reviewed all pages at these exact prior hashes; current references-only pagination adjustment awaits manager review. This is limited manuscript/layout cross-review, not independent specialist certification.",
+    "scope": "Manager reviewed all pages at these exact prior hashes. Limited manuscript/layout cross-review, not independent specialist certification.",
     "pdfs": {
       "manuscript": {
         "sha256": "fb53ffb172cc21b03804810477dca64670d13db0a5649d35eec6e0f88a79cf5c",
@@ -53,6 +53,19 @@
       },
       "companion": {
         "sha256": "fadde60e3a06d6eeb58ce84be5be71d4b613a3a91772607d93b7345e33349c79",
+        "pages": 11
+      }
+    }
+  },
+  "manager_final_review": {
+    "scope": "Manager accepted current main references pages25\u201327 after viewing final renders. Main pages1\u201324 and all11 companion pages are raster-identical at400px to the prior full-page manager-reviewed snapshots; companion extracted text also confirmed byte-identical by manager. No broader specialist certification claimed.",
+    "pdfs": {
+      "manuscript": {
+        "sha256": "f0084183c8ad427fddc884612c6e3557a58245360318cd5f3e857c25eebc74f0",
+        "pages": 27
+      },
+      "companion": {
+        "sha256": "bb6dc1d603438cd82b766309fb9ec461b1c7f0865b9abc44b285f40ee7b71eea",
         "pages": 11
       }
     }

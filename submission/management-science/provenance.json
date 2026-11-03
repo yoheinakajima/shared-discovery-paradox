@@ -181,8 +181,8 @@
     },
     {
       "path": "submission/management-science/qa-receipt.json",
-      "bytes": 2850,
-      "sha256": "86db46fa389e8cce8bda8952191f4faa941d7ff503cee0cdf6555270baf0cccb"
+      "bytes": 3438,
+      "sha256": "8210f5e61b1f1c15983010311812de29028960cfb251b5ff5e915856beef333f"
     },
     {
       "path": "submission/management-science/readiness.md",
