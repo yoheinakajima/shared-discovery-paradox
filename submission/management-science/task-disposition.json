@@ -130,7 +130,7 @@
       "evidence": [
         "ascollected-draft.md"
       ],
-      "remaining": "Human contributor/provenance facts; separately authorized actual AsCollected project/account and exact editable URL."
+      "remaining": "Approved author/support fields populated. Exact original stage/contributor provenance and full-history/rights certifications remain open; separately authorized actual AsCollected project and editable URL still required."
     },
     {
       "id": "SHARED-024",
@@ -167,19 +167,23 @@
     },
     {
       "id": "SHARED-032",
-      "disposition": "worksheet-complete-owner-input-needed",
+      "disposition": "approved-public-author-fields-prepared",
       "evidence": [
-        "author-declarations-template.md"
+        "author-declarations-template.md",
+        "author-information.tex",
+        "author-information.pdf"
       ],
-      "remaining": "Current author affiliation/contact/ORCID/contributions and consent."
+      "remaining": "Sole author, current affiliation/contact/location and supplied ORCID populated in named assets. Checksum passes; resolver failed/no registry authentication claimed. Final human approval and actual portal responsibilities remain open."
     },
     {
       "id": "SHARED-033",
-      "disposition": "worksheet-complete-owner-input-needed",
+      "disposition": "funding-relationships-and-tool-record-prepared",
       "evidence": [
-        "author-declarations-template.md"
+        "author-declarations-template.md",
+        "tool-assistance.md",
+        "tool-use-evidence.json"
       ],
-      "remaining": "Actual funding/conflicts/rights/AI/history/competing submissions and human accountability."
+      "remaining": "Approved Untapped support/founder-GP relationship populated. Tool assistance reconstructed from records; pre-import creation tools/versions unestablished. Remaining conflicts/rights/full-history and fresh exclusivity certification still required; no private answers stored."
     },
     {
       "id": "SHARED-034",
@@ -187,7 +191,7 @@
       "evidence": [
         "cover-letter-draft.md"
       ],
-      "remaining": "Private declarations, chosen DE/nominees, provenance URL and final human approval; do not send template."
+      "remaining": "Approved name/contact/ORCID/funding and evidence-based tool disclosure populated; remaining history/rights/conflicts, chosen DE/nominees, AsCollected URL and final human approval. Unsent."
     },
     {
       "id": "SHARED-035",
@@ -222,7 +226,7 @@
         "provenance.json",
         "qa-receipt.json"
       ],
-      "remaining": "Human facts/approval, required initial AsCollected project URL and later scoped external actions remain open. Manager final limited cross-review recorded in qa-receipt.json; no generic initial-submission code-anonymity blocker."
+      "remaining": "Supplied public author/support fields prepared. Remaining human certifications/final approval, fresh submission-stage exclusivity/prior-history/follow-on status, nominee conflicts, required AsCollected URL and scoped external actions remain open. Manager limited review applies to exact blind PDF hashes in qa-receipt.json."
     },
     {
       "id": "SHARED-040",

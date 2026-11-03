@@ -1,22 +1,23 @@
-# Author/declaration template — no attestations entered
+# Named author information and declaration worksheet
 
-This repository is public. **Do not enter private answers in this file or Git.** Use a private owner packet outside Git or ignored `private-local/`; Atlas receives only status and evidence pointers. Known public facts below are observations, not current personal assertions.
+This public repository contains only author-approved public-ready fields and source-backed preparation evidence. Keep private relationships, account/project details, editorial correspondence and unapproved attestations outside Git or in ignored `private-local/`. These named assets are separate from the anonymous main/EC; do not upload a title page at initial review.
 
-| Field | Draft or evidence | Required private confirmation |
+| Field | Approved/prepared value | Remaining confirmation or action |
 | --- | --- | --- |
-| Author/byline | Original paper and [arXiv2607.18045v1](https://arxiv.org/abs/2607.18045v1): Yohei Nakajima, Untapped Capital | Accurate byline, current affiliation, any other qualifying human author and author order |
-| SSRN affiliation discrepancy | [SSRN7147798](https://ssrn.com/abstract=7147798) displays Claremont McKenna College; paper says Untapped | Which affiliation is correct for this submission? Do not infer current academic employment from SSRN profile. |
-| Contact/submitting/corresponding author | Not filled | Current email/address; who submits and accepts correspondence responsibility |
-| ORCID | Not filled; [INFORMS requires it](https://pubsonline.informs.org/authorportal/orcid) | Existing ORCID and permission for use; any registration is a later authorized action |
-| Contributions | Not filled | Actual CRediT roles and who originated/checks math, code and writing |
-| Funding and conflicts | Unknown | Actual sources/support and perceived financial/professional/institutional COI; never default to “none” |
-| Rights/permissions | Public source MIT notice; preprint pages carry their own licenses | Author owns/has rights to manuscript, code and figures and can enter eventual agreement; no assistant certification |
-| Human subjects / private data | Inspected code generates a mathematical model without human data | Confirm full project history; if no human subjects, state truthful nonapplicability, not IRB approval |
-| AI use | November source preparation used Codex assistance; original manuscript/code/proof history unknown | Actual original and revision tools/tasks and scope, human review of all claims/citations/code. No AI authorship; no invented “no AI” statement. |
-| Competing journal/conference submissions | Unknown | Complete current and prior history, including any Management Science submission/rejection and all overlapping manuscripts. Absence of receipt in a search does not establish none. |
-| Public preprints | Original arXiv2607.18045v1, SSRN7147798; related follow-on arXiv2609.01814v1 | Confirm complete version/overlap history and current follow-on status before cover letter certification |
-| Reviewer/editor conflicts | Not filled | Adviser/student relationships, same institution, last-five-year coauthors and other material conflicts for every nominee |
-| Fee/waiver | USD79 original submission; [waiver routes](https://pubsonline.informs.org/page/mnsc/submission-fee-faq) | Verified submitting-member/eligible-country/actual hardship basis, or explicit USD79 cap. No membership or hardship guessed. |
-| Final approval | Not filled | Human approves exact manuscript, companion, code/provenance route, letter and declarations; independent review gaps visible |
+| Sole human author / affiliation | Yohei Nakajima; Untapped Capital | Supplied fields cleared for preparation; final approval of exact submission remains required |
+| Contact / location | yohei@untapped.vc; Bellevue, Washington, USA | Actual submitting/corresponding-author portal action remains separately authorized |
+| ORCID | [0009-0009-1293-6053](https://orcid.org/0009-0009-1293-6053), author supplied | ISO7064 checksum passes. Public resolver tool failed; no registry identity authentication claimed. No registration needed or performed. |
+| SSRN profile | SSRN displays Claremont McKenna College; current author-approved affiliation here is Untapped Capital | Use supplied current affiliation; SSRN is not current employment authority |
+| Funding | “This research, including computational resources and model/API usage, was supported by Untapped Capital.” | Approved public funding statement; author’s founder/GP relationship disclosed alongside support |
+| Relevant relationship | The author is the founder and General Partner of Untapped Capital. Untapped publicly lists Explore Science as a portfolio company ([official site](https://untapped.vc/)). | No claim of a personal advisory/paid role, investment date or tool-provider sponsorship. The Shared tool record does not establish Explore Science or ActiveGraph execution. Any other relevant relationship and nominee-specific conflicts remain unconfirmed. |
+| Contributions | Sole human authorship supplied; assistance and actual replay/checks recorded in `tool-assistance.md` | Exact CRediT roles and complete original conceptualization/mathematics/programming/writing provenance remain unverified; do not infer independent personal checking of every derivation |
+| Rights/permissions | Original MIT notice retained; preprints have their own licenses | Human confirms authority for manuscript, code/figures and eventual publishing agreement; no assistant signature or rights certification |
+| Human subjects / private data | Inspected code generates a mathematical model without human data | Confirm full project history; do not invent IRB approval |
+| AI assistance / accountability | Evidence-based wording in `tool-assistance.md`; public import evidence in `tool-use-evidence.json` | Unknown historical versions remain unknown. Human final responsibility/approval is distinct from AI checks; no AI authorship or independent expert/journal-review claim |
+| Current exclusivity / prior history | No public certification entered | Fresh confirmation at actual submission, complete prior Management Science/journal/conference history, and current related-paper status; absence of a receipt does not establish none |
+| Public versions / overlap | Original arXiv2607.18045v1, SSRN7147798; related follow-on arXiv2609.01814v1 | Preserve disclosures and confirm complete overlap/history before certification |
+| Reviewer/editor conflicts | Candidate roster prepared separately | Adviser/student, same institution, last-five-year coauthor and other material conflicts remain unconfirmed for every nominee |
+| Fee/waiver | USD79 original submission or truthful applicable waiver | No fee authority or eligibility inferred from affiliation/funding; exact later scope required |
+| Final approval | Exact named/anonymous assets prepared, not signed or submitted | Human approves final files, declarations, disclosure plan and legal/account/spend scope |
 
-Possible AI-assistance disclosure wording **for author revision only**: “During preparation of this revision, the author used Codex to assist with literature comparison, source editing, code execution and document checks. The author reviewed and takes responsibility for the submitted material.” This wording must be expanded/corrected to reflect actual earlier AI use and actual human verification; it must not be submitted merely because a template contains it. The inspected policies require human responsibility and accurate material, but no universal fixed tools/prompts formula was found.
+The funding and founder/GP relationship are disclosed together. Remaining relevant professional/financial relationships and nominee-specific conflicts require their own truthful certifications; the supplied support facts do not need to be recollected.

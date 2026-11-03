@@ -33,7 +33,25 @@ for name in ('manuscript', 'companion'):
     if name == 'companion':
         assert 'References' not in text
     assert 'Untapped Capital' not in text
+    assert not any(identity in text for identity in (
+        'yohei@untapped.vc', '0009-0009-1293-6053', 'Bellevue, Washington',
+        'supported by Untapped', 'founder and General Partner'))
     print(name, re.search(r'Pages:\s*(\d+)', info).group(1) + ' pages; metadata/text checks passed')
+named_pdf = here / 'author-information.pdf'
+named_text = subprocess.check_output(['pdftotext', '-layout', str(named_pdf), '-']).decode()
+named_info = subprocess.check_output(['pdfinfo', str(named_pdf)]).decode()
+assert re.search(r'^Author:\s*Yohei Nakajima\s*$', named_info, re.M)
+assert re.search(r'Pages:\s*1\s*$', named_info, re.M)
+for value in ('Yohei Nakajima', 'Untapped Capital', 'yohei@untapped.vc',
+              '0009-0009-1293-6053', 'Bellevue, Washington, USA'):
+    assert value in named_text, value
+orcid = json.loads((here / 'tool-use-evidence.json').read_text())['orcid']['id'].replace('-', '')
+total = 0
+for digit in orcid[:-1]:
+    total = (total + int(digit)) * 2
+checksum = (12 - total % 11) % 11
+assert ('X' if checksum == 10 else str(checksum)) == orcid[-1]
+print('Named author asset: 1 page; supplied metadata and ORCID checksum passed; blind files separate')
 tasks = json.loads((here / 'task-disposition.json').read_text())['tasks']
 assert len(tasks) == 28 and len({t['id'] for t in tasks}) == 28
 receipt = json.loads((here / 'verification-receipt.json').read_text())

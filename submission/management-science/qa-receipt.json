@@ -37,7 +37,8 @@
     "Neutral proper attribution to related preprint retained; not self-identifying prose",
     "Zero overfull boxes and undefined citations/references in final cached build",
     "References-only bibsep 0.4em removes orphan final reference page; final pages25\u201327 rendered at1400px and checked; first24 pages extracted layout/text identical to preceding reviewed PDF",
-    "400px raster regression: main pages1\u201324 and all11 companion pages identical to preceding manager-reviewed PDFs; current main references pages25\u201327 separately visually checked"
+    "400px raster regression: main pages1\u201324 and all11 companion pages identical to preceding manager-reviewed PDFs; current main references pages25\u201327 separately visually checked",
+    "Approved public author fields populated only in named/offline metadata; blind main/EC source and PDF bytes unchanged; email/ORCID/affiliation/funding-role leak checks passed"
   ],
   "limitations": [
     "Color figure print handling must be checked in any later production proof; no print-color payment authorized",
@@ -69,5 +70,21 @@
         "pages": 11
       }
     }
+  },
+  "named_author_asset": {
+    "path": "submission/management-science/author-information.pdf",
+    "bytes": 17770,
+    "sha256": "1f788b065b2b37529bfa2e9a110fa4b70b4a84433e466896bde407778b6dc05d",
+    "pages": 1,
+    "author_metadata": "Yohei Nakajima",
+    "scope": "Named title/contact/support asset, separate from anonymous initial-review pair",
+    "visual_review": "Final page rendered at1400px and visually checked; one page, readable, inside margins",
+    "build": "Existing cached Tectonic --only-cached --untrusted via build.py --author-information-only; zero overfull boxes and unresolved references"
+  },
+  "orcid_verification": {
+    "supplied_id": "0009-0009-1293-6053",
+    "checksum_valid": true,
+    "public_resolver": "tool inaccessible",
+    "registry_authentication_performed": false
   }
 }

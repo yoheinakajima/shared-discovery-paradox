@@ -116,18 +116,28 @@
   "prepared_files": [
     {
       "path": "submission/management-science/README.md",
-      "bytes": 2119,
-      "sha256": "e4fb5b9ae56c47cb68c6ea94fff215302bc10f80310b5072bdf2ce07df185d76"
+      "bytes": 2481,
+      "sha256": "f2708ad36a4734cb2c3d0fa6b7b34d00f6fb320c3426b0ab41f338d89acd8402"
     },
     {
       "path": "submission/management-science/ascollected-draft.md",
-      "bytes": 2990,
-      "sha256": "ce540c7d0d863b630d97cd4fc85a3198ddfb1b50546a292d57bbf53aad30faf8"
+      "bytes": 3359,
+      "sha256": "7d4bec21128b52a2b432b3d3bd0a3978eaf43e5be5dd1bd2491aa9cc8966ee74"
     },
     {
       "path": "submission/management-science/author-declarations-template.md",
-      "bytes": 3745,
-      "sha256": "109d8ad0384151e7fb2ab6378bf98a569b755862dc129159ee9aea7f6bb30e3b"
+      "bytes": 4184,
+      "sha256": "9917f82465906538623956ea5cbe799d77403a678a12686b1d960255d1362089"
+    },
+    {
+      "path": "submission/management-science/author-information.pdf",
+      "bytes": 17770,
+      "sha256": "1f788b065b2b37529bfa2e9a110fa4b70b4a84433e466896bde407778b6dc05d"
+    },
+    {
+      "path": "submission/management-science/author-information.tex",
+      "bytes": 1493,
+      "sha256": "9784263bdb54f8a09628dc0cf75784f8c407b14fda53f7038fb9cc4ddc19a6cb"
     },
     {
       "path": "submission/management-science/bibliography.bib",
@@ -136,8 +146,8 @@
     },
     {
       "path": "submission/management-science/build.py",
-      "bytes": 1702,
-      "sha256": "779095527704c07ad0b330a7783afd4916ea6b98aa4990f931d825064c6fed9b"
+      "bytes": 2051,
+      "sha256": "9ad4676fc14f12bf5a0002f8846d0ef43e94516112a8e0e2cf00271c3de5dbc7"
     },
     {
       "path": "submission/management-science/companion.pdf",
@@ -151,8 +161,8 @@
     },
     {
       "path": "submission/management-science/cover-letter-draft.md",
-      "bytes": 4026,
-      "sha256": "5b5e2ea4e5e5ff3aa999fe0bc8abb7603cce297c3b4ca8e4bbfef197eaf4848a"
+      "bytes": 5023,
+      "sha256": "c5622e57e282d4a6c6cd30d6a2c41464b4a33c7cfd68c8201394db096e442276"
     },
     {
       "path": "submission/management-science/main-labels.tex",
@@ -176,18 +186,18 @@
     },
     {
       "path": "submission/management-science/portal-checklist.md",
-      "bytes": 4003,
-      "sha256": "af39f7a1f6901cf65b7430c4d57bb69644a36d278b1b429c9bbfe464e1b905d2"
+      "bytes": 4294,
+      "sha256": "3fa723e63155463c0b8cf81320a75a0ae1f477ae25c9d8c236912efb3a05a581"
     },
     {
       "path": "submission/management-science/qa-receipt.json",
-      "bytes": 3496,
-      "sha256": "e50c133ed7cad3a66ec2fc98cf506933e9f359ddae17b234e226719b8706ccd8"
+      "bytes": 4484,
+      "sha256": "0b4f766fe9bd4cbf6487490b5b944ff8a53a0e2d8123e390819256a1a7c8b610"
     },
     {
       "path": "submission/management-science/readiness.md",
-      "bytes": 6581,
-      "sha256": "ef2db4a5248b416b1343f010292a41b44fcc4a100a4a06c93e156b3c9d1dca67"
+      "bytes": 7269,
+      "sha256": "272eb9cb8b7904207e68b7f4eba1ff66507eca34604efb8773d8a65d1fe6d39b"
     },
     {
       "path": "submission/management-science/receipts/native-verification.log.txt",
@@ -206,18 +216,18 @@
     },
     {
       "path": "submission/management-science/replication-contents.json",
-      "bytes": 3220,
-      "sha256": "7c9374d486ce552e9481889d1e3a5f9c38e6ddb82ba99d3377e81a3b86834b67"
+      "bytes": 3591,
+      "sha256": "382897c1735e8b0ebdffa03b008e94c7e10b42cfc508a84cc9354f56805d4fb4"
     },
     {
       "path": "submission/management-science/replication-guide.md",
-      "bytes": 9846,
-      "sha256": "0fd7b1c3079c6179e0814436dabf1e8f41d4dee0cb963ef0f5d482256f14b198"
+      "bytes": 10270,
+      "sha256": "9de0b5d39df70098527112d2c05a87b0c74924955b465dd4545bab4a0f82a827"
     },
     {
       "path": "submission/management-science/replication-package.zip",
-      "bytes": 480129,
-      "sha256": "91501b6c6732358cbe080d8b355ab05646d0662d637a6fd8192ac79e98d90254"
+      "bytes": 485093,
+      "sha256": "f859fe5401cf4a29e8b285d83e9c6194bd4ec2a74f753f274146e02e9c649d11"
     },
     {
       "path": "submission/management-science/requirements-lock.txt",
@@ -236,8 +246,18 @@
     },
     {
       "path": "submission/management-science/task-disposition.json",
-      "bytes": 8674,
-      "sha256": "bc2b9ec9a5a93bc1a8afa227a7c1de7f1cc8ea169fda48c5f612e7bef6ed6b02"
+      "bytes": 9447,
+      "sha256": "98753c162e18458f6f5f7594e3b30fdcaf374fa57d42f443469ed6b05aa89c5b"
+    },
+    {
+      "path": "submission/management-science/tool-assistance.md",
+      "bytes": 3888,
+      "sha256": "48f8b163681c70c1b2303a36516637b7dea00dccf1696b32560023602cbdf5cf"
+    },
+    {
+      "path": "submission/management-science/tool-use-evidence.json",
+      "bytes": 6001,
+      "sha256": "02f0f89b1e44cc16e0cbff52f22cb15c9940e6b1e1ca98a01d9f7a0a75b5e755"
     },
     {
       "path": "submission/management-science/verification-receipt.json",
@@ -246,8 +266,8 @@
     },
     {
       "path": "submission/management-science/verify_package.py",
-      "bytes": 2188,
-      "sha256": "7963837157608bae75449a2bc0bd702c572d2941d769e0cc5afaa0df437724c4"
+      "bytes": 3266,
+      "sha256": "5096d45a084ffebfd3310ca8084832ed3c42366593a6a94597f839d7e94b9ce4"
     }
   ],
   "primary_literature_artifacts": [
@@ -284,5 +304,9 @@
   "submitted": false,
   "account_or_external_project_created": false,
   "new_scientific_campaigns": false,
-  "limitations": "All prepared-file hashes exclude this self-describing manifest. Verify final Git head from PR; no recursive commit hash embedded."
+  "limitations": "All prepared-file hashes exclude this self-describing manifest. Verify final Git head from PR; no recursive commit hash embedded.",
+  "approved_public_author_metadata_prepared": true,
+  "private_owner_answers_included": false,
+  "author_metadata_scope": "Author-approved public-ready name/affiliation/contact/location/ORCID/support and public relationship only; fresh submission certifications remain open",
+  "tool_history_scope": "Evidence-bounded original Claude Code archive import and later venue/current Codex preparation; pre-import creation tools/versions unestablished; no complete provider-history search or absence-of-AI inference"
 }

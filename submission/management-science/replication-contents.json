@@ -7,11 +7,6 @@
       "sha256": "a38ea78f852a563f5172121b14a24f144e428b8a259d9e7179f8775e863ea021"
     },
     {
-      "path": "verify_shared_discovery_v8_6.py",
-      "bytes": 51055,
-      "sha256": "83871228a6743acbcbce9e60806529108860b74bd43c62cc60addbc1eedd75d9"
-    },
-    {
       "path": "data/canonical_quality.csv",
       "bytes": 355,
       "sha256": "542e8e179fb21fc8490198fc03a86f2da5edf54a48c66f82ada73bdbfdbea960"
@@ -72,9 +67,14 @@
       "sha256": "172c4626f13b8e3ca5a8d51d9638bd5252995218413d12a3465c3c607c562b6f"
     },
     {
+      "path": "submission/management-science/receipts/native-verification.log.txt",
+      "bytes": 4113,
+      "sha256": "008fb016e42ea4d59cdb030475b2d6d2151a34d5b732f097a7bb0e3cb246bba5"
+    },
+    {
       "path": "submission/management-science/replication-guide.md",
-      "bytes": 9846,
-      "sha256": "0fd7b1c3079c6179e0814436dabf1e8f41d4dee0cb963ef0f5d482256f14b198"
+      "bytes": 10270,
+      "sha256": "9de0b5d39df70098527112d2c05a87b0c74924955b465dd4545bab4a0f82a827"
     },
     {
       "path": "submission/management-science/requirements-lock.txt",
@@ -82,14 +82,24 @@
       "sha256": "4c58fcbbf15c5fcf0e94bfc79fdca72f6b4c8dba6a68857071203e5410ea8c8e"
     },
     {
+      "path": "submission/management-science/tool-assistance.md",
+      "bytes": 3888,
+      "sha256": "48f8b163681c70c1b2303a36516637b7dea00dccf1696b32560023602cbdf5cf"
+    },
+    {
+      "path": "submission/management-science/tool-use-evidence.json",
+      "bytes": 6001,
+      "sha256": "02f0f89b1e44cc16e0cbff52f22cb15c9940e6b1e1ca98a01d9f7a0a75b5e755"
+    },
+    {
       "path": "submission/management-science/verification-receipt.json",
       "bytes": 2614,
       "sha256": "e4be9ab29694f13818d5d5663ed58413df50932ccfb3b5570613e138f71c030b"
     },
     {
-      "path": "submission/management-science/receipts/native-verification.log.txt",
-      "bytes": 4113,
-      "sha256": "008fb016e42ea4d59cdb030475b2d6d2151a34d5b732f097a7bb0e3cb246bba5"
+      "path": "verify_shared_discovery_v8_6.py",
+      "bytes": 51055,
+      "sha256": "83871228a6743acbcbce9e60806529108860b74bd43c62cc60addbc1eedd75d9"
     }
   ]
 }

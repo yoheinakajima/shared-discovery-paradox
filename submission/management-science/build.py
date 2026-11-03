@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-"""Compile the review pair with the existing Tectonic cache; never fetch TeX."""
+"""Compile the review pair or separate named page with cached Tectonic; never fetch TeX."""
 from pathlib import Path
+import argparse
 import re
 import shutil
 import subprocess
@@ -12,7 +13,12 @@ build.mkdir(exist_ok=True)
 engine = shutil.which('tectonic')
 if not engine:
     raise SystemExit('Existing tectonic executable required; do not auto-install.')
-for name in ('manuscript', 'companion'):
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--author-information-only', action='store_true',
+                    help='Build only the separate named author asset, not blind review files.')
+args = parser.parse_args()
+names = ('author-information',) if args.author_information_only else ('manuscript', 'companion')
+for name in names:
     if name == 'companion':
         labels = [line for line in (build / 'manuscript.aux').read_text().splitlines()
                   if line.startswith('\\newlabel')]

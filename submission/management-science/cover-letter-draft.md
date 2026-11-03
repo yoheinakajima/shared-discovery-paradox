@@ -12,8 +12,20 @@ Abstract:
 
 Public versions and overlap: the original working paper is available as [arXiv2607.18045v1](https://arxiv.org/abs/2607.18045v1) and [SSRN7147798](https://ssrn.com/abstract=7147798). This journal draft corrects the strict planner-gain domain/boundary convention, expands direct prior-art discussion and separates the institutional claim from analogies. A related follow-on working paper, [When Does Information Sharing Improve Decentralized Discovery?](https://arxiv.org/abs/2609.01814v1), develops incremental-sharing/residual-rescue criteria and a selected two-agent Bayesian result. It shares the broad motivation; those later results are not represented as contributions of this submission. Additional overlap and submission history require author confirmation below.
 
-**Do not send until completed privately:** preferred current DE and COI-vetted reviewer/AE roster; complete prior/competing-submission history (including any previous Management Science decision); funding/COI/AI/rights statements; verified author contact/ORCID; exact AsCollected editable project URL; approved initial code/data disclosure plan (any later requested code upload needs stage-appropriate handling); fee/waiver decision; human final approval. No assertion of exclusivity, no-conflict status, sole authorship eligibility or signed rights is made by this draft.
+Author and support: Yohei Nakajima is the sole human author, affiliated with Untapped Capital. This research, including computational resources and model/API usage, was supported by Untapped Capital. The author is its founder and General Partner; Untapped publicly lists Explore Science as a portfolio company.
+
+AI assistance: Claude Code assisted archive import/packaging and numerical checking. Later author-supplied Claude assessments informed venue planning. OpenAI Codex assisted this revision's literature/reference analysis, mathematical exposition and domain checking, source edits, existing numerical replay and document QA. The earlier archive's creation tools and exact provider versions are not fully established. AI preparation reviews are not independent journal peer review; sole human authorship and final human responsibility remain distinct from these checks. See `tool-assistance.md` for the bounded reconstruction.
+
+**Do not send until completed privately:** preferred current DE and COI-vetted reviewer/AE roster; complete prior/competing-submission history (including any previous Management Science decision); remaining COI/rights/history attestations; final approval of the evidence-based AI disclosure; exact AsCollected editable project URL; approved initial code/data disclosure plan (any later requested code upload needs stage-appropriate handling); fee/waiver decision; human final approval. No assertion of exclusivity, no-conflict status or signed rights is made by this draft.
 
 Sincerely,
 
-[Human author's confirmed name and contact — fill outside Git]
+Yohei Nakajima
+
+Untapped Capital
+
+Bellevue, Washington, USA
+
+yohei@untapped.vc
+
+ORCID: https://orcid.org/0009-0009-1293-6053
