@@ -134,13 +134,13 @@
     },
     {
       "id": "SHARED-024",
-      "disposition": "implemented-with-anonymity-boundary",
+      "disposition": "implemented-attributed-first-look-bundle",
       "evidence": [
         "replication-package.zip",
         "replication-contents.json",
         "provenance.json"
       ],
-      "remaining": "MIT copyright retained; attributed code package is not represented as fully anonymous."
+      "remaining": "MIT copyright retained; attributed ZIP prepared for accepted-paper First Look/editor request, not automatic initial upload. Any later upload requires scoped authority."
     },
     {
       "id": "SHARED-030",
@@ -156,14 +156,14 @@
     },
     {
       "id": "SHARED-031",
-      "disposition": "implemented-pdfs-code-route-unresolved",
+      "disposition": "implemented-anonymous-initial-review-pdfs",
       "evidence": [
         "manuscript.pdf",
         "companion.pdf",
         "qa-receipt.json",
         "replication-guide.md"
       ],
-      "remaining": "Anonymous manuscript/EC checked; code copyright/provenance must use supported editor/confidential route. No deletion of MIT notice or agreed exception claimed."
+      "remaining": "Anonymous main/EC checked. Attributed ZIP is a later First Look/editor-request item; only if requested during review does supported handling need checking before upload. No deletion of MIT notice or exception claimed."
     },
     {
       "id": "SHARED-032",
@@ -222,7 +222,7 @@
         "provenance.json",
         "qa-receipt.json"
       ],
-      "remaining": "Human facts/approval, code-anonymity route and later external scope unresolved; manager final cross-review pending."
+      "remaining": "Human facts/approval, required initial AsCollected project URL and later scoped external actions remain open. Manager final limited cross-review recorded in qa-receipt.json; no generic initial-submission code-anonymity blocker."
     },
     {
       "id": "SHARED-040",

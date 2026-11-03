@@ -6,7 +6,7 @@ This additive source package implements the reviewed first-target preparation at
 
 - Review pair: `manuscript.tex` / `manuscript.pdf`; `companion.tex` / `companion.pdf`; `bibliography.bib`; generated `main-labels.tex`.
 - Science: `scientific-audit.md`, `reference-audit.md`, `reference-metadata.json`, `organizations-fit.md`.
-- Reproducibility: `replication-guide.md`, exact `requirements-lock.txt`, `verification-receipt.json`, new native log, attributed `replication-package.zip` and its contents manifest.
+- Reproducibility: `replication-guide.md`, exact `requirements-lock.txt`, `verification-receipt.json`, new native log, attributed `replication-package.zip` and its contents manifest, prepared for First Look/editor request rather than automatic initial upload.
 - Offline submission: `cover-letter-draft.md`, `ascollected-draft.md`, `author-declarations-template.md`, `reviewer-editor-worksheet.md`, `portal-checklist.md`.
 - Handoff: `readiness.md`, `task-disposition.json`, `provenance.json`, `qa-receipt.json`.
 

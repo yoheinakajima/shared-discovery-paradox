@@ -1,5 +1,5 @@
 {
-  "scope": "Attributed local replication bundle; original MIT notice retained; not fully anonymous; not uploaded",
+  "scope": "Attributed local replication bundle prepared for accepted-paper First Look/editor request; original MIT notice retained; not automatic initial upload; not uploaded",
   "files": [
     {
       "path": "LICENSE",
@@ -73,8 +73,8 @@
     },
     {
       "path": "submission/management-science/replication-guide.md",
-      "bytes": 9338,
-      "sha256": "0e0596150faaf202fd7aaec453f79782d5dc3aee94bea675dfaccebbc7164c04"
+      "bytes": 9846,
+      "sha256": "0fd7b1c3079c6179e0814436dabf1e8f41d4dee0cb963ef0f5d482256f14b198"
     },
     {
       "path": "submission/management-science/requirements-lock.txt",
