@@ -6,3 +6,7 @@ __pycache__/
 *.blg
 *.synctex.gz
 .DS_Store
+
+.venv/
+submission/management-science/build/
+submission/management-science/private-local/
