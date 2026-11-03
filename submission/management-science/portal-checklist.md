@@ -6,7 +6,7 @@ Current target: Management Science / Organizations / Regular Manuscript. Officia
 | --- | --- | --- |
 | Department/type | Organizations / regular article | Confirm the live option names immediately before authorized entry |
 | Title | The Shared Discovery Paradox: How a One-Answer Rule Turns Better Information into Worse Search | Human approval of exact PDF/title |
-| Abstract | Exact204-word journal abstract in `manuscript.tex` and `cover-letter-draft.md` | Recount if author edits; publisher limit250 |
+| Abstract | Exact223-word journal abstract in `manuscript.tex` and `cover-letter-draft.md` | Recount if author edits; publisher limit250 |
 | Keywords | organizational design; information sharing; search; common-source dependence | Four, within required3–5 |
 | Anonymous main PDF | `manuscript.pdf` | Check final portal-generated PDF after any later upload; no title-page upload |
 | Anonymous electronic companion | `companion.pdf` | Main/EC numbering checked; no empty references heading |

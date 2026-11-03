@@ -62,5 +62,23 @@
     "scope": "Later venue-review context, not evidence of original manuscript creation or independent journal peer review",
     "exact_models_or_versions": "unestablished",
     "source": "Recorded preparation discussion; private review text not redistributed"
+  },
+  "current_ui_reviews": {
+    "reviewed_head": "59f7ccd388b26d0dea7699f15fd5b1d398541baf",
+    "models": [
+      {
+        "ui_label": "Claude Opus5.5Extra",
+        "self_reported_model": "claude-opus-5-5",
+        "backend_authenticated": false,
+        "limits": "No author script/CSV/source audit replay; primary attribution suggestions required builder verification; reported independent computations not accepted as an audited artifact"
+      },
+      {
+        "ui_label": "Gemini Pro",
+        "backend_revision": "unreported",
+        "limits": "No verifier/root/grid replay or external primary-text check; G1/G2 retracted, covariance defect framing withdrawn after direct source clarification"
+      }
+    ],
+    "role": "Independent model critiques supplied to preparation worker, with manager dispositions; not independent human journal peer review",
+    "record": "review-dispositions.json"
   }
 }

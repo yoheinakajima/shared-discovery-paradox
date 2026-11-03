@@ -56,5 +56,8 @@ tasks = json.loads((here / 'task-disposition.json').read_text())['tasks']
 assert len(tasks) == 28 and len({t['id'] for t in tasks}) == 28
 receipt = json.loads((here / 'verification-receipt.json').read_text())
 assert receipt['exit_code'] == 0 and receipt['all_original_assertions_passed']
-print('PASS: hashes, format, 28 citations, 28 task dispositions and saved verification receipt.')
+reviews = json.loads((here / 'review-dispositions.json').read_text())['findings']
+assert len(reviews) == 13
+assert {x['id'] for x in reviews} == ({f'SDP-{i:02d}' for i in range(1, 10)} | {f'G-SHARED-{i}' for i in range(1, 5)})
+print(f'PASS: hashes, format, {len(keys)} citations, 28 task dispositions and saved verification receipt.')
 print('This is not a proof certification or a readiness/owner-attestation check.')

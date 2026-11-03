@@ -1,0 +1,116 @@
+{
+  "reviewed_source_head": "59f7ccd388b26d0dea7699f15fd5b1d398541baf",
+  "scope": "Manager-selected corrections after two independently supplied AI preparation reviews; no independent human/expert or journal certification",
+  "models": [
+    {
+      "ui_label": "Claude Opus5.5Extra",
+      "self_reported_model": "claude-opus-5-5",
+      "backend_authenticated": false,
+      "limits": "No author script/CSV/source audit replay; primary attribution suggestions required builder verification; reported independent computations not accepted as an audited artifact"
+    },
+    {
+      "ui_label": "Gemini Pro",
+      "backend_revision": "unreported",
+      "limits": "No verifier/root/grid replay or external primary-text check; G1/G2 retracted, covariance defect framing withdrawn after direct source clarification"
+    }
+  ],
+  "findings": [
+    {
+      "id": "SDP-01",
+      "disposition": "accepted-corrected",
+      "source_evidence": "manuscript.tex \u00a74.3 and Related work; reference-audit.md",
+      "reason": "Direct primary K\u2013O\u00a72 payoff/consequence(ii)/tight example/Thm2.7 verified; full smoothness implication credited, with GairingThm2 mixedNE corroboration."
+    },
+    {
+      "id": "SDP-02",
+      "disposition": "accepted-corrected",
+      "source_evidence": "manuscript.tex abstract, full-copy remark, implications/conclusion",
+      "reason": "Cyclic private roles at c1 algebra verified; roles are cooperative precommitment, not equilibrium. No intermediate policy table imported."
+    },
+    {
+      "id": "SDP-03",
+      "disposition": "accepted-focused-citations",
+      "source_evidence": "manuscript.tex Related work; reference-metadata.json",
+      "reason": "Sah\u2013Stiglitz primaryNBER abstract/publication metadata, Csaszar\u2013Eggers publisher abstract/metadata and Dasgupta\u2013Maskin author introduction verified. Remaining3suggested references not added without need/access. Fit risk retained."
+    },
+    {
+      "id": "SDP-04",
+      "disposition": "deferred-optional-extension",
+      "source_evidence": "review-dispositions.json",
+      "reason": "No new endpoint-crossing theorem, grid study or general single-crossing claim; existing finite patterns retain exact scope."
+    },
+    {
+      "id": "SDP-05",
+      "disposition": "accepted-corrected",
+      "source_evidence": "companion.tex abundant-evidence remark",
+      "reason": "Removed unsupported logM open-window placement; retained existing strong sufficient condition, explicitly not a sharp threshold."
+    },
+    {
+      "id": "SDP-06",
+      "disposition": "accepted-minimal-corrections",
+      "source_evidence": "manuscript.tex Beyond finite example; companion.tex EC3\u20135",
+      "reason": "Statement/proof forward references explicit; target mean renamed ell_M, rescue function H(k), retaining other locally defined symbols without global reorder."
+    },
+    {
+      "id": "SDP-07",
+      "disposition": "accepted-corrected",
+      "source_evidence": "manuscript.tex Introduction/partial conformity/Beyond finite example",
+      "reason": "Weakly improves includes pure corners; sentence capitalization fixed; blind calibration distinguished."
+    },
+    {
+      "id": "SDP-08",
+      "disposition": "accepted-with-policy-scope",
+      "source_evidence": "manuscript.tex Uniform posterior; reference-audit.md",
+      "reason": "Korman\u2013Rodeh primaryv3Thm12 finite factor verified; exclusive worstcase result distinguished from equal-sharing uniform symmetric calculation."
+    },
+    {
+      "id": "SDP-09",
+      "disposition": "accepted-saved-evidence-only",
+      "source_evidence": "companion.tex market diagnostic and EC6; existing saved receipt",
+      "reason": "Four sample means/SEs and40000/30000/20000/8000 sample counts from retained log/script; observed order not general monotonicity. Nonmarket60000-draw grid distinguished from market grid; no rerun."
+    },
+    {
+      "id": "G-SHARED-1",
+      "disposition": "rejected-reading-error-retracted",
+      "source_evidence": "manuscript.tex Proposition7",
+      "reason": "Frozen statement already M\u2265N; equality case verified; no extension/change."
+    },
+    {
+      "id": "G-SHARED-2",
+      "disposition": "rejected-already-explicit-retracted",
+      "source_evidence": "manuscript.tex Theorem2 and following text; companion.tex EC3",
+      "reason": "p<1 and p1gain0 already explicit; no redundant insertion."
+    },
+    {
+      "id": "G-SHARED-3",
+      "disposition": "accepted-optional-proof-clarity",
+      "source_evidence": "manuscript.tex partial conformity",
+      "reason": "Fixed nested adopters/common tie draw; first and later adoption cases plus positive-probability strict witness. Finite enumeration remains illustration, never proof."
+    },
+    {
+      "id": "G-SHARED-4",
+      "disposition": "accepted-optional-exposition-defect-retracted",
+      "source_evidence": "companion.tex weighted occupancy Step1",
+      "reason": "Exact conditional covariance shown and bounded; no independence of false-box counts assumed."
+    }
+  ],
+  "additional_notes": [
+    {
+      "id": "SDP-N1",
+      "disposition": "accepted",
+      "detail": "Maximum-weight union bound and Markov inequality using bounded second exponential moments added; strict positive market limit explicitly uses alpha>0,Lambda>0."
+    },
+    {
+      "id": "SDP-N2",
+      "disposition": "deferred",
+      "detail": "Lemma remains in EC with main identity/assumptions/outline; no gratuitous expansion solely to move it."
+    },
+    {
+      "id": "SDP-N3",
+      "disposition": "accepted",
+      "detail": "Related partial-sharing citation retained neutrally; priority-loaded follow-on/original language removed."
+    }
+  ],
+  "new_experiments": false,
+  "new_provider_calls_by_builder": false
+}

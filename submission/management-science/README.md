@@ -5,7 +5,7 @@ Source draft PR: https://github.com/yoheinakajima/shared-discovery-paradox/pull/
 This additive source package implements the reviewed first-target preparation at baseline `5025cc8e8f2f8ca015dff2066f08f81ad5715a51`. The original manuscript/PDFs, script, saved data, figures and history are preserved. **Prepared for review, not certified submission-ready.** Management Science Organizations remains the already-authorized first preparation target; there is no submission, acceptance, arXiv replacement, merge or deployment claim.
 
 - Review pair: `manuscript.tex` / `manuscript.pdf`; `companion.tex` / `companion.pdf`; `bibliography.bib`; generated `main-labels.tex`.
-- Science: `scientific-audit.md`, `reference-audit.md`, `reference-metadata.json`, `organizations-fit.md`.
+- Science: `scientific-audit.md`, `reference-audit.md`, `reference-metadata.json`, `organizations-fit.md`, `review-dispositions.json` (all9Claude/4Gemini findings and additional notes).
 - Reproducibility: `replication-guide.md`, exact `requirements-lock.txt`, `verification-receipt.json`, new native log, attributed `replication-package.zip` and its contents manifest, prepared for First Look/editor request rather than automatic initial upload.
 - Named author assets (separate from blind review): `author-information.tex` / `author-information.pdf`, updated `author-declarations-template.md`, `tool-assistance.md` and public-source `tool-use-evidence.json`. Build the named page alone with `python3 submission/management-science/build.py --author-information-only`.
 - Offline submission: `cover-letter-draft.md`, `ascollected-draft.md`, `author-declarations-template.md`, `reviewer-editor-worksheet.md`, `portal-checklist.md`.

@@ -25,7 +25,8 @@
       "id": "SHARED-010",
       "disposition": "implemented",
       "evidence": [
-        "scientific-audit.md"
+        "scientific-audit.md",
+        "review-dispositions.json"
       ],
       "remaining": "Priority/novelty is bounded audit, not exhaustive certification."
     },
@@ -35,7 +36,8 @@
       "evidence": [
         "scientific-audit.md",
         "reference-audit.md",
-        "bibliography.bib"
+        "bibliography.bib",
+        "review-dispositions.json"
       ],
       "remaining": ""
     },
@@ -45,7 +47,8 @@
       "evidence": [
         "scientific-audit.md",
         "manuscript.tex",
-        "companion.tex"
+        "companion.tex",
+        "review-dispositions.json"
       ],
       "remaining": "Builder checked arguments; manager separately reviewed central strictness/likelihood/coupling. Full independent expert audit of every asymptotic argument is not claimed."
     },
@@ -54,7 +57,8 @@
       "disposition": "implemented",
       "evidence": [
         "manuscript.tex",
-        "scientific-audit.md"
+        "scientific-audit.md",
+        "review-dispositions.json"
       ],
       "remaining": ""
     },
@@ -63,7 +67,8 @@
       "disposition": "implemented",
       "evidence": [
         "organizations-fit.md",
-        "manuscript.tex"
+        "manuscript.tex",
+        "review-dispositions.json"
       ],
       "remaining": "Already-authorized Management Science preparation continues; final author assesses contribution, no repeat preliminary gate."
     },
@@ -82,7 +87,8 @@
       "evidence": [
         "scientific-audit.md",
         "verification-receipt.json",
-        "companion.tex"
+        "companion.tex",
+        "review-dispositions.json"
       ],
       "remaining": ""
     },
@@ -92,9 +98,10 @@
       "evidence": [
         "reference-audit.md",
         "reference-metadata.json",
-        "bibliography.bib"
+        "bibliography.bib",
+        "review-dispositions.json"
       ],
-      "remaining": "All28 retained citations reviewed; explicit M-level full-text limits, Ladha/Nelson final-page checks and Golovin old registry failure remain. No imported central proof depends on these limited lineage claims."
+      "remaining": "All31 retained citations reviewed; explicit M-level full-text limits, Ladha/Nelson final-page checks and Golovin old registry failure remain. No imported central proof depends on these limited lineage claims."
     },
     {
       "id": "SHARED-020",
@@ -224,7 +231,8 @@
       "evidence": [
         "readiness.md",
         "provenance.json",
-        "qa-receipt.json"
+        "qa-receipt.json",
+        "review-dispositions.json"
       ],
       "remaining": "Supplied public author/support fields prepared. Remaining human certifications/final approval, fresh submission-stage exclusivity/prior-history/follow-on status, nominee conflicts, required AsCollected URL and scoped external actions remain open. Manager limited review applies to exact blind PDF hashes in qa-receipt.json."
     },

@@ -1,6 +1,6 @@
 # Retained-reference audit
 
-Date: 2026-11-02. Scope: **all 28 references actually cited by the journal manuscript**, not every unused BibTeX record inherited from the original source. The companion cites no independent sources and has no References heading. Metadata and entailment are different checks: a correct DOI/title does not establish what a paper proves. This record exposes access/verification limits rather than certifying unread texts.
+Date: 2026-11-02. Scope: **all 31 references actually cited by the journal manuscript**, not every unused BibTeX record inherited from the original source. The companion cites no independent sources and has no References heading. Metadata and entailment are different checks: a correct DOI/title does not establish what a paper proves. This record exposes access/verification limits rather than certifying unread texts.
 
 `reference-metadata.json` contains retrieved primary DOI-registration records (authors, title, venue, volume/issue/page/date/URL). Initial Crossref429 responses for six DOI records were resolved by a bounded sequential retry. Title query for Kleinberg–Oren initially selected the 2022 journal extension; exact conference DOI lookup corrected it to the 2011 STOC paper. Collet–Korman's actual DOI is **10.1145/3210377.3210405**, checked against its exact title/pages/author record; no guessed DOI remains. Registration records sometimes contain only the first page; those cases are marked below. There were no paid endpoint calls. Free Monid discovery offered paid/nonmatching routes; primary records were used directly.
 
@@ -38,3 +38,13 @@ Depth codes: **F** = relevant full primary text/argument read; **A** = primary a
 | Zollman2007 | DOI10.1086/525605 record; Philosophy of Science74(5):574–587 matches | A: primary abstract describes reliability/speed tradeoff with distribution of experimental results. Supports network communication mechanism, not the exact numerical frontier here. |
 
 Remaining access gaps are explicit: full-text entailment of the M entries; primary final-page checks for Ladha/Nelson; Golovin's old DOI-registry failure despite confirmed corrected author preprint. These are not evidence that the references are wrong. The journal text uses them only at the supported/limited lineage level, with central proofs self-contained and direct close-prior-art full texts reviewed. Final human reference review should resolve any field needing formal attestation. No claim of a fully expert-certified bibliography or comprehensive novelty search is made.
+
+## Additions and deeper checks after the two model reviews
+
+| Key | Primary metadata / actual access | Entailment and limits |
+| --- | --- | --- |
+| SahStiglitz1986 | NBER1334 page confirms1984working-paper abstract and1986AER76(4):716–727 publication | A: hierarchy/polyarchy aggregate project-acceptance errors differently. Only this broad architecture contrast is used; final article proofs not audited. |
+| CsaszarEggers2013 | INFORMS DOI10.1287/mnsc.1120.1698 confirms59(10):2257–2277 and primary abstract | A: compares individual/delegation/voting/averaging structures conditional on knowledge/environment. No specific theorem or empirical conclusion imported. |
+| DasguptaMaskin1987 | Author-hosted PDF frontmatter97:581–595 and author publication page confirm1987; introduction pp581–585 read | F(introduction/model motivation): social versus market research portfolios, correlated projects, duplication and incentives. No claim to reproduce their full model or prove equivalence. |
+
+KleinbergOren2011 was reread directly at §2, pp5–7 of the author PDF: payoff σ_j(k)/k, σ_j(k)=w_j(1−f_j^k); setting q_j=1 gives our exact conditional payoff/welfare. Consequence(ii) and the guaranteed-success decoy example give2−1/N and tightness. Theorem2.7 supplies full smoothness with μ≤(N−1)/N, already implying standard mixed/CCE/vanishing-regret consequences. The earlier multiple-success contrast was insufficient and removed. Gairing's Theorem2 independently treats arbitrary mixedNE; f=1/j is our specialization, not an example explicitly asserted to appear there. KormanRodeh2020 Theorem12 was checked in full primary v3, giving the same finite exclusive-policy factor; current text distinguishes that result from the equal-sharing uniform example.

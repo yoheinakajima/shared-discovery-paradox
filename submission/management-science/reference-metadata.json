@@ -1454,5 +1454,86 @@
     "URL": "https://doi.org/10.1086/525605",
     "source": "https://api.crossref.org/works/10.1086/525605",
     "abstract_available": true
+  },
+  "SahStiglitz1986": {
+    "title": [
+      "The Architecture of Economic Systems: Hierarchies and Polyarchies"
+    ],
+    "author": [
+      {
+        "name": "Raaj Kumar Sah"
+      },
+      {
+        "name": "Joseph E. Stiglitz"
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          1986
+        ]
+      ]
+    },
+    "container-title": [
+      "American Economic Review"
+    ],
+    "volume": "76",
+    "page": "716-727",
+    "URL": "https://www.nber.org/papers/w1334",
+    "inspection_scope": "Primary NBER abstract and Published Versions metadata; earlier1984working paper, not full1986article audit"
+  },
+  "CsaszarEggers2013": {
+    "title": [
+      "Organizational Decision Making: An Information Aggregation View"
+    ],
+    "author": [
+      {
+        "name": "Felipe A. Csaszar"
+      },
+      {
+        "name": "J. P. Eggers"
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2013
+        ]
+      ]
+    },
+    "container-title": [
+      "Management Science"
+    ],
+    "volume": "59",
+    "page": "2257-2277",
+    "URL": "https://pubsonline.informs.org/doi/10.1287/mnsc.1120.1698",
+    "inspection_scope": "Primary publisher abstract/metadata read; full article argument not audited"
+  },
+  "DasguptaMaskin1987": {
+    "title": [
+      "The Simple Economics of Research Portfolios"
+    ],
+    "author": [
+      {
+        "name": "Partha Dasgupta"
+      },
+      {
+        "name": "Eric Maskin"
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          1987
+        ]
+      ]
+    },
+    "container-title": [
+      "The Economic Journal"
+    ],
+    "volume": "97",
+    "page": "581-595",
+    "URL": "https://maskin.scholars.harvard.edu/sites/g/files/omnuum10606/files/maskin/files/the_simple_economics_of_research_portfolios.pdf",
+    "inspection_scope": "Primary author-hosted paper frontmatter and introduction pp581\u2013585 read, plus author publication listing; no claim to have independently checked all propositions"
   }
 }

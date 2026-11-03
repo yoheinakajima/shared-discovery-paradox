@@ -6,41 +6,36 @@
   "pdfs": {
     "manuscript": {
       "path": "submission/management-science/manuscript.pdf",
-      "bytes": 197691,
-      "sha256": "f0084183c8ad427fddc884612c6e3557a58245360318cd5f3e857c25eebc74f0",
-      "pages": 27,
+      "bytes": 204157,
+      "sha256": "7dca07904a399958c5665a7947f40d61e160423371ac6e6e539414d8d6762906",
+      "pages": 28,
       "author_metadata_empty": true,
       "unknown_reference_markers": 0,
       "overfull_boxes": 0
     },
     "companion": {
       "path": "submission/management-science/companion.pdf",
-      "bytes": 91893,
-      "sha256": "bb6dc1d603438cd82b766309fb9ec461b1c7f0865b9abc44b285f40ee7b71eea",
+      "bytes": 94280,
+      "sha256": "2046ab84434b7cc950d8a6ca6e0fe104c70b4b7206e8c4f6d6437b27d7fa6d0a",
       "pages": 11,
       "author_metadata_empty": true,
       "unknown_reference_markers": 0,
       "overfull_boxes": 0
     }
   },
-  "abstract_whitespace_word_count": 204,
+  "abstract_whitespace_word_count": 223,
   "keyword_count": 4,
   "font_pt": 11,
   "margins_inches": 1,
   "line_spacing": 1.5,
   "all_final_pages_rendered_and_layout_reviewed": true,
   "detail_checks": [
-    "Wide Table1 all columns inside margins and readable",
-    "Figures1\u20134 titles/axis labels/legends/captions checked on rendered pages",
-    "Main first page has no empty-author title gap",
-    "Companion first/proof/final pages checked; no empty References heading",
-    "Neutral proper attribution to related preprint retained; not self-identifying prose",
-    "Zero overfull boxes and undefined citations/references in final cached build",
-    "References-only bibsep 0.4em removes orphan final reference page; final pages25\u201327 rendered at1400px and checked; first24 pages extracted layout/text identical to preceding reviewed PDF",
-    "400px raster regression: main pages1\u201324 and all11 companion pages identical to preceding manager-reviewed PDFs; current main references pages25\u201327 separately visually checked",
-    "Approved public author fields populated only in named/offline metadata; blind main/EC source and PDF bytes unchanged; email/ORCID/affiliation/funding-role leak checks passed",
-    "Named title/cover/declaration now disclose author financial interest through Untapped founder/GP role and research support; no paper-specific portfolio-company relevance inferred; blind source/PDF bytes unchanged",
-    "Named candidate operational footer and instructional metadata removed; file-handling/unsubmitted/approval notes kept in README and readiness rather than PDF body"
+    "All28 main and11 EC pages rendered at600px and inspected; main body pages1\u201325 raster-identical to inspected pre-final-bibliography correction renders",
+    "Changed role example, direct prior-art/organizational paragraph and conditional covariance/union-bound proof pages checked at1400px",
+    "References-only bibsep0.1em and standard journal metadata avoid orphan reference page; body remains11pt/1.5spacing/1in",
+    "Saved Monte Carlo means/SEs and sample counts checked against retained native receipt and unchanged script, with no numerical replay",
+    "Abstract223words;31 cited references; all13 model findings plus3 additional notes have dispositions",
+    "Zero overfull boxes and undefined references/citations; anonymous main/EC omit contact/affiliation/ORCID/funding identity"
   ],
   "limitations": [
     "Color figure print handling must be checked in any later production proof; no print-color payment authorized",
@@ -61,7 +56,7 @@
     }
   },
   "manager_final_review": {
-    "scope": "Manager accepted current main references pages25\u201327 after viewing final renders. Main pages1\u201324 and all11 companion pages are raster-identical at400px to the prior full-page manager-reviewed snapshots; companion extracted text also confirmed byte-identical by manager. No broader specialist certification claimed.",
+    "scope": "Historical manager review of the earlier PDF snapshot at the exact hashes below, before the two-model correction round; not a claim of manager review of current revised PDFs.",
     "pdfs": {
       "manuscript": {
         "sha256": "f0084183c8ad427fddc884612c6e3557a58245360318cd5f3e857c25eebc74f0",
@@ -93,5 +88,6 @@
     "sha256": "1f788b065b2b37529bfa2e9a110fa4b70b4a84433e466896bde407778b6dc05d",
     "pages": 1,
     "scope": "Manager independently reviewed the preceding named-page render/metadata and package verifier at source head a89085dbd3a4f0a2ca7f43e74e40d2352197ccba; current financial-interest wording refinement was separately rendered and checked by builder."
-  }
+  },
+  "revision_scope": "Post-two-model correction round; current main28pp/EC11pp builder-rendered and checked. Historical manager reviews below apply only to their recorded prior hashes, not automatically to current revised PDFs."
 }

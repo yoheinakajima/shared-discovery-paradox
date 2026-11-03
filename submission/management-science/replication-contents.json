@@ -73,8 +73,8 @@
     },
     {
       "path": "submission/management-science/replication-guide.md",
-      "bytes": 10270,
-      "sha256": "9de0b5d39df70098527112d2c05a87b0c74924955b465dd4545bab4a0f82a827"
+      "bytes": 10625,
+      "sha256": "a9ba6beb6d44ab3956cf0a8dbb51e07350837899270bb62b1c1baada31f84dc1"
     },
     {
       "path": "submission/management-science/requirements-lock.txt",
@@ -82,14 +82,19 @@
       "sha256": "4c58fcbbf15c5fcf0e94bfc79fdca72f6b4c8dba6a68857071203e5410ea8c8e"
     },
     {
+      "path": "submission/management-science/review-dispositions.json",
+      "bytes": 5776,
+      "sha256": "02af5e4e58e5a62249d05c5948a6a5eb7f5881a924ff335cd8d7b4187b86c8a0"
+    },
+    {
       "path": "submission/management-science/tool-assistance.md",
-      "bytes": 3888,
-      "sha256": "48f8b163681c70c1b2303a36516637b7dea00dccf1696b32560023602cbdf5cf"
+      "bytes": 4749,
+      "sha256": "5b35919947ced43ed6093be7be949e1ca3cc6739623496bc81205a8feb63073c"
     },
     {
       "path": "submission/management-science/tool-use-evidence.json",
-      "bytes": 6001,
-      "sha256": "02f0f89b1e44cc16e0cbff52f22cb15c9940e6b1e1ca98a01d9f7a0a75b5e755"
+      "bytes": 6910,
+      "sha256": "cb1a22ec7f299e2309bf9fc9313e1a1ed7425684cda3bdfa7c6198f2067fbd2c"
     },
     {
       "path": "submission/management-science/verification-receipt.json",
