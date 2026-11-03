@@ -39,7 +39,8 @@
     "References-only bibsep 0.4em removes orphan final reference page; final pages25\u201327 rendered at1400px and checked; first24 pages extracted layout/text identical to preceding reviewed PDF",
     "400px raster regression: main pages1\u201324 and all11 companion pages identical to preceding manager-reviewed PDFs; current main references pages25\u201327 separately visually checked",
     "Approved public author fields populated only in named/offline metadata; blind main/EC source and PDF bytes unchanged; email/ORCID/affiliation/funding-role leak checks passed",
-    "Named title/cover/declaration now disclose author financial interest through Untapped founder/GP role and research support; no paper-specific portfolio-company relevance inferred; blind source/PDF bytes unchanged"
+    "Named title/cover/declaration now disclose author financial interest through Untapped founder/GP role and research support; no paper-specific portfolio-company relevance inferred; blind source/PDF bytes unchanged",
+    "Named candidate operational footer and instructional metadata removed; file-handling/unsubmitted/approval notes kept in README and readiness rather than PDF body"
   ],
   "limitations": [
     "Color figure print handling must be checked in any later production proof; no print-color payment authorized",
@@ -74,12 +75,12 @@
   },
   "named_author_asset": {
     "path": "submission/management-science/author-information.pdf",
-    "bytes": 17673,
-    "sha256": "5ad3cba9dc7f8b9e6dfcd673f56f9c98a09ffd7ce33d09c44b212e3f9734b953",
+    "bytes": 13573,
+    "sha256": "8dca7262071ab42836d7e152df27e8a7a0009337bc6225258e309ce55d64f643",
     "pages": 1,
     "author_metadata": "Yohei Nakajima",
     "scope": "Named title/contact/support asset, separate from anonymous initial-review pair",
-    "visual_review": "Financial-interest revision rendered at1400px and visually checked; one page, readable, inside margins; no portfolio-company reference",
+    "visual_review": "Clean one-page candidate rendered at1400px and visually checked; operational footer removed; PDF subject is Author information; readable and inside margins",
     "build": "Existing cached Tectonic --only-cached --untrusted via build.py --author-information-only; zero overfull boxes and unresolved references"
   },
   "orcid_verification": {
