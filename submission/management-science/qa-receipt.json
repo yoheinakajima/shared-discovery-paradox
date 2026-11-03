@@ -38,7 +38,8 @@
     "Zero overfull boxes and undefined citations/references in final cached build",
     "References-only bibsep 0.4em removes orphan final reference page; final pages25\u201327 rendered at1400px and checked; first24 pages extracted layout/text identical to preceding reviewed PDF",
     "400px raster regression: main pages1\u201324 and all11 companion pages identical to preceding manager-reviewed PDFs; current main references pages25\u201327 separately visually checked",
-    "Approved public author fields populated only in named/offline metadata; blind main/EC source and PDF bytes unchanged; email/ORCID/affiliation/funding-role leak checks passed"
+    "Approved public author fields populated only in named/offline metadata; blind main/EC source and PDF bytes unchanged; email/ORCID/affiliation/funding-role leak checks passed",
+    "Named title/cover/declaration now disclose author financial interest through Untapped founder/GP role and research support; no paper-specific portfolio-company relevance inferred; blind source/PDF bytes unchanged"
   ],
   "limitations": [
     "Color figure print handling must be checked in any later production proof; no print-color payment authorized",
@@ -73,12 +74,12 @@
   },
   "named_author_asset": {
     "path": "submission/management-science/author-information.pdf",
-    "bytes": 17770,
-    "sha256": "1f788b065b2b37529bfa2e9a110fa4b70b4a84433e466896bde407778b6dc05d",
+    "bytes": 17673,
+    "sha256": "5ad3cba9dc7f8b9e6dfcd673f56f9c98a09ffd7ce33d09c44b212e3f9734b953",
     "pages": 1,
     "author_metadata": "Yohei Nakajima",
     "scope": "Named title/contact/support asset, separate from anonymous initial-review pair",
-    "visual_review": "Final page rendered at1400px and visually checked; one page, readable, inside margins",
+    "visual_review": "Financial-interest revision rendered at1400px and visually checked; one page, readable, inside margins; no portfolio-company reference",
     "build": "Existing cached Tectonic --only-cached --untrusted via build.py --author-information-only; zero overfull boxes and unresolved references"
   },
   "orcid_verification": {
@@ -86,5 +87,10 @@
     "checksum_valid": true,
     "public_resolver": "tool inaccessible",
     "registry_authentication_performed": false
+  },
+  "named_author_prior_manager_review": {
+    "sha256": "1f788b065b2b37529bfa2e9a110fa4b70b4a84433e466896bde407778b6dc05d",
+    "pages": 1,
+    "scope": "Manager independently reviewed the preceding named-page render/metadata and package verifier at source head a89085dbd3a4f0a2ca7f43e74e40d2352197ccba; current financial-interest wording refinement was separately rendered and checked by builder."
   }
 }

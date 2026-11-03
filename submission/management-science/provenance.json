@@ -126,18 +126,18 @@
     },
     {
       "path": "submission/management-science/author-declarations-template.md",
-      "bytes": 4184,
-      "sha256": "9917f82465906538623956ea5cbe799d77403a678a12686b1d960255d1362089"
+      "bytes": 4101,
+      "sha256": "525be3b4c83d293b8f5d9f277116ee152fd62f4bccc80145fe0debef37e4b9ef"
     },
     {
       "path": "submission/management-science/author-information.pdf",
-      "bytes": 17770,
-      "sha256": "1f788b065b2b37529bfa2e9a110fa4b70b4a84433e466896bde407778b6dc05d"
+      "bytes": 17673,
+      "sha256": "5ad3cba9dc7f8b9e6dfcd673f56f9c98a09ffd7ce33d09c44b212e3f9734b953"
     },
     {
       "path": "submission/management-science/author-information.tex",
-      "bytes": 1493,
-      "sha256": "9784263bdb54f8a09628dc0cf75784f8c407b14fda53f7038fb9cc4ddc19a6cb"
+      "bytes": 1459,
+      "sha256": "c6f7cebd6f51754cb1ceb0295ece087e460e0d132668c0490a2b7f12b8b9121c"
     },
     {
       "path": "submission/management-science/bibliography.bib",
@@ -161,8 +161,8 @@
     },
     {
       "path": "submission/management-science/cover-letter-draft.md",
-      "bytes": 5023,
-      "sha256": "c5622e57e282d4a6c6cd30d6a2c41464b4a33c7cfd68c8201394db096e442276"
+      "bytes": 5017,
+      "sha256": "9fcd5807f8897c66a429ae6a0290206642ff4c2635522bf8df66a2f5850e32a7"
     },
     {
       "path": "submission/management-science/main-labels.tex",
@@ -191,8 +191,8 @@
     },
     {
       "path": "submission/management-science/qa-receipt.json",
-      "bytes": 4484,
-      "sha256": "0b4f766fe9bd4cbf6487490b5b944ff8a53a0e2d8123e390819256a1a7c8b610"
+      "bytes": 5156,
+      "sha256": "e43a4020016fff65d3eb954c9dd2d87f91e200be686b402a535860f671c64364"
     },
     {
       "path": "submission/management-science/readiness.md",
